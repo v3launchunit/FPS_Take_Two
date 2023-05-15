@@ -1,0 +1,175 @@
+###############################################################################
+######################### UNTITLED SHOOTER GAME BIBLE #########################
+############################## ***** "V" ******* ##############################
+###############################################################################
+
+    This is where I will keep all my ideas for this as-of-yet unnamed game.
+
+########## Weapons ##########
+    Axe
+        Melee backup weapon
+        Primary   - Swing
+        Secondary - none
+        "Starting weapon. For conserving ammo or breaching doors."
+
+    Frying Pan
+        Melee weapon
+        Primary   - Extremely loud swing
+        Secondary - none
+
+    Shotgun
+        Starting weapon
+        Primary   - Buckshot (Shells)
+        Secondary - none
+        "Starting weapon. Packs a good punch, and has a reasonable spread."
+
+    Twin Shotguns - "Snatched a second Shotgun"
+        Primary   - Left  Buck (Shells)
+        Secondary - Right Buck (Shells)
+        "Don't try this at home."
+
+    Boomstick - "Burgled a Boomstick"
+        Close-range burst weapon
+        Primary   - Super Buckshot (Shells *2)
+        Secondary - Slugs          (Slugs)
+            A powerful single shot, capable of overpenetrating enemies.
+        "The immense spread of this shotgun indicates that there is something very wrong with the left barrel."
+
+    Pepperbox - "Pilfered a Pepperbox"
+        Mid-range marksman weapon
+        Primary   - Slugs (Slugs)
+        Secondary - Hand Grenades (Bombs)
+        "What's a handgun doing this far into the arsenal?"
+    
+    Nailgun - "Nabbed a Nailgun"
+        Mid-range sustained weapon
+        Primary   - Nails (Nails)
+        Secondary - Spike (Bombs)
+            A railroad spike that detonates after a brief period.
+        "On one hand, it fires nails. On the other hand, it fires nails."
+
+    AKM - "Acquired an AKM"
+        Mid-range sustained weapon
+        Primary   - Super Nails (Nails *2)
+            Fly faster and farther than regular nails.
+        Secondary - Grenades    (Bombs *2)
+            Impact concusssion grenades with a wide blast radius.
+        "Apparently whoever had this last figured it would be easier to make it fire FUCKING NAILS than to find actual rounds."
+
+    Big Iron - "Borrowed a Big Iron"
+        Long-range six-shooter
+        Primary   - Slugs (Slugs *2)
+        Secondary - Scope
+        "Bane of Texan outlaws the world over."
+
+    Crossbow - "Confiscated a Crossbow"
+        Long-range sniper weapon
+        Primary   - Lightning Bolt (Cells *10)
+            A powerful, penetrating bolt of electricity.
+        Secondary - Super Scope
+        "The wrath of the gods, now in a convenient handheld package."
+            
+    Plasma Cannon - "Plundered a Plasma Cannon"
+        Mid-range projectile weapon
+        Primary   - Plasma Spray (Cells)
+            A conical spray of plasma that deals heavy knockback.
+        Secondary - Plasma Balls (Cells *5)
+            Deadly balls of plasma that explode on contact.
+        "This still feels like a terrible idea."
+
+    Rocket Launcher - "Recovered an RPG"
+        Long-range projectile weapon
+        Primary   - Rockets (Bombs *3)
+            Laser-guided shaped charges.
+        Secondary - Detonate Rockets
+        "So THAT's why Mr. Jameson stopped coming to church."
+
+    Inventory
+        Slot 1 (Melee)
+            Axe
+        Slot 2 (Burst)
+            Shotgun
+            Twin Shotguns
+            Boomstick
+        Slot 3 (Sustained)
+            Nailgun
+            AKM
+        Slot 4 (Ranged)
+            Pepperbox
+            Big Iron
+            Crossbow
+        Slot 5 (Projectile)
+            Pulse Cannon
+            Rocket Launcher
+        Slot 6 (Other)
+
+        Slot 7 (Debug)
+
+########## Enemies ##########
+    Zombie
+        70 Health
+        Primary - Eldritch blast
+        Slow
+    
+    Zombie Lumberjack
+        120 Health
+        Primary - Axe
+        Medium
+
+    Zombie Hunter
+        200 Health
+        Primary - Big Iron
+        Slow
+
+    Deer
+        100 Health
+        Primary - Suicide Bomb
+        Very Fast
+
+    Strikebreaker Hammer
+        150 Health
+        Primary - Shotgun
+        Medium
+
+    Strikebreaker Hound
+        50 Health
+        Primary - Teeth
+        Fast
+
+########## Plot Thoughts ##########
+    Act I
+        Setting: Countryside
+        Weapons:
+            Shotgun
+            Boomstick
+            Nailgun
+            Big Iron
+        
+        Enemies:
+            Zombie
+            Lumberjack
+            Hunter
+            Hammer
+            Hound
+
+        Levels:
+
+
+
+    Act II
+        Setting: City/University
+
+    Act III
+        Setting: Otherworld
+
+    Act IV
+        Setting: Corporate HQ
+
+########## Easter Eggs ##########
+    Newspaper
+        Headline: "Pennsylvania Local Tragically Dies in Soap-related Incident"
+        Body:     "Nyarlathotep, a long-time citizen of DUSK, Pennsylvania, was recently found dead in his home, with a single bar of soap nearby. Officials are currently investigating into who is responsible for the tragic loss of this well-respected community leader."
+
+########## Credits ##########
+    Stock Photos (terrain): https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
+    Stock Photos (gore):    https://www.texturecan.com
