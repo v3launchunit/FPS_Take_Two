@@ -48,16 +48,6 @@ public class HudHandler : MonoBehaviour
             GameObject.Find("Crosshairs").GetComponent<Image>().sprite = target.InteractCrosshairs;
         else
             GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _weaponCrosshairs;
-        // if (_logMessages.Count > 0)
-        // {
-        //     _logDecayTimer += Time.deltaTime;
-        //     if (_logDecayTimer >= _logDecayDelay)
-        //     {
-        //         _logMessages.RemoveAt(0);
-        //         _log.text = string.Join("\n", _logMessages);
-        //         _logDecayTimer = 0;
-        //     }
-        // }
     }
 
     public void Log(string text)

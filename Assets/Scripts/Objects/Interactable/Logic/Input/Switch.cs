@@ -8,8 +8,10 @@ public class Switch : InteractableObject
     // [SerializeField] private Vector3           _offRotation;
     [SerializeField] private Vector3           _onPosition;
     [SerializeField] private Vector3           _onRotation;
-    [SerializeField] private float             _travelTime =  0.5f;
-    [SerializeField] private float             _resetDelay = -1;
+    [SerializeField] private float             _travelTime  =  0.5f;
+    [SerializeField] private float             _resetDelay  = -1;
+    [SerializeField] private int               _requiredKey = -1;
+    [SerializeField] private string            _lockedText;
     [SerializeField] private bool              _oneWay;
     [SerializeField] private List<LogicOutput> _targets;
 
@@ -61,6 +63,12 @@ public class Switch : InteractableObject
 
     public override void OnInteract(GameObject other)
     {
+        if (_requiredKey != -1 && !other.GetComponentInParent<PlayerStatus>().Keys[_requiredKey])
+        {
+            GameObject.FindObjectOfType<HudHandler>().Log(_lockedText);
+            return;
+        }
+
         if (!_on)
         {
             print("switch pressed!");

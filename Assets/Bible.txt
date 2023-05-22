@@ -198,6 +198,13 @@
                 Bosses:
                     The Machine
 
+########## Enemies ##########
+
+########## Bosses ##########
+    Tanya
+        Primary - Twin Pistols
+        Melee   - C4
+
 ########## Easter Eggs ##########
     Explosion Sounds
         Cat Screech

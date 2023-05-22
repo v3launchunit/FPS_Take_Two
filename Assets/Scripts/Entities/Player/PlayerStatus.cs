@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatus : Status
 {
     [SerializeField] private int    _maxArmor = 0;
     [SerializeField] private int    _armor    = 0;
-    [SerializeField] private bool[] _keys;
+    [SerializeField] private bool[] _keys     = {false, false, false, false, false, false};
 
     public override int Damage(int damage, float multiplier) //
     {
@@ -47,7 +48,13 @@ public class PlayerStatus : Status
 
     public bool AddKey(int index)
     {
-        return false;
+        if (_keys[index])
+            return false;
+        
+        _keys[index] = true;
+        
+        GameObject.Find("KeyPanel").transform.GetChild(index).gameObject.GetComponent<Image>().color = new(1, 1, 1);
+        return true;
     }
 
     // public override void Kill()
@@ -55,6 +62,7 @@ public class PlayerStatus : Status
     //     print("You just got fucking murdered!");
     // }
     
-    public int MaxArmor { get => _maxArmor; }
-    public int Armor    { get => _armor; }
+    public int    MaxArmor { get => _maxArmor; }
+    public int    Armor    { get => _armor; }
+    public bool[] Keys     { get => _keys; }
 }
