@@ -48,6 +48,14 @@ public class HudHandler : MonoBehaviour
             GameObject.Find("Crosshairs").GetComponent<Image>().sprite = target.InteractCrosshairs;
         else
             GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _weaponCrosshairs;
+
+        GameObject.Find("BloodVignette").GetComponent<Image>().color = new
+        (
+            0.5f, 
+            0, 
+            0, 
+            2 * (0.5f - ((float)_playerStatus.Health/(float)_playerStatus.MaxHealth))
+        );
     }
 
     public void Log(string text)

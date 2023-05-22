@@ -103,6 +103,7 @@ public class SyringeHandler : WeaponBase
     public void HealSelf()
     {
         GetComponentInParent<PlayerStatus>().Heal(_healAmount);
+        GameObject.FindObjectOfType<Flash>().DoFlash(new Color(0, 1, 0, (float)_healAmount/(float)GetComponentInParent<PlayerStatus>().MaxHealth));
         GetComponentInParent<PlayerMovement>().CamRecoil(-45);
         _charge--;
     }

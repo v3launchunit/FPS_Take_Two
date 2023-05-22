@@ -5,9 +5,6 @@ using UnityEngine;
 public class KeyPickup : Pickup
 {
     [SerializeField] private int _index;
-    [SerializeField] private string _pickupText;
-    [SerializeField] private string _pickupFailText;
-    [SerializeField] private Color  _pickupFlashColor;
 
     public override void OnInteract(GameObject other)
     {

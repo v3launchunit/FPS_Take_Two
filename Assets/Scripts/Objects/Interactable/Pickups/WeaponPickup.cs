@@ -8,9 +8,6 @@ public class WeaponPickup : Pickup
     [SerializeField] private GameObject _weapon;
     [SerializeField] private int        _startingMainAmmo;
     [SerializeField] private int        _startingAltAmmo;
-    [SerializeField] private string     _pickupText;
-    [SerializeField] private string     _pickupFailText;
-    [SerializeField] private Color      _pickupFlashColor;
 
     public override void OnInteract(GameObject other)
     {

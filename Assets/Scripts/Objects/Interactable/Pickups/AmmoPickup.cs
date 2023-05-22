@@ -10,9 +10,6 @@ public class AmmoPickup : Pickup
     [SerializeField] private bool[]   _isAltAmmo;
     [SerializeField] private int[]    _sharedIndex;
     [SerializeField] private int[]    _sharedAmount;
-    [SerializeField] private string   _pickupText;
-    [SerializeField] private string   _pickupFailText;
-    [SerializeField] private Color    _pickupFlashColor;
 
     public override void OnInteract(GameObject other)
     {

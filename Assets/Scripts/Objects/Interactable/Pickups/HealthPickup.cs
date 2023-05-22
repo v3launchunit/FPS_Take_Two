@@ -7,9 +7,6 @@ public class HealthPickup : Pickup
 {
     [SerializeField] private bool   _armorPickup = false;
     [SerializeField] private int    _amount      = 15;
-    [SerializeField] private string _pickupText;
-    [SerializeField] private string _pickupFailText;
-    [SerializeField] private Color  _pickupFlashColor;
 
     public override void OnInteract(GameObject other)
     {
