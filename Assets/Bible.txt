@@ -12,10 +12,19 @@
         Secondary - none
         "Starting weapon. For conserving ammo or breaching doors."
 
-    Frying Pan
+    Syringe - "Snagged a Syringe!"
+        Melee lifesteal weapon
+        Primary   - Stab
+            Stab an enemy, dealing damage and storing up charges.
+        Secondary - Heal
+            Consume a charge to heal damage.
+        "Extract the lifeforce of others and use it to augument your own."
+
+    Frying Pan - "Found a Frying Pan"
         Melee weapon
         Primary   - Extremely loud swing
         Secondary - none
+        "This trusty cast-iron frying pan can also be used as a drying pan!"
 
     Shotgun
         Starting weapon
@@ -84,6 +93,11 @@
         Secondary - Detonate Rockets
         "So THAT's why Mr. Jameson stopped coming to church."
 
+    Flak Cannon - "Found a Flak Cannon"
+        Hitscan superweapon
+        Primary   - Rapid Fire Artillery Shells
+        Secondary - Super Scope
+
     Inventory
         Slot 1 (Melee)
             Axe
@@ -99,9 +113,10 @@
             Big Iron
             Crossbow
         Slot 5 (Projectile)
-            Pulse Cannon
+            Plasma Cannon
             Rocket Launcher
         Slot 6 (Other)
+            Flak Cannon
 
         Slot 7 (Debug)
 
@@ -164,12 +179,36 @@
 
     Act IV
         Setting: Corporate HQ
+        Weapons:
+            Flak Cannon
+        
+        Enemies:
+            Camera
+            Hammer
+            Hound
+            Hog
+            Chopper
+
+        Levels:
+            E4M01:
+            FINALE: Welcome
+                Weapons:
+                    Flak Cannon
+                
+                Bosses:
+                    The Machine
 
 ########## Easter Eggs ##########
+    Explosion Sounds
+        Cat Screech
+        Vine Boom
+        Shart
+
     Newspaper
         Headline: "Pennsylvania Local Tragically Dies in Soap-related Incident"
         Body:     "Nyarlathotep, a long-time citizen of DUSK, Pennsylvania, was recently found dead in his home, with a single bar of soap nearby. Officials are currently investigating into who is responsible for the tragic loss of this well-respected community leader."
 
 ########## Credits ##########
-    Stock Photos (terrain): https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
-    Stock Photos (gore):    https://www.texturecan.com
+    Stock Photos (terrain):  https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
+    Stock Photos (gore):     https://www.texturecan.com
+    Stock Sounds (gunshots): free sound effects from https://www.fesliyanstudios.com

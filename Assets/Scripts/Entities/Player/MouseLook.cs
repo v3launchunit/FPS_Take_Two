@@ -35,7 +35,7 @@ public class MouseLook : MonoBehaviour
         _playerbody.Rotate(Vector3.up * mouseX);        
 
         _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Input.GetButtonDown("Interact") && Physics.Raycast(_ray, out RaycastHit hit, 5f, 1 << 6))
+        if (Input.GetButtonDown("Interact") && Physics.Raycast(_ray, out RaycastHit hit, 3)) // , 1 << 6
         {
             GameObject target = hit.collider.gameObject;
             if (target.TryGetComponent(out InteractableObject _)) // targetInteract

@@ -18,12 +18,13 @@ public class Hitscan : OwnedProjectile
     // private Ray        _ray;
     private RaycastHit _raycastHit;
     private Vector3    _impactPoint;
-    private Transform _hit;
+    private Transform  _hit;
     private float      _moveTimer         = 0f;
     private float      _fadeTimer         = 0f;
     private int        _scanEscapeCounter = 0;
     private Vector3    _scanStartingPosition;
     private Vector3    _firedFrom;
+    private bool       _hitOrganic;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,8 @@ public class Hitscan : OwnedProjectile
                 _impactPoint,
                 _fadeTimer / Vector3.Distance(_firedFrom, _impactPoint) * _fadeSpeed
             ));
-            if (line.GetPosition(0) == line.GetPosition(1)) Destroy(gameObject);
+            if (line.GetPosition(0) == line.GetPosition(1)) // && _moveTimer > 5
+                Destroy(gameObject);
 
             _fadeTimer += Time.deltaTime;
         }
@@ -84,7 +86,7 @@ public class Hitscan : OwnedProjectile
         LineRenderer line = gameObject.GetComponent<LineRenderer>();
 
         Vector3 angle = transform.rotation * Vector3.forward;
-        if (Physics.Raycast(_scanStartingPosition, angle, out _raycastHit, _maxRange, _layerMask))
+        if (Physics.Raycast(_scanStartingPosition, angle, out _raycastHit, _maxRange, _layerMask, QueryTriggerInteraction.Ignore))
         {
             _impactPoint = _raycastHit.point;
             _hit         = _raycastHit.transform;
@@ -110,9 +112,12 @@ public class Hitscan : OwnedProjectile
                     line.SetPosition(1, _impactPoint);
                     return;
                 }
+
+                _hitOrganic = targetDamage.Organic;
+
                 _damage -= targetDamage.Damage(_damage);
 
-                if (_damage > 0)
+                if (_piercer && _damage > 0)
                 {
                     SpawnExplosion();
                     Scan();
@@ -126,6 +131,8 @@ public class Hitscan : OwnedProjectile
 
         line.SetPosition(0, transform.position);
         line.SetPosition(1, _impactPoint);
+
+        print(_hitOrganic);
     }
 
     void SpawnExplosion()
@@ -141,4 +148,6 @@ public class Hitscan : OwnedProjectile
             TransferOwnership(e.transform);
         }
     }
+
+    public bool HitOrganic { get => _hitOrganic; }
 }

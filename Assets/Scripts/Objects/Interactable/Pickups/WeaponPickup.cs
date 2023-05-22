@@ -14,6 +14,9 @@ public class WeaponPickup : Pickup
 
     public override void OnInteract(GameObject other)
     {
+        if (_interactSound != null)
+            Instantiate(_interactSound, transform.position, transform.rotation);
+
         if (other.GetComponentInChildren<WeaponSelect>().AddWeapon(_weapon, _startingMainAmmo, _startingAltAmmo))
         {
             // GameObject v = GameObject.Find("Vignette");

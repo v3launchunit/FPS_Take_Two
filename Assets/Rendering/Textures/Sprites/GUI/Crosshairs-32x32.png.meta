@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6dcf6a24cb4c7e64f8ebef1aada31d0c
+guid: 3bcd7ced304751346858e70f1b5cc072
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlasmaCannonIcon
+      name: Crosshairs-32x32_PlasmaCannon
       rect:
         serializedVersion: 2
         x: 1
-        y: 96
-        width: 14
-        height: 16
+        y: 129
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9405ab1786149f4090865265c9f0d18
-      internalID: 903740731
+      spriteID: 3fff5b1a411440d4397ebd96be6f8f2d
+      internalID: 1986802575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RPGIcon
+      name: Crosshairs-32x32_RPG
       rect:
         serializedVersion: 2
-        x: 17
-        y: 96
-        width: 15
-        height: 16
+        x: 33
+        y: 129
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91a05b9cfe216f448357596e5b11957
-      internalID: 571624357
+      spriteID: a9db482feddc3d644ad64c777bb76807
+      internalID: 2059190383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PepperboxIcon
+      name: Crosshairs-32x32_Pepperbox
       rect:
         serializedVersion: 2
-        x: 3
-        y: 80
-        width: 11
-        height: 16
+        x: 1
+        y: 97
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c42f4ebdd0e8610478d1a85a57fe618c
-      internalID: 1056798119
+      spriteID: d47f3b2bd5680e94ebaa799dd89717cc
+      internalID: 1171195871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigIronIcon
+      name: Crosshairs-32x32_BigIron
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
+        x: 33
+        y: 97
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3caacd7fad3bd8f4f96c9c976fe5002d
-      internalID: 1692626744
+      spriteID: b4c0c97da93286a44a9573dbb5c8a43a
+      internalID: -2072059990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrossbowIcon
+      name: Crosshairs-32x32_Crossbow
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
+        x: 65
+        y: 97
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c36fe9ba27218b04890fca904c9ccf99
-      internalID: 391100450
+      spriteID: 7e7d1ee99e926c14ebc56980001d3609
+      internalID: 1623719172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NailgunIcon
+      name: Crosshairs-32x32_Nailgun
       rect:
         serializedVersion: 2
-        x: 2
-        y: 64
-        width: 12
-        height: 16
+        x: 1
+        y: 65
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3231c61910a614eb18926fb65d0966
-      internalID: -187412473
+      spriteID: 31951ad6e96a52f4294304338c6a2767
+      internalID: 967470931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AKMIcon
+      name: Crosshairs-32x32_AKM
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
-        width: 14
-        height: 16
+        x: 33
+        y: 65
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec213878950f2704d8e6cf1a88ee3f00
-      internalID: 850698014
+      spriteID: cbb1cc4c675334c4e85e1b6b92fca514
+      internalID: -2032614619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShotgunIcon
+      name: Crosshairs-32x32_Shotgun
       rect:
         serializedVersion: 2
-        x: 5
-        y: 48
-        width: 8
-        height: 16
+        x: 1
+        y: 33
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f21b2e911e70927458e083440b847792
-      internalID: -2045876957
+      spriteID: e4a150f86035f0442867dea0efc7833e
+      internalID: 1850174452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TwinShotgunsIcon
+      name: Crosshairs-32x32_TwinShotguns
       rect:
         serializedVersion: 2
-        x: 19
-        y: 48
-        width: 10
-        height: 16
+        x: 33
+        y: 33
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fd762a048607d44db234538f2cd7b79
-      internalID: 674884970
+      spriteID: da756f6e414fa6e40b14f0b6e17b5184
+      internalID: 1848075627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoomstickIcon
+      name: Crosshairs-32x32_Boomstick
       rect:
         serializedVersion: 2
-        x: 35
-        y: 48
-        width: 10
-        height: 16
+        x: 65
+        y: 33
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c9a09a1713aa1248ab69559f3b1e77c
-      internalID: 801359957
+      spriteID: ccc4cfc4259aacf40b1ae5c235eda59d
+      internalID: 814677533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AxeIcon
+      name: Crosshairs-32x32_Axe
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
+        x: 1
+        y: 1
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04cfcafaedcd0d047a4dca8824ef4106
-      internalID: -179908625
+      spriteID: a2b7ac9697f80a046ab210337a93fd7e
+      internalID: 723444802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeaponSelect_17
+      name: Crosshairs-32x32_Syringe
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 33
+        y: 1
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,20 +350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c903ed9260edc7944a2358d94190cbef
-      internalID: -1511602534
+      spriteID: 2bf792d99dcf37f4f8c96549c8cf97ee
+      internalID: 173577172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WeaponSelect_18
+      name: Crosshairs-32x32_Cursor
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 17
-        height: 17
+        x: 1
+        y: 225
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,20 +371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a87463e28f109994fba18cf738cf4edf
-      internalID: -973548118
+      spriteID: 21586bf67b5d3f747bbbd9abc69725d7
+      internalID: -1490355366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1
+      name: Crosshairs-32x32_Push
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 33
+        y: 225
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,20 +392,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3bf68c1cfcbad40b2cb738f32663ad
-      internalID: -40296265
+      spriteID: 3b080924152a1334a9335e3b75d08273
+      internalID: -2045951021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2
+      name: Crosshairs-32x32_Grab
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
+        x: 65
+        y: 225
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,113 +413,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79bfac999e849c743a180531ed7c7188
-      internalID: -518114181
+      spriteID: 408f680becd10ee4498e673857054094
+      internalID: 976143515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3
+      name: Crosshairs-32x32_Howitzer
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 65
+        y: 129
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86a277bb5a0069943a8f1a2ba876fd73
-      internalID: 1660481704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e27d0d2c542709f4dba21f4a7f2f342e
-      internalID: 189052597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58529923d78cd1b4ca0579d3ca1f300d
-      internalID: -398339700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d50f0ba1b72372b4eb98ce95a32e8680
-      internalID: -1391778642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aafc977057fcf21488a632994820b5b7
-      internalID: -1543522685
+      spriteID: b7051d16fd05a7044977141c0c8bb2fb
+      internalID: -308116444
       vertices: []
       indices: 
       edges: []
@@ -527,7 +443,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b1c02691387e43449c15848c12303f3
+    spriteID: 7af49b7fac6318f44a8dc03967c0b7e4
     internalID: 0
     vertices: []
     indices: 
@@ -535,33 +451,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1: -40296265
-      2: -518114181
-      3: 1660481704
-      4: 189052597
-      5: -398339700
-      6: -1391778642
-      7: -1543522685
-      AKMIcon: 850698014
-      AxeIcon: -179908625
-      BigIronIcon: 1692626744
-      BoomstickIcon: 801359957
-      CrossbowIcon: 391100450
-      NailgunIcon: -187412473
-      PepperboxIcon: 1056798119
-      PlasmaCannonIcon: 903740731
-      RPGIcon: 571624357
-      ShotgunIcon: -2045876957
-      TwinShotgunsIcon: 674884970
-      WeaponSelect_16: 312688064
-      WeaponSelect_17: -1511602534
-      WeaponSelect_18: -973548118
-      WeaponSelect_19: 881211745
-      WeaponSelect_2: 1691271397
-      WeaponSelect_3: -2024818519
-      WeaponSelect_4: 855854883
-      WeaponSelect_5: 2130643118
-      WeaponSelect_6: -2132665306
+      Crosshairs-32x32_2: -1842869099
+      Crosshairs-32x32_AKM: -2032614619
+      Crosshairs-32x32_Axe: 723444802
+      Crosshairs-32x32_BigIron: -2072059990
+      Crosshairs-32x32_Boomstick: 814677533
+      Crosshairs-32x32_Crossbow: 1623719172
+      Crosshairs-32x32_Cursor: -1490355366
+      Crosshairs-32x32_Grab: 976143515
+      Crosshairs-32x32_Howitzer: -308116444
+      Crosshairs-32x32_Nailgun: 967470931
+      Crosshairs-32x32_Pepperbox: 1171195871
+      Crosshairs-32x32_PlasmaCannon: 1986802575
+      Crosshairs-32x32_Push: -2045951021
+      Crosshairs-32x32_RPG: 2059190383
+      Crosshairs-32x32_Shotgun: 1850174452
+      Crosshairs-32x32_Syringe: 173577172
+      Crosshairs-32x32_TwinShotguns: 1848075627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

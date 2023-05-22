@@ -335,6 +335,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Crosshairs-16x16_Syringe
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6163d2255da1fb042b89e1cf1768a6d4
+      internalID: -1544608856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -346,7 +367,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crosshairs-16x16_0: -305325100
       Crosshairs-16x16_1: -942375942
       Crosshairs-16x16_2: -1070522796
       Crosshairs-16x16_3: -1227945986
@@ -361,6 +381,7 @@ TextureImporter:
       Crosshairs-16x16_PlasmaCannon: 1525862034
       Crosshairs-16x16_RPG: 748451644
       Crosshairs-16x16_Shotgun: 841836544
+      Crosshairs-16x16_Syringe: -1544608856
       Crosshairs-16x16_TwinShotguns: -267067898
   spritePackingTag: 
   pSDRemoveMatte: 0

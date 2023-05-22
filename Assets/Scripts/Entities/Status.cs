@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Status : MonoBehaviour
 {
-    [SerializeField] protected int       _maxHealth = 100;
-    [SerializeField] protected int       _health    = 100;
+    [SerializeField] protected int      _maxHealth    = 100;
+    [SerializeField] protected int      _health       = 100;
     [SerializeField] private GameObject _deathExplosion;
     [SerializeField] private int        _gibThreshold = 10;
     [SerializeField] private GameObject _gibExplosion;
+    [SerializeField] private bool       _organic = false;
 
     private bool _isDead = false;
 
@@ -49,6 +50,8 @@ public class Status : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    public virtual bool Organic   { get => _organic; }
 
     public int  MaxHealth { get => _maxHealth; }
     public int  Health    { get => _health; }

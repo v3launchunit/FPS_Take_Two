@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a2e75d17ef3b2d4496b578966f02e64,
         type: 3}
       propertyPath: m_Name
-      value: rpg
+      value: rpgPickup
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9a2e75d17ef3b2d4496b578966f02e64,
         type: 3}
@@ -136,6 +136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _touchInteract: 1
+  _shootInteract: 0
+  _interactCrosshairs: {fileID: 0}
+  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+    type: 3}
   _weapon: {fileID: 979648739273686049, guid: 2036ffdef21cfe04a910107ce7129705, type: 3}
   _startingMainAmmo: 1
   _startingAltAmmo: 0

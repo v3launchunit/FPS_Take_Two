@@ -367,6 +367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _touchInteract: 0
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
   _onPosition: {x: 0, y: 0, z: 0.05}
   _onRotation: {x: 90, y: 0, z: 0}
   _travelTime: 0.3

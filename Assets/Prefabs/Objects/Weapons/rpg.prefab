@@ -301,12 +301,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: RPG
   _icon: {fileID: 3743310100739483010, guid: c1af0c42fd1cd2f4f8410d178a095d01, type: 3}
-  _crosshairs: {fileID: 748451644, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 2059190383, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 4
   _index: 1
   _mainBullet: {fileID: 5136272352233544748, guid: ebc45a04c3b49ed409c6efd79820b96c,
     type: 3}
   _mainMuzzleFlash: {fileID: 0}
+  _mainFireSound: {fileID: 4474095313810178510, guid: a2ac6746093d17e438caf600bb52e9a2,
+    type: 3}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: 10
@@ -317,6 +319,7 @@ MonoBehaviour:
   _mainCamRecoil: 0
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0

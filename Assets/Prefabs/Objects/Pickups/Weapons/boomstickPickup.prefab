@@ -116,6 +116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _touchInteract: 1
+  _shootInteract: 0
+  _interactCrosshairs: {fileID: 0}
+  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+    type: 3}
   _weapon: {fileID: 2858345273658330533, guid: a313de111e80f864e8e85ef0484734da, type: 3}
   _startingMainAmmo: 15
   _startingAltAmmo: 5

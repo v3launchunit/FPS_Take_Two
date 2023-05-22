@@ -258,8 +258,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
   m_Range: 50
-  m_SpotAngle: 50
-  m_InnerSpotAngle: 50
+  m_SpotAngle: 45
+  m_InnerSpotAngle: 22.5
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -287,7 +287,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 2800000, guid: cd0f4d3df1e0e6745a447e1b70acb01b, type: 3}
+  m_Cookie: {fileID: 2800000, guid: 146cecaaa7d3bc045b724b17c846076b, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 1
@@ -588,8 +588,10 @@ MonoBehaviour:
   _gibThreshold: 10
   _gibExplosion: {fileID: 1109266680002391311, guid: a11f229bacb591545a5ade4eae1b0e98,
     type: 3}
+  _organic: 0
   _maxArmor: 100
   _armor: 25
+  _keys: 
 --- !u!1 &544714778327743814
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,12 +897,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Shotgun
   _icon: {fileID: 7752578430172633729, guid: 5002643a2fcbc8e4e9794d2ba3e3e35d, type: 3}
-  _crosshairs: {fileID: 841836544, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 1850174452, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 1
   _index: 0
   _mainBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
+    type: 3}
+  _mainFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
   _mainBurst: 9
   _mainSpread: 5
@@ -912,6 +916,7 @@ MonoBehaviour:
   _mainCamRecoil: 5
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0
@@ -1069,6 +1074,7 @@ MonoBehaviour:
   _mainBullet: {fileID: 3445455089518735197, guid: 69d041d3e8119dd4f926e0358da12b46,
     type: 3}
   _mainMuzzleFlash: {fileID: 0}
+  _mainFireSound: {fileID: 0}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: -1
@@ -1079,6 +1085,7 @@ MonoBehaviour:
   _mainCamRecoil: -5
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0

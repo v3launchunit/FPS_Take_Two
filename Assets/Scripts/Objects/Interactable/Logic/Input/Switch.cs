@@ -75,6 +75,9 @@ public class Switch : InteractableObject
 
     public void ToggleActive(bool on)
     {
+        if (_interactSound != null)
+            Instantiate(_interactSound, transform.position, transform.rotation);
+            
         _on = on;
         _targetPosition = (on) ? _onPosition : _offPosition;
         _targetRotation = (on) ? _onRotation : _offRotation;

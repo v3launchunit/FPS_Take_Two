@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pepperbox
   _icon: {fileID: 2376261410790241259, guid: f1d2aabc983b02742b6d86da48fe863d, type: 3}
-  _crosshairs: {fileID: 1963732356, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 1171195871, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 3
   _index: 0
   _left: {fileID: 2106688701555271611}

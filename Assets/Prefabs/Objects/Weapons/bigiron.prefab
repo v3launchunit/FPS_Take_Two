@@ -128,7 +128,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 0.5019608}
+      key0: {r: 1, g: 0, b: 0, a: 0}
       key1: {r: 1, g: 0, b: 0, a: 0.5019608}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -271,7 +271,7 @@ PrefabInstance:
     - target: {fileID: -3913916400222787055, guid: 6780b85e6ca8e804792771ab8db52970,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1667202930860327310, guid: 6780b85e6ca8e804792771ab8db52970,
         type: 3}
@@ -347,12 +347,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Big Iron
   _icon: {fileID: 6287914305384751006, guid: 71d0b479144d2cf4ba4a062b8b53d169, type: 3}
-  _crosshairs: {fileID: -2104703058, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: -2072059990, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 3
   _index: 1
   _mainBullet: {fileID: 3445455089518735197, guid: fc981d65999451f4bbd73ec5f08cffb1,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+    type: 3}
+  _mainFireSound: {fileID: 8525948762005938277, guid: c7f825259b2976941b93bb086dfb19b0,
     type: 3}
   _mainBurst: 1
   _mainSpread: 0
@@ -360,10 +362,11 @@ MonoBehaviour:
   _mainAmmo: 5
   _sharedMainAmmo: -1
   _mainAutomatic: 1
-  _mainRecoil: 10
+  _mainRecoil: 0
   _mainCamRecoil: 15
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0

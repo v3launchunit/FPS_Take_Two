@@ -144,15 +144,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b80c484c6778844a73e3ce6aca8b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 100
   _explosion: {fileID: 1186836860010196686, guid: 4bde5a8594f90964da5f25a44d00a81f,
     type: 3}
   _maxRange: 100
   _lifetime: 60
   _fadeSpeed: 100
   _fadeDelay: 0.05
-  _damage: 75
   _launchFactorMovement: 0.25
   _launchFactorRigidbody: -10
   _layerMask:
     serializedVersion: 2
     m_Bits: 1865
+  _parrier: 0
+  _piercer: 0

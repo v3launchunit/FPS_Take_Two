@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Twin Shotguns
   _icon: {fileID: 2235327434011437661, guid: 796b9230f8f2d9341aa486856366433c, type: 3}
-  _crosshairs: {fileID: -267067898, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 1848075627, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 1
   _index: 1
   _left: {fileID: 8307780500591584558}
@@ -382,6 +382,7 @@ MonoBehaviour:
   _index: 0
   _mainBullet: {fileID: 0}
   _mainMuzzleFlash: {fileID: 0}
+  _mainFireSound: {fileID: 0}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: 0
@@ -393,6 +394,8 @@ MonoBehaviour:
   _altBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
   _altMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
+    type: 3}
+  _altFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
   _altBurst: 9
   _altSpread: 10
@@ -547,6 +550,8 @@ MonoBehaviour:
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
+  _mainFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
+    type: 3}
   _mainBurst: 9
   _mainSpread: 10
   _mainAmmoMax: 1
@@ -557,6 +562,7 @@ MonoBehaviour:
   _mainCamRecoil: 5
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0

@@ -31,6 +31,9 @@ public class AmmoPickup : Pickup
 
         if (b)
         {
+            if (_interactSound != null)
+                Instantiate(_interactSound, transform.position, transform.rotation);
+            
             GameObject.FindObjectOfType<Flash>().DoFlash(_pickupFlashColor);
             GameObject.FindObjectOfType<HudHandler>().Log(_pickupText);
             Destroy(gameObject);

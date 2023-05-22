@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerStatus : Status
 {
-    [SerializeField] private int _maxArmor = 0;
-    [SerializeField] private int _armor = 0;
+    [SerializeField] private int    _maxArmor = 0;
+    [SerializeField] private int    _armor    = 0;
+    [SerializeField] private bool[] _keys;
 
     public override int Damage(int damage, float multiplier) //
     {
@@ -42,6 +43,11 @@ public class PlayerStatus : Status
             _armor = _maxArmor;
         
         return true;
+    }
+
+    public bool AddKey(int index)
+    {
+        return false;
     }
 
     // public override void Kill()

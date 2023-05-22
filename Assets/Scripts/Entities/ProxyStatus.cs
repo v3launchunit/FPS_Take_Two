@@ -11,4 +11,6 @@ public class ProxyStatus : Status
     {
         return _status.Damage(damage, _damageMult * multiplier);
     }
+    
+    public override bool Organic   { get => _status.Organic; }
 }

@@ -45,7 +45,8 @@ public abstract class WeaponBase : MonoBehaviour
             _iconInstance.GetComponent<Image>().color = new(1, 1, 1, 1);
         }
         if (_crosshairs != null)
-            GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _crosshairs;
+            GameObject.FindObjectOfType<HudHandler>().WeaponCrosshairs = _crosshairs;
+        //    GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _crosshairs;
     }
 
     void OnDisable()

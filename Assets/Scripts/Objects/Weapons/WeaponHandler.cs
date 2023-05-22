@@ -7,6 +7,7 @@ public class WeaponHandler : WeaponBase
 {
     [SerializeField] private GameObject _mainBullet;
     [SerializeField] private GameObject _mainMuzzleFlash;
+    [SerializeField] private GameObject _mainFireSound;
     [SerializeField] private int        _mainBurst      =  1;
     [SerializeField] private float      _mainSpread     =  0;
     [SerializeField] private int        _mainAmmoMax    = 50;
@@ -18,6 +19,7 @@ public class WeaponHandler : WeaponBase
 
     [SerializeField] private GameObject _altBullet;
     [SerializeField] private GameObject _altMuzzleFlash;
+    [SerializeField] private GameObject _altFireSound;
     [SerializeField] private int        _altBurst      =  1;
     [SerializeField] private float      _altSpread     =  0;
     [SerializeField] private int        _altAmmoMax    =  5;
@@ -97,6 +99,9 @@ public class WeaponHandler : WeaponBase
                         proj.Owner = Camera.main.transform.parent.parent;
                 }
 
+            if (_mainFireSound != null)
+                Instantiate<GameObject>(_mainFireSound);
+
             _animator.SetTrigger("MainFire");
             GameObject.Find("Crosshairs").GetComponent<Animator>().SetTrigger("Fire");
             GetComponentInParent<Movement>().Knockback(transform.forward * _mainRecoil);
@@ -149,6 +154,9 @@ public class WeaponHandler : WeaponBase
                     if (b.TryGetComponent(out OwnedProjectile proj))
                         proj.Owner = Camera.main.transform.parent.parent;
                 }
+            
+            if (_altFireSound != null)
+                Instantiate<GameObject>(_altFireSound);
             
             _animator.SetTrigger("AltFire");
             GameObject.Find("Crosshairs").GetComponent<Animator>().SetTrigger("Fire");

@@ -13,6 +13,9 @@ public class HealthPickup : Pickup
 
     public override void OnInteract(GameObject other)
     {
+        if (_interactSound != null)
+            Instantiate(_interactSound, transform.position, transform.rotation);
+            
         if (other.GetComponentInParent<Status>().Heal(_amount))
         {
             GameObject.FindObjectOfType<Flash>().DoFlash(_pickupFlashColor);

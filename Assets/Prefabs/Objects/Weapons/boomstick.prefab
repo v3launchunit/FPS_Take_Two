@@ -237,12 +237,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Boomstick
   _icon: {fileID: 1729140038815141777, guid: 5706ad30020294d40bf057c86fc9f9b5, type: 3}
-  _crosshairs: {fileID: -546281078, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 814677533, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 1
   _index: 2
   _mainBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
-  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
+  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+    type: 3}
+  _mainFireSound: {fileID: 4474095313810178510, guid: 8ac403f10b313384999f3fc43e23c79c,
     type: 3}
   _mainBurst: 36
   _mainSpread: 20
@@ -255,6 +257,8 @@ MonoBehaviour:
   _altBullet: {fileID: 973319088124361784, guid: 653cbd028cfb0d743903c2308c25b783,
     type: 3}
   _altMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+    type: 3}
+  _altFireSound: {fileID: 8525948762005938277, guid: c7f825259b2976941b93bb086dfb19b0,
     type: 3}
   _altBurst: 1
   _altSpread: 0

@@ -203,12 +203,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: AKM
   _icon: {fileID: 3154920569161208577, guid: c6f9846e1db81dd41a39ac5ef646702f, type: 3}
-  _crosshairs: {fileID: -487036242, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: -2032614619, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 2
   _index: 1
   _mainBullet: {fileID: 2730727309722998590, guid: 95ec74ca4206ca54e8e4e3980b00a771,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+    type: 3}
+  _mainFireSound: {fileID: 4756592628764114648, guid: 1c18ad7fcb5d56d48983245322e2d3d8,
     type: 3}
   _mainBurst: 1
   _mainSpread: 3
@@ -221,6 +223,8 @@ MonoBehaviour:
   _altBullet: {fileID: 7730573428739181444, guid: c8f85bbba59be0849a76f300783fdb47,
     type: 3}
   _altMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+    type: 3}
+  _altFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
   _altBurst: 1
   _altSpread: 0

@@ -432,7 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Crossbow
   _icon: {fileID: 1993195622645355348, guid: 34afc83479d00ad4fb9c888f7b229bfd, type: 3}
-  _crosshairs: {fileID: -1643705173, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _crosshairs: {fileID: 1623719172, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 3
   _index: 2
   _bullet: {fileID: 3553420234629529280, guid: 20255e96370239546966a7a4bce60ccd, type: 3}

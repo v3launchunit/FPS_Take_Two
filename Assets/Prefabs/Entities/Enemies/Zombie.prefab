@@ -223,13 +223,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b88a1aa26cfa64ab2d69c7940ffd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 40
-  _health: 40
+  _maxHealth: 60
+  _health: 60
   _deathExplosion: {fileID: 1326755823733274519, guid: 639ac572677ef1c40b2cbe500c1150d7,
     type: 3}
   _gibThreshold: 50
   _gibExplosion: {fileID: 5617390132151680554, guid: 8fc996495bce2c249b442d2356367ef1,
     type: 3}
+  _organic: 1
 --- !u!1 &6236161748595772147
 GameObject:
   m_ObjectHideFlags: 0

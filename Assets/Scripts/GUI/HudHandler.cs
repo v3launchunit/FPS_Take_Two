@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 public class HudHandler : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class HudHandler : MonoBehaviour
     [SerializeField] private GameObject      _logEntry;
     [SerializeField] private TextMeshProUGUI _health;
     [SerializeField] private TextMeshProUGUI _ammo;
+
+    private Sprite _weaponCrosshairs;
     // [SerializeField] private int             _logMaxLength  = 20;
     // [SerializeField] private float           _logDecayDelay = 60f;
     // private List<string> _logMessages   = new();
@@ -36,6 +39,15 @@ public class HudHandler : MonoBehaviour
             _health.text = $"{_playerStatus.Armor:00}/{_playerStatus.Health:000}%";
         _ammo.text   = $"{mainDisplay}/{altDisplay}";
 
+        if 
+        (
+            Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 3) &&
+            hit.collider.gameObject.TryGetComponent(out InteractableObject target)                    &&
+            target.InteractCrosshairs != null
+        )
+            GameObject.Find("Crosshairs").GetComponent<Image>().sprite = target.InteractCrosshairs;
+        else
+            GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _weaponCrosshairs;
         // if (_logMessages.Count > 0)
         // {
         //     _logDecayTimer += Time.deltaTime;
@@ -58,4 +70,6 @@ public class HudHandler : MonoBehaviour
 
         Instantiate(_logEntry, _log.transform).GetComponent<TextMeshProUGUI>().text = text;
     }
+
+    public Sprite WeaponCrosshairs { get => _weaponCrosshairs; set => _weaponCrosshairs=value; }
 }
