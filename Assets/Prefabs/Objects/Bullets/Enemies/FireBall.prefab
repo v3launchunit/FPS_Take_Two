@@ -188,7 +188,7 @@ MonoBehaviour:
   _explosion: {fileID: 151787894086565077, guid: 2ab58efba838c4b459f1bd220660de50,
     type: 3}
   _stickyExplosion: 0
-  _bulletSpeed: 100
+  _bulletSpeed: 30
   _lifetime: 60
   _launchFactor: 1
   _targetCrosshairs: 0

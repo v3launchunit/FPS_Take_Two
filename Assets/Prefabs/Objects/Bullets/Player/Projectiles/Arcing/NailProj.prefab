@@ -214,11 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e1a971a4892247a33b9a45818c105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 5
+  _damage: 15
   _explosion: {fileID: 7689540465798720483, guid: 9ff1b7394a962fe48a0e6e3728eae0f9,
     type: 3}
   _stickyExplosion: 1
-  _bulletSpeed: 300
+  _bulletSpeed: 100
   _lifetime: 60
   _launchFactor: 1
   _targetCrosshairs: 1

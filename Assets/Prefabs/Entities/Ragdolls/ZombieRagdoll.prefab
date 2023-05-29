@@ -366,7 +366,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.3300001, z: 0.13999999}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -417,7 +417,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &1326755823733274519 stripped
 GameObject:
@@ -425,7 +427,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2209293473914309318}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-1006545978152948336
+--- !u!114 &7208977767838658074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,6 +446,8 @@ MonoBehaviour:
   _gibThreshold: 10
   _gibExplosion: {fileID: 5617390132151680554, guid: 8fc996495bce2c249b442d2356367ef1,
     type: 3}
+  _explosionPos: {fileID: 2667301490041445365}
+  _organic: 0
 --- !u!1 &1691002483133529951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 711385642847335833, guid: 76b783b6ba6580142b91fb5176afc663,
@@ -543,8 +547,16 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
+--- !u!4 &2667301490041445365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300045009065480499, guid: 76b783b6ba6580142b91fb5176afc663,
+    type: 3}
+  m_PrefabInstance: {fileID: 2209293473914309318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3330290086768745412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5719732579551457022, guid: 76b783b6ba6580142b91fb5176afc663,
@@ -592,7 +604,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000029802322, y: 0.3300001, z: -0.1400001}
+  m_ConnectedAnchor: {x: -0.000000029802322, y: 0.3300001, z: -0.13999999}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -643,7 +655,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &3355122939218098346 stripped
 GameObject:
@@ -743,7 +757,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &4414782812963083944 stripped
 GameObject:
@@ -793,7 +809,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000044703484, y: 0.01000011, z: -0.119999886}
+  m_ConnectedAnchor: {x: 0.000000044703484, y: 0.01000011, z: -0.120000005}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -844,7 +860,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &4790943671473188246 stripped
 GameObject:
@@ -881,7 +899,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.345, y: 0.36000007, z: 0.6024904}
   m_Center: {x: 0.000000014901161, y: 0.18000004, z: 0}
---- !u!114 &6281378047129560945
+--- !u!114 &2142605260015680254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -898,7 +916,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &6257117352241470034 stripped
 GameObject:
@@ -999,7 +1019,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &6644896176518829574 stripped
 GameObject:
@@ -1099,7 +1121,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &7107213643007967007 stripped
 GameObject:
@@ -1149,7 +1173,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000012445466, y: 0.2607678, z: 0.00000011920929}
+  m_ConnectedAnchor: {x: 0.00000012445466, y: 0.26076776, z: 0.000000014901161}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -1200,7 +1224,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &7574595339981241598 stripped
 GameObject:
@@ -1250,7 +1276,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000074505806, y: 0.01000011, z: 0.119999886}
+  m_ConnectedAnchor: {x: 0.000000074505806, y: 0.01000011, z: 0.120000005}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -1301,7 +1327,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &7628798122546640539 stripped
 GameObject:
@@ -1402,7 +1430,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &7654936178545964455 stripped
 GameObject:
@@ -1503,7 +1533,9 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1
 --- !u!1 &9130341986988401457 stripped
 GameObject:
@@ -1553,7 +1585,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000011396392, y: 0.260768, z: -0.00000008940698}
+  m_ConnectedAnchor: {x: 0.00000011396392, y: 0.260768, z: 0.000000029802326}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -1604,5 +1636,7 @@ MonoBehaviour:
   _deathExplosion: {fileID: 0}
   _gibThreshold: 10
   _gibExplosion: {fileID: 0}
-  _status: {fileID: -1006545978152948336}
+  _explosionPos: {fileID: 0}
+  _organic: 0
+  _status: {fileID: 7208977767838658074}
   _damageMult: 1

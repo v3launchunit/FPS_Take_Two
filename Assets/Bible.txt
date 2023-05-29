@@ -12,7 +12,7 @@
         Secondary - none
         "Starting weapon. For conserving ammo or breaching doors."
 
-    Syringe - "Snagged a Syringe!"
+    Syringe - "Snagged a Syringe"
         Melee lifesteal weapon
         Primary   - Stab
             Stab an enemy, dealing damage and storing up charges.
@@ -46,54 +46,65 @@
 
     Pepperbox - "Pilfered a Pepperbox"
         Mid-range marksman weapon
-        Primary   - Slugs (Slugs)
-        Secondary - Hand Grenades (Bombs)
+        Primary   - Slugs
+        Secondary - Hand Grenades
         "What's a handgun doing this far into the arsenal?"
     
     Nailgun - "Nabbed a Nailgun"
         Mid-range sustained weapon
-        Primary   - Nails (Nails)
-        Secondary - Spike (Bombs)
+        Primary   - Nails
+        Secondary - Spike
             A railroad spike that detonates after a brief period.
         "On one hand, it fires nails. On the other hand, it fires nails."
 
+    Tommy Gun - "Tracked down a Tommy Gun"
+        Mid-range sustained weapon
+        Primary   - Bullets
+        Secondary - Molotovs
+            Bounce off walls and explode in a deadly inferno. Beware of self-damage.
+
     AKM - "Acquired an AKM"
         Mid-range sustained weapon
-        Primary   - Super Nails (Nails *2)
+        Primary   - Super Nails
             Fly faster and farther than regular nails.
-        Secondary - Grenades    (Bombs *2)
+        Secondary - Grenades
             Impact concusssion grenades with a wide blast radius.
         "Apparently whoever had this last figured it would be easier to make it fire FUCKING NAILS than to find actual rounds."
 
     Big Iron - "Borrowed a Big Iron"
         Long-range six-shooter
-        Primary   - Slugs (Slugs *2)
+        Primary   - Slugs
         Secondary - Scope
         "Bane of Texan outlaws the world over."
 
     Crossbow - "Confiscated a Crossbow"
         Long-range sniper weapon
-        Primary   - Lightning Bolt (Cells *10)
+        Primary   - Lightning Bolt
             A powerful, penetrating bolt of electricity.
         Secondary - Super Scope
         "The wrath of the gods, now in a convenient handheld package."
             
     Plasma Cannon - "Plundered a Plasma Cannon"
         Mid-range projectile weapon
-        Primary   - Plasma Spray (Cells)
+        Primary   - Plasma Spray
             A conical spray of plasma that deals heavy knockback.
-        Secondary - Plasma Balls (Cells *5)
+        Secondary - Plasma Balls
             Deadly balls of plasma that explode on contact.
         "This still feels like a terrible idea."
 
     Rocket Launcher - "Recovered an RPG"
         Long-range projectile weapon
-        Primary   - Rockets (Bombs *3)
+        Primary   - Rockets
             Laser-guided shaped charges.
         Secondary - Detonate Rockets
         "So THAT's why Mr. Jameson stopped coming to church."
 
-    Flak Cannon - "Found a Flak Cannon"
+    C4 - "Collected some C4"
+        Melee Explosive
+        Primary   - Place
+        Secondary - Detonate
+
+    Howitzer - "Hunted down a Howitzer"
         Hitscan superweapon
         Primary   - Rapid Fire Artillery Shells
         Secondary - Super Scope
@@ -116,7 +127,7 @@
             Plasma Cannon
             Rocket Launcher
         Slot 6 (Other)
-            Flak Cannon
+            Howitzer
 
         Slot 7 (Debug)
 
@@ -180,7 +191,7 @@
     Act IV
         Setting: Corporate HQ
         Weapons:
-            Flak Cannon
+            Howitzer
         
         Enemies:
             Camera
@@ -193,7 +204,7 @@
             E4M01:
             FINALE: Welcome
                 Weapons:
-                    Flak Cannon
+                    Howitzer
                 
                 Bosses:
                     The Machine

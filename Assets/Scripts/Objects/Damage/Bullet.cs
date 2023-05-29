@@ -9,6 +9,7 @@ public class Bullet : OwnedProjectile
     [SerializeField] protected bool       _stickyExplosion  = false;
     [SerializeField] protected float      _bulletSpeed      = 500f;
     [SerializeField] private float        _lifetime         =  60f;
+    [SerializeField] private bool         _explodeOnDecay   = false;
     // [SerializeField] private float        _linger           =   0.25f;
     [SerializeField] private float        _launchFactor     =   1;
     [SerializeField] protected bool       _targetCrosshairs = false;
@@ -21,7 +22,7 @@ public class Bullet : OwnedProjectile
 
     private void Start()
     {
-        Vector3 angle = Camera.main.transform.rotation * Vector3.forward;
+        Vector3 angle = transform.rotation * Vector3.forward;
         if (_targetCrosshairs && Physics.Raycast(Camera.main.transform.position, angle, out _raycastHit, 1024, _mask))
             transform.LookAt(_raycastHit.point);
         else if (_targetCrosshairs)
@@ -34,7 +35,7 @@ public class Bullet : OwnedProjectile
 
         Rigidbody bulletBody = gameObject.GetComponent<Rigidbody>();
 
-        bulletBody.AddForce(transform.forward * _bulletSpeed);
+        bulletBody.AddForce(transform.forward * _bulletSpeed, ForceMode.VelocityChange);
         Destroy(gameObject, _lifetime);
     }
 
@@ -84,6 +85,7 @@ public class Bullet : OwnedProjectile
                 _collided = false;
                 return;
             }
+
             var e = Instantiate(_explosion, position, rotation);
 
             TransferOwnership(e.transform);
@@ -152,5 +154,16 @@ public class Bullet : OwnedProjectile
         Destroy(gameObject, 0.25f);
 
         print($"{_owner.name}'s bullet hit {other.gameObject.name}");
+    }
+
+    private void OnDestroy()
+    {
+        if (_explodeOnDecay && !_collided)
+        {
+            var e = Instantiate(_explosion, transform.position, transform.rotation);
+            TransferOwnership(e.transform);
+            
+            // if (e.TryGetComponent(out OwnedProjectile p))
+        }
     }
 }

@@ -100,6 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0a5a3ced8ff064cbb829498dcc944f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pitch: 1
+  _yaw: 1
+  _roll: 0
 --- !u!108 &8046572572508137467
 Light:
   m_ObjectHideFlags: 0
@@ -508,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b01e2b09b961b4fa050ede863f8dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
+  _damage: 500
   _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
     type: 3}
   _stickyExplosion: 0

@@ -218,7 +218,7 @@ MonoBehaviour:
   _mainFireSound: {fileID: 4756592628764114648, guid: 1c18ad7fcb5d56d48983245322e2d3d8,
     type: 3}
   _mainBurst: 1
-  _mainSpread: 3
+  _mainSpread: 7.5
   _mainAmmoMax: 200
   _mainAmmo: 0
   _sharedMainAmmo: -1

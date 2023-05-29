@@ -49,7 +49,7 @@ public class PlayerMovement : Movement
         // Handle gun bobbing
         _playerHands.localPosition = new
         (
-            0,
+            -x * 0.1f,
             Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4,
             0
         );

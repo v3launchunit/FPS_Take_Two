@@ -437,7 +437,7 @@ MonoBehaviour:
   _index: 2
   _bullet: {fileID: 3553420234629529280, guid: 20255e96370239546966a7a4bce60ccd, type: 3}
   _muzzleFlash: {fileID: 0}
-  _damageBase: 10
+  _damageBase: 15
   _chargeDelay: 0.1
   _ammoMax: 100
   _ammo: 100
@@ -465,6 +465,7 @@ MonoBehaviour:
   _mainBullet: {fileID: 7763596665089330956, guid: b86a0a610d0470445ae9c8683ac9d0ce,
     type: 3}
   _mainMuzzleFlash: {fileID: 0}
+  _mainFireSound: {fileID: 0}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: 15
@@ -475,6 +476,7 @@ MonoBehaviour:
   _mainCamRecoil: 5
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}
+  _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 0

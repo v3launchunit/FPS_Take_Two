@@ -5173,7 +5173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pitch: 1
   _yaw: 1
-  _roll: 0
+  _roll: 1
 --- !u!108 &151787895532766686
 Light:
   m_ObjectHideFlags: 0

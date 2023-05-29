@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System;
 using UnityEngine.UI;
 
 public class HudHandler : MonoBehaviour
@@ -13,12 +12,17 @@ public class HudHandler : MonoBehaviour
     [SerializeField] private GameObject      _logEntry;
     [SerializeField] private TextMeshProUGUI _health;
     [SerializeField] private TextMeshProUGUI _ammo;
+    [SerializeField] private float           _smoothTime = 0.5f;
 
     private Sprite _weaponCrosshairs;
-    // [SerializeField] private int             _logMaxLength  = 20;
-    // [SerializeField] private float           _logDecayDelay = 60f;
-    // private List<string> _logMessages   = new();
-    // private float        _logDecayTimer = 0f;
+    private float  _healthDisp   = 0;
+    private float  _healthVel    = 0;
+    private float  _armorDisp    = 0;
+    private float  _armorVel     = 0;
+    private float  _mainAmmoDisp = 0;
+    private float  _mainAmmoVel  = 0;
+    private float  _altAmmoDisp  = 0;
+    private float  _altAmmoVel   = 0;
 
     void Update()
     {
@@ -26,17 +30,51 @@ public class HudHandler : MonoBehaviour
         string altDisplay;
 
         if (_weapons != null && _weapons.HasMainAmmo)
-            mainDisplay = _weapons.CurrentMainAmmo.ToString("00");
+        {
+            _mainAmmoDisp = Mathf.SmoothDamp
+            (
+                _mainAmmoDisp, 
+                _weapons.CurrentMainAmmo, 
+                ref _mainAmmoVel, 
+                _smoothTime
+            );
+            mainDisplay = Mathf.RoundToInt(_mainAmmoDisp).ToString("00");
+        }
         else
             mainDisplay = "--";
         
         if (_weapons != null && _weapons.HasAltAmmo)
-            altDisplay = _weapons.CurrentAltAmmo.ToString("00");
+        {
+            _mainAmmoDisp = Mathf.SmoothDamp
+            (
+                _altAmmoDisp, 
+                _weapons.CurrentAltAmmo, 
+                ref _altAmmoVel, 
+                _smoothTime
+            );
+            altDisplay = Mathf.RoundToInt(_altAmmoDisp).ToString("00");
+        }
         else
             altDisplay = "--";
 
         if (_playerStatus != null)
-            _health.text = $"{_playerStatus.Armor:00}/{_playerStatus.Health:000}%";
+        {
+            _armorDisp = Mathf.SmoothDamp
+            (
+                _armorDisp, 
+                _playerStatus.Armor, 
+                ref _armorVel, 
+                _smoothTime
+            );
+            _healthDisp = Mathf.SmoothDamp
+            (
+                _healthDisp, 
+                _playerStatus.Health, 
+                ref _healthVel, 
+                _smoothTime
+            );
+            _health.text = $"{Mathf.RoundToInt(_armorDisp):00}/{Mathf.RoundToInt(_healthDisp):000}%";
+        }
         _ammo.text   = $"{mainDisplay}/{altDisplay}";
 
         if 

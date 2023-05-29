@@ -234,6 +234,52 @@ public class WeaponHandler : WeaponBase
         return false;
     }
 
+
+    public void MainFire()
+    {
+        if (_mainMuzzleFlash != null)
+            Instantiate<GameObject>
+            (
+                _mainMuzzleFlash, 
+                _spawner.transform.position, 
+                Camera.main.transform.rotation * Quaternion.Euler
+                (
+                    0,
+                    0,
+                    (Random.value - 0.5f) * 45f
+                )
+            )
+            .transform.SetParent(transform, true);
+
+        if (_mainBullet != null)
+            for (int i = 0; i < _mainBurst; i++)
+            {
+                var b = Instantiate<GameObject>
+                (
+                    _mainBullet, 
+                    _spawner.transform.position, 
+                    Camera.main.transform.rotation * Quaternion.Euler
+                    (
+                        (Random.value - 0.5f) * _mainSpread/2, 
+                        (Random.value - 0.5f) * _mainSpread,
+                        0
+                    )
+                );
+
+                if (b.TryGetComponent(out OwnedProjectile proj))
+                    proj.Owner = Camera.main.transform.parent.parent;
+            }
+
+        if (_mainFireSound != null)
+            Instantiate<GameObject>(_mainFireSound);
+
+        _animator.SetTrigger("MainFire");
+        GameObject.Find("Crosshairs").GetComponent<Animator>().SetTrigger("Fire");
+        GetComponentInParent<Movement>().Knockback(transform.forward * _mainRecoil);
+        GetComponentInParent<PlayerMovement>().CamRecoil(_mainCamRecoil);
+        _busy = true;
+    }
+
     public override int  MainAmmo       { get => _mainAmmo; }
     public override int  MainAmmoMax    { get => _mainAmmoMax; }
     public override int  SharedMainAmmo { get => _sharedMainAmmo; }

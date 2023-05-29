@@ -9,9 +9,16 @@ public class Status : MonoBehaviour
     [SerializeField] private GameObject _deathExplosion;
     [SerializeField] private int        _gibThreshold = 10;
     [SerializeField] private GameObject _gibExplosion;
+    [SerializeField] private Transform  _explosionPos;
     [SerializeField] private bool       _organic = false;
 
     private bool _isDead = false;
+
+    void Start()
+    {
+        if (_explosionPos == null)
+            _explosionPos = transform;
+    }
 
     public int Damage(int damage) { return Damage(damage, 1); }
     public virtual int Damage(int damage, float multiplier) //
@@ -44,9 +51,9 @@ public class Status : MonoBehaviour
             _isDead = true;
             print(gameObject.name + " fucking died!");
             if (_gibExplosion != null && _health <= 0 - _gibThreshold)
-                Instantiate(_deathExplosion, transform.position, transform.rotation);
+                Instantiate(_deathExplosion, _explosionPos.position, _explosionPos.rotation);
             if (_deathExplosion != null)
-                Instantiate(_deathExplosion, transform.position, transform.rotation);
+                Instantiate(_deathExplosion, _explosionPos.position, _explosionPos.rotation);
             Destroy(gameObject);
         }
     }

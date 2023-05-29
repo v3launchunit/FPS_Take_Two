@@ -100,13 +100,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e1a971a4892247a33b9a45818c105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 300
   _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
     type: 3}
-  _bulletSpeed: 1000
+  _stickyExplosion: 0
+  _bulletSpeed: 200
   _lifetime: 60
-  _damage: 500
   _launchFactor: 1
   _targetCrosshairs: 1
+  _targetTarget: 0
   _mask:
     serializedVersion: 2
     m_Bits: 1865

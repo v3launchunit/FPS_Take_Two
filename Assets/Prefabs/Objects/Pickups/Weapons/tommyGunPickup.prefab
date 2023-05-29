@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &799515548317763324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.918821
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2499995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.3313632
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659259
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.258819
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_Name
+      value: tommyGunPickup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 474108b6c2e74b6418884e54247c7b74, type: 3}
+--- !u!1 &565512873651796909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+    type: 3}
+  m_PrefabInstance: {fileID: 799515548317763324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6235205622855451884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565512873651796909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3717864403219605331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565512873651796909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef275f7ee929d347917c3206e422740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _touchInteract: 1
+  _shootInteract: 0
+  _interactCrosshairs: {fileID: 0}
+  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+    type: 3}
+  _pickupText: Tracked down a Tommy Gun!
+  _pickupFailText: 
+  _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _weapon: {fileID: 4222178762055474030, guid: 7a96350f78a09e74990371f347ecb3f2, type: 3}
+  _startingMainAmmo: 0
+  _startingAltAmmo: 0

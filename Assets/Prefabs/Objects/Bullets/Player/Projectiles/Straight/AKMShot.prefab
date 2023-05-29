@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 703098913231214097}
   - component: {fileID: 1299842500128109364}
   m_Layer: 7
-  m_Name: Bullet
+  m_Name: AKMShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,11 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e1a971a4892247a33b9a45818c105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 5
+  _damage: 15
   _explosion: {fileID: 1186836860010196686, guid: 4bde5a8594f90964da5f25a44d00a81f,
     type: 3}
   _stickyExplosion: 0
-  _bulletSpeed: 500
+  _bulletSpeed: 100
   _lifetime: 60
   _launchFactor: 1
   _targetCrosshairs: 1
