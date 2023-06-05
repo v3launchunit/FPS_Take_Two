@@ -201,8 +201,10 @@
             Chopper
 
         Levels:
-            E4M01:
-            FINALE: Welcome
+            E1M01  "In the Flesh?": 
+
+            E4M01  "In the Flesh":
+            FINALE "Welcome": 
                 Weapons:
                     Howitzer
                 

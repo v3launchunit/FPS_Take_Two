@@ -62,6 +62,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5495902304160430328, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5495902304160430328, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04999988
+      objectReference: {fileID: 0}
+    - target: {fileID: -5495902304160430328, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f1c914d139b2bfa4a884dfa53e7a5602,
         type: 3}
       propertyPath: m_Name
@@ -71,6 +86,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617677424195230996, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617677424195230996, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.024999881
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617677424195230996, guid: f1c914d139b2bfa4a884dfa53e7a5602,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7053421877332046286, guid: f1c914d139b2bfa4a884dfa53e7a5602,
         type: 3}
@@ -99,9 +129,22 @@ BoxCollider:
   m_GameObject: {fileID: 5845393812039931939}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &2378565354978499766
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5845393812039931939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &507603053
 MonoBehaviour:
@@ -120,9 +163,10 @@ MonoBehaviour:
   _interactCrosshairs: {fileID: 0}
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _weapon: {fileID: 2858345273658330533, guid: a313de111e80f864e8e85ef0484734da, type: 3}
-  _startingMainAmmo: 15
-  _startingAltAmmo: 5
   _pickupText: Burgled a boomstick!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
+  _weapon: {fileID: 2858345273658330533, guid: a313de111e80f864e8e85ef0484734da, type: 3}
+  _startingMainAmmo: 15
+  _startingAltAmmo: 5

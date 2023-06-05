@@ -72,6 +72,31 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: -4226156463210825400, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000014156103
+      objectReference: {fileID: 0}
+    - target: {fileID: -4226156463210825400, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2499997
+      objectReference: {fileID: 0}
+    - target: {fileID: -771660224154329397, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -771660224154329397, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09999986
+      objectReference: {fileID: 0}
+    - target: {fileID: -771660224154329397, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.014999703
+      objectReference: {fileID: 0}
     - target: {fileID: 635547659545568360, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_Layer
@@ -92,6 +117,31 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3652011956315678642, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652011956315678642, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000000022351742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652011956315678642, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167280743394806330, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.025000142
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167280743394806330, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2499997
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79ab4d5d250f8194aad700be1665d294, type: 3}
 --- !u!1 &3968846781241287445 stripped
@@ -109,10 +159,23 @@ BoxCollider:
   m_GameObject: {fileID: 3968846781241287445}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 1.25}
   m_Center: {x: 0, y: 0, z: 0.25}
+--- !u!135 &7850402695817625998
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968846781241287445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.65
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1104685038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,9 +193,10 @@ MonoBehaviour:
   _interactCrosshairs: {fileID: 0}
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _weapon: {fileID: 4524916422361737023, guid: edea814f971295f44a95c37fce3bff05, type: 3}
-  _startingMainAmmo: 50
-  _startingAltAmmo: 3
   _pickupText: Nabbed a Nailgun!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
+  _weapon: {fileID: 4524916422361737023, guid: edea814f971295f44a95c37fce3bff05, type: 3}
+  _startingMainAmmo: 50
+  _startingAltAmmo: 3

@@ -87,6 +87,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: -3747366939539972763, guid: 9a2e75d17ef3b2d4496b578966f02e64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3747366939539972763, guid: 9a2e75d17ef3b2d4496b578966f02e64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9a2e75d17ef3b2d4496b578966f02e64,
         type: 3}
       propertyPath: m_Name
@@ -102,6 +112,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 5818122044206442928, guid: 9a2e75d17ef3b2d4496b578966f02e64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818122044206442928, guid: 9a2e75d17ef3b2d4496b578966f02e64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.330669e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818122044206442928, guid: 9a2e75d17ef3b2d4496b578966f02e64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a2e75d17ef3b2d4496b578966f02e64, type: 3}
 --- !u!1 &3338934905848552103 stripped
@@ -110,6 +135,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2492511817814534134}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &6431825042387483671
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3338934905848552103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &7551106710109504482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119,7 +157,7 @@ BoxCollider:
   m_GameObject: {fileID: 3338934905848552103}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 7.5}
   m_Center: {x: 0, y: 0, z: 1.5}
@@ -140,9 +178,10 @@ MonoBehaviour:
   _interactCrosshairs: {fileID: 0}
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _weapon: {fileID: 979648739273686049, guid: 2036ffdef21cfe04a910107ce7129705, type: 3}
-  _startingMainAmmo: 1
-  _startingAltAmmo: 0
   _pickupText: Recovered and RPG!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
+  _weapon: {fileID: 979648739273686049, guid: 2036ffdef21cfe04a910107ce7129705, type: 3}
+  _startingMainAmmo: 1
+  _startingAltAmmo: 0

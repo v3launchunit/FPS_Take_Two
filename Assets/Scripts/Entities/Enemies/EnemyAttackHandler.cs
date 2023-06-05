@@ -14,7 +14,7 @@ public class EnemyAttackHandler : MonoBehaviour
     private float         _cooldown;
     private Transform     _spawner;
     private EnemyMovement _movement;
-    private Transform     _target;
+    [SerializeField] private Transform     _target;
 
     void Start()
     {
@@ -31,13 +31,15 @@ public class EnemyAttackHandler : MonoBehaviour
 
         if 
         (
+            _target != null &&
             !_movement.Busy &&
-            _cooldown <= 0  && 
-            Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, _sight) && 
-            hit.transform == _target
+            _cooldown <= 0  // && 
+            // Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, _sight) && 
+            // hit.transform == _target
         )
         {
-            print($"{_target} spotted");
+            // print($"{_target} spotted");
+            transform.LookAt(_target);
             gameObject.GetComponent<Animator>().SetTrigger("Fire");
             _movement.Busy = true;
         }
@@ -47,6 +49,8 @@ public class EnemyAttackHandler : MonoBehaviour
 
     public void Fire()
     {
+        transform.LookAt(_target);
+
         if (_muzzleFlash != null)
         {
             GameObject flash = Instantiate(_muzzleFlash, _spawner.transform.position, _spawner.transform.rotation);

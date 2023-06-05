@@ -104,9 +104,22 @@ BoxCollider:
   m_GameObject: {fileID: 565512873651796909}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &7544546130601256891
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565512873651796909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3717864403219605331
 MonoBehaviour:
@@ -128,6 +141,7 @@ MonoBehaviour:
   _pickupText: Tracked down a Tommy Gun!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
   _weapon: {fileID: 4222178762055474030, guid: 7a96350f78a09e74990371f347ecb3f2, type: 3}
   _startingMainAmmo: 0
   _startingAltAmmo: 0

@@ -117,6 +117,9 @@ public class Hitscan : OwnedProjectile
 
                 _damage -= targetDamage.Damage(_damage);
 
+                // if (_hit.TryGetComponent(out EnemyMovement enemyMovement))
+                //     enemyMovement.Target = _owner;
+
                 if (_piercer && _damage > 0)
                 {
                     SpawnExplosion();

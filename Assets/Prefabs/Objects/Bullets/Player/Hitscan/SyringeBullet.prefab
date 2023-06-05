@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 35
-  _explosion: {fileID: 1186836860010196686, guid: ca972d5fc9913274c8846b2f3cb25682,
+  _explosion: {fileID: 1186836860010196686, guid: d350dc3b966894f458ce02975bcac79c,
     type: 3}
   _maxRange: 3
   _lifetime: 60

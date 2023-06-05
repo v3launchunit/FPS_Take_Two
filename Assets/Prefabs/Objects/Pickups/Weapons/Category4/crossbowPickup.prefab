@@ -1,105 +1,118 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7822853547363518241
+--- !u!1001 &1296814626938481843
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.25
+      value: -4
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.25
+      value: 6.25
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: 919132149155446097, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_Name
-      value: plasmaCannonPickup
+      value: crossbowPickup
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+    - target: {fileID: 919132149155446097, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69, type: 3}
---- !u!1 &6940383524663655024 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: bb9d87ec4d4ba20458d85dda991c07ee, type: 3}
+--- !u!1 &2107227064191930850 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bcf77abf0b0d7f4191e2ee2b4404e69,
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bb9d87ec4d4ba20458d85dda991c07ee,
     type: 3}
-  m_PrefabInstance: {fileID: 7822853547363518241}
+  m_PrefabInstance: {fileID: 1296814626938481843}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &4997074128555206971
+--- !u!65 &1473317018
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6940383524663655024}
+  m_GameObject: {fileID: 2107227064191930850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &3031498264525817203
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107227064191930850}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 1}
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5941158239577130576
+--- !u!114 &1473317017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6940383524663655024}
+  m_GameObject: {fileID: 2107227064191930850}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ef275f7ee929d347917c3206e422740, type: 3}
@@ -110,9 +123,10 @@ MonoBehaviour:
   _interactCrosshairs: {fileID: 0}
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _weapon: {fileID: 1223990817627627461, guid: bd7b670c0ae58ed45aece72e5d039cab, type: 3}
-  _startingMainAmmo: 15
-  _startingAltAmmo: 0
-  _pickupText: Plundered a Plasma Cannon!
+  _pickupText: Confiscated a Crossbow!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
+  _weapon: {fileID: 4137947334668169372, guid: 31e6872fdad44d347884c22cf7105b6d, type: 3}
+  _startingMainAmmo: 15
+  _startingAltAmmo: 0

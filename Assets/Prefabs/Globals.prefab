@@ -1688,6 +1688,7 @@ MonoBehaviour:
     type: 3}
   _health: {fileID: 798740772328209337}
   _ammo: {fileID: 798740773891126686}
+  _smoothTime: 0.1
 --- !u!1 &798740773400742072
 GameObject:
   m_ObjectHideFlags: 0

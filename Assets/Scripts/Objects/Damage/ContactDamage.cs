@@ -11,7 +11,12 @@ public class ContactDamage : OwnedProjectile
     {
         print($"Owned by {_owner.name}");
         if (other.TryGetComponent(out Status status))
+        {    
             status.Damage((_owner.name == other.transform.name) ? _selfDamage : _damage);
+
+            // if (other.gameObject.TryGetComponent(out EnemyMovement enemyMovement))
+            //     enemyMovement.Target = _owner;
+        }
             // status.Damage(_damage);
 
         if (other.TryGetComponent(out Movement movement))

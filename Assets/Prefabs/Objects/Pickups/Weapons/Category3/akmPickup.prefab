@@ -104,9 +104,22 @@ BoxCollider:
   m_GameObject: {fileID: 3518165314373671659}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &5911029243925232365
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3518165314373671659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3641217216197457176
 MonoBehaviour:
@@ -125,9 +138,10 @@ MonoBehaviour:
   _interactCrosshairs: {fileID: 0}
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _weapon: {fileID: 4222178762055474030, guid: 7a96350f78a09e74990371f347ecb3f2, type: 3}
-  _startingMainAmmo: 35
-  _startingAltAmmo: 3
   _pickupText: Acquired an AKM!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
+  _weapon: {fileID: 4222178762055474030, guid: 7a96350f78a09e74990371f347ecb3f2, type: 3}
+  _startingMainAmmo: 35
+  _startingAltAmmo: 3

@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 3168334465985375128}
   - component: {fileID: 9050814932345861807}
   - component: {fileID: 4667806356422243856}
+  - component: {fileID: 3146716807233229362}
   m_Layer: 14
   m_Name: syringePickup
   m_TagString: Untagged
@@ -618,6 +619,7 @@ MonoBehaviour:
   _pickupText: Snagged a Syringe!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
+  _pickupSpinSpeed: 36
   _weapon: {fileID: 7420475668016536434, guid: 2c5898717b3a7b44eaaba4c17a76f8b1, type: 3}
   _startingMainAmmo: 0
   _startingAltAmmo: 0
@@ -630,7 +632,7 @@ BoxCollider:
   m_GameObject: {fileID: 7563359779646886016}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5, y: 15, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
@@ -811,6 +813,19 @@ MonoBehaviour:
   occlusionOffset: 0.05
   scale: 1
   allowOffScreen: 0
+--- !u!135 &3146716807233229362
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7563359779646886016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 12
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8811152575871070379
 GameObject:
   m_ObjectHideFlags: 0

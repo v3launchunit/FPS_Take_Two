@@ -79,6 +79,9 @@ public class Bullet : OwnedProjectile
             if (collision.gameObject.TryGetComponent(out Status targetStatus)) 
             {
                 targetStatus.Damage(_damage);
+
+                // if (collision.gameObject.TryGetComponent(out EnemyMovement enemyMovement))
+                //     enemyMovement.Target = _owner;
             }
             else if (_bouncy)
             {
@@ -131,6 +134,10 @@ public class Bullet : OwnedProjectile
         if (other.gameObject.TryGetComponent(out Status targetStatus)) 
         {
             _damage -= targetStatus.Damage(_damage);
+
+            // if (other.gameObject.TryGetComponent(out EnemyMovement enemyMovement))
+            //     enemyMovement.Target = _owner;
+
             if (_damage > 0)
             {
                 _collided = false;

@@ -12,7 +12,7 @@ public class HudHandler : MonoBehaviour
     [SerializeField] private GameObject      _logEntry;
     [SerializeField] private TextMeshProUGUI _health;
     [SerializeField] private TextMeshProUGUI _ammo;
-    [SerializeField] private float           _smoothTime = 0.5f;
+    [SerializeField] private float           _smoothTime = 0.1f;
 
     private Sprite _weaponCrosshairs;
     private float  _healthDisp   = 0;
@@ -41,11 +41,14 @@ public class HudHandler : MonoBehaviour
             mainDisplay = Mathf.RoundToInt(_mainAmmoDisp).ToString("00");
         }
         else
-            mainDisplay = "--";
+        {
+            _mainAmmoDisp = 0;
+            mainDisplay   = "--";
+        }
         
         if (_weapons != null && _weapons.HasAltAmmo)
         {
-            _mainAmmoDisp = Mathf.SmoothDamp
+            _altAmmoDisp = Mathf.SmoothDamp
             (
                 _altAmmoDisp, 
                 _weapons.CurrentAltAmmo, 
@@ -55,7 +58,10 @@ public class HudHandler : MonoBehaviour
             altDisplay = Mathf.RoundToInt(_altAmmoDisp).ToString("00");
         }
         else
-            altDisplay = "--";
+        {
+            _altAmmoDisp = 0;
+            altDisplay   = "--";
+        }
 
         if (_playerStatus != null)
         {
