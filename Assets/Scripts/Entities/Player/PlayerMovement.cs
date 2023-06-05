@@ -18,6 +18,7 @@ public class PlayerMovement : Movement
     [SerializeField] protected float     _bobIntensity = 0.25f;
 
     protected float _cyoteTimeLeft;
+    private   float _crouchPos       = 0;
     private   float _crouchVel       = 0;
     private   float _handSmoothFall  = 0;
     private   float _handSmoothPitch = 0;
@@ -56,7 +57,7 @@ public class PlayerMovement : Movement
         _playerHands.localPosition = new
         (
             -x * 0.1f,
-            Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4,
+            (Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4) - ((2 - _crouchPos)/10),
             0
         );
     }
@@ -107,41 +108,41 @@ public class PlayerMovement : Movement
 
     private void SetCrouch()
     {
-        var    collider = GetComponent<CapsuleCollider>();
+        var collider = GetComponent<CapsuleCollider>();
 
-        // float crouchPos = Mathf.SmoothDamp
-        // (
-        //     collider.height, 
-        //     Input.GetButton("Crouch") ? _crouchHeight : 2, 
-        //     ref _crouchVel, 
-        //     0.1f
-        // );
-        // collider.center            = new(0, crouchPos/2, 0);
-        // collider.height            = crouchPos;
-        // _controller.center         = new(0, crouchPos/2, 0);
-        // _controller.height         = crouchPos;
-        // _groundCheck.localPosition = new(0, 1 - crouchPos, 0);
+        _crouchPos = Mathf.SmoothDamp
+        (
+            _crouchPos, 
+            Input.GetButton("Crouch") ? _crouchHeight : 2, 
+            ref _crouchVel, 
+            0.05f
+        );
+        collider.center            = new(0, 1 - _crouchPos/2, 0);
+        collider.height            = _crouchPos;
+        _controller.center         = new(0, 1 - _crouchPos/2, 0);
+        _controller.height         = _crouchPos;
+        _groundCheck.localPosition = new(0, 1 - _crouchPos, 0);
 
-        if (Input.GetButtonDown("Crouch"))
-        {
-            collider.center            = new(0, _crouchHeight/2, 0);
-            collider.height            = _crouchHeight;
-            _controller.center         = new(0, _crouchHeight/2, 0);
-            _controller.height         = _crouchHeight;
-            _groundCheck.localPosition = Vector3.zero;
-            // Knockback()
-            // if (_grounded)
-            //     _controller.Move(Vector3.down);
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
-            collider.center            = Vector3.zero;
-            collider.height            = 2;
-            _controller.center         = Vector3.zero;
-            _controller.height         = 2;
-            _groundCheck.localPosition = Vector3.down;
-            // if (_grounded)
-            //     _controller.Move(Vector3.up);
-        }
+        // if (Input.GetButtonDown("Crouch"))
+        // {
+        //     collider.center            = new(0, _crouchHeight/2, 0);
+        //     collider.height            = _crouchHeight;
+        //     _controller.center         = new(0, _crouchHeight/2, 0);
+        //     _controller.height         = _crouchHeight;
+        //     _groundCheck.localPosition = Vector3.zero;
+        //     // Knockback()
+        //     // if (_grounded)
+        //     //     _controller.Move(Vector3.down);
+        // }
+        // else if (Input.GetButtonUp("Crouch"))
+        // {
+        //     collider.center            = Vector3.zero;
+        //     collider.height            = 2;
+        //     _controller.center         = Vector3.zero;
+        //     _controller.height         = 2;
+        //     _groundCheck.localPosition = Vector3.down;
+        //     // if (_grounded)
+        //     //     _controller.Move(Vector3.up);
+        // }
     }
 }
