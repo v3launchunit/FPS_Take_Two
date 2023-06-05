@@ -683,13 +683,14 @@ MonoBehaviour:
   _fallGrav: -19.62
   _cyoteTime: 0.25
   _knockbackFalloff: 0.975
-  _groundDistance: 0.4
+  _groundDistance: 0.5
   _groundMask:
     serializedVersion: 2
     m_Bits: 1864
   _controller: {fileID: 544714778127298209}
   _walkSpeed: 12
   _jumpHeight: 3
+  _crouchHeight: 1
   _tiltFactor: 3
   _weaponDrag: 3
   _playerCam: {fileID: 544714778327743817}
@@ -715,6 +716,7 @@ MonoBehaviour:
   _gibThreshold: 10
   _gibExplosion: {fileID: 1109266680002391311, guid: a11f229bacb591545a5ade4eae1b0e98,
     type: 3}
+  _explosionPos: {fileID: 0}
   _organic: 0
   _maxArmor: 100
   _armor: 25
