@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : Movement
 {
-    [SerializeField] protected float _walkSpeed  = 9f;
-    [SerializeField] protected float _jumpHeight = 3f;
-    [SerializeField] protected float _tiltFactor = 3f;
-    [SerializeField] private   float _weaponDrag = 3f;
+    [SerializeField] protected float _walkSpeed    =  9f;
+    [SerializeField] protected float _jumpHeight   =  3f;
+    [SerializeField] protected float _crouchHeight =  1f;
+    [SerializeField] protected float _slideSpeed   = 18f;
+    [SerializeField] protected float _tiltFactor   =  3f;
+    [SerializeField] private   float _weaponDrag   =  3f;
 
     [SerializeField] protected Transform _playerCam;
 
     [SerializeField] protected Transform _playerHands;
     [SerializeField] protected float     _bobSpeed     = 3.14f;
     [SerializeField] protected float     _bobIntensity = 0.25f;
+
     protected float _cyoteTimeLeft;
+    private   float _crouchPos       = 0;
+    private   float _crouchVel       = 0;
     private   float _handSmoothFall  = 0;
     private   float _handSmoothPitch = 0;
     private   float _handSmoothYaw   = 0;
@@ -32,13 +37,15 @@ public class PlayerMovement : Movement
         // Handle actual movement
         Vector3 move = transform.right * x + transform.forward * z;
         _controller.Move(_walkSpeed * Time.deltaTime * move);
+        if (Input.GetButtonDown("Crouch") && _grounded)
+            Knockback(-_slideSpeed * move);
 
         // Handle camera bobbing
         Vector3 bob = new
-            (
-                Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed)     * _bobIntensity,
-                Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/2
-            );
+        (
+            Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed)     * _bobIntensity,
+            Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/2
+        );
         _playerCam.localPosition = bob;
 
         // Handle camera tilting
@@ -50,7 +57,7 @@ public class PlayerMovement : Movement
         _playerHands.localPosition = new
         (
             -x * 0.1f,
-            Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4,
+            (Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4) - ((2 - _crouchPos)/10),
             0
         );
     }
@@ -89,11 +96,53 @@ public class PlayerMovement : Movement
             Mathf.SmoothDampAngle(_playerHands.localEulerAngles.y, Input.GetAxis("Mouse X") * _weaponDrag, ref _handSmoothYaw, 0.3f),
             0
         );
+
+        SetCrouch();
     }
 
     public void CamRecoil(float strength)
     {
         _camRecoil   -= strength;
         _camRecoilVel = 0;
+    }
+
+    private void SetCrouch()
+    {
+        var collider = GetComponent<CapsuleCollider>();
+
+        _crouchPos = Mathf.SmoothDamp
+        (
+            _crouchPos, 
+            Input.GetButton("Crouch") ? _crouchHeight : 2, 
+            ref _crouchVel, 
+            0.05f
+        );
+        collider.center            = new(0, 1 - _crouchPos/2, 0);
+        collider.height            = _crouchPos;
+        _controller.center         = new(0, 1 - _crouchPos/2, 0);
+        _controller.height         = _crouchPos;
+        _groundCheck.localPosition = new(0, 1 - _crouchPos, 0);
+
+        // if (Input.GetButtonDown("Crouch"))
+        // {
+        //     collider.center            = new(0, _crouchHeight/2, 0);
+        //     collider.height            = _crouchHeight;
+        //     _controller.center         = new(0, _crouchHeight/2, 0);
+        //     _controller.height         = _crouchHeight;
+        //     _groundCheck.localPosition = Vector3.zero;
+        //     // Knockback()
+        //     // if (_grounded)
+        //     //     _controller.Move(Vector3.down);
+        // }
+        // else if (Input.GetButtonUp("Crouch"))
+        // {
+        //     collider.center            = Vector3.zero;
+        //     collider.height            = 2;
+        //     _controller.center         = Vector3.zero;
+        //     _controller.height         = 2;
+        //     _groundCheck.localPosition = Vector3.down;
+        //     // if (_grounded)
+        //     //     _controller.Move(Vector3.up);
+        // }
     }
 }
