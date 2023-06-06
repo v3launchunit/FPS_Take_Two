@@ -202,8 +202,12 @@
 
         Levels:
             E1M01  "In the Flesh?": 
+            E1M02  ""
 
             E4M01  "In the Flesh":
+            E4M01  "Ashen Tundra":
+            E4M03  "City of Dust":
+            E4M09  "Searing Flesh, Frozen Heart"
             FINALE "Welcome": 
                 Weapons:
                     Howitzer
