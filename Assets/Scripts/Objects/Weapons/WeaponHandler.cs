@@ -273,7 +273,7 @@ public class WeaponHandler : WeaponBase
         if (_mainFireSound != null)
             Instantiate<GameObject>(_mainFireSound);
 
-        _animator.SetTrigger("MainFire");
+        // _animator.SetTrigger("MainFire");
         GameObject.Find("Crosshairs").GetComponent<Animator>().SetTrigger("Fire");
         GetComponentInParent<Movement>().Knockback(transform.forward * _mainRecoil);
         GetComponentInParent<PlayerMovement>().CamRecoil(_mainCamRecoil);

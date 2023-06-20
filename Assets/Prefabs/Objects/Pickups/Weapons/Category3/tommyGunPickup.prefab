@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 45
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
@@ -85,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
       propertyPath: m_Name
-      value: tommyGunPickup
+      value: tommyGun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 474108b6c2e74b6418884e54247c7b74, type: 3}
@@ -142,6 +142,6 @@ MonoBehaviour:
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
   _pickupSpinSpeed: 36
-  _weapon: {fileID: 4222178762055474030, guid: 7a96350f78a09e74990371f347ecb3f2, type: 3}
+  _weapon: {fileID: 4857056373402526536, guid: 0357794ba71c2a943b8ec89a977cf5b1, type: 3}
   _startingMainAmmo: 0
   _startingAltAmmo: 0

@@ -149,11 +149,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 951738658981965494, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
+    - target: {fileID: 3586949037043703132, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: 4051729396554169364, guid: 24d8f908ba82f3c43bad8069041f23bc,
         type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 5232627393660835655, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d8f908ba82f3c43bad8069041f23bc, type: 3}
 --- !u!4 &3590461380831183316 stripped
@@ -214,7 +229,7 @@ MonoBehaviour:
     type: 3}
   _mainBurst: 1
   _mainSpread: 5
-  _mainAmmoMax: 150
+  _mainAmmoMax: 50
   _mainAmmo: 0
   _sharedMainAmmo: -1
   _mainAutomatic: 1

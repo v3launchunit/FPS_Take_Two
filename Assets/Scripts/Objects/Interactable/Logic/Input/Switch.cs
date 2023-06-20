@@ -63,7 +63,7 @@ public class Switch : InteractableObject
 
     public override void OnInteract(GameObject other)
     {
-        if (_requiredKey != -1 && !other.GetComponentInParent<PlayerStatus>().Keys[_requiredKey])
+        if (_requiredKey != -1 && _lockedText != "" && !other.GetComponentInParent<PlayerStatus>().Keys[_requiredKey])
         {
             GameObject.FindObjectOfType<HudHandler>().Log(_lockedText);
             return;

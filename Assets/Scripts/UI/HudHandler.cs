@@ -86,12 +86,19 @@ public class HudHandler : MonoBehaviour
         if 
         (
             Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 3) &&
-            hit.collider.gameObject.TryGetComponent(out InteractableObject target)                    &&
-            target.InteractCrosshairs != null
+            hit.collider.gameObject.TryGetComponent(out InteractableObject target)
         )
-            GameObject.Find("Crosshairs").GetComponent<Image>().sprite = target.InteractCrosshairs;
+        {
+            if (target.InteractCrosshairs != null)
+                GameObject.Find("Crosshairs").GetComponent<Image>().sprite      = target.InteractCrosshairs;
+            if (target.InteractTooltip    != "")
+                GameObject.Find("Tooltip").GetComponent<TextMeshProUGUI>().text = target.InteractTooltip;
+        }
         else
-            GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _weaponCrosshairs;
+        {
+            GameObject.Find("Crosshairs").GetComponent<Image>().sprite      = _weaponCrosshairs;
+            GameObject.Find("Tooltip").GetComponent<TextMeshProUGUI>().text = "";
+        }
 
         GameObject.Find("BloodVignette").GetComponent<Image>().color = new
         (

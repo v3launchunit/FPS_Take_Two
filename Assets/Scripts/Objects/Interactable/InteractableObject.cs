@@ -7,6 +7,7 @@ public abstract class InteractableObject : MonoBehaviour
     [SerializeField] private   bool       _touchInteract = false;
     [SerializeField] private   bool       _shootInteract = false;
     [SerializeField] private   Sprite     _interactCrosshairs;
+    [SerializeField] private   string     _interactTooltip;
     [SerializeField] protected GameObject _interactSound;
 
     void OnCollisionEnter(Collision collision)
@@ -24,4 +25,5 @@ public abstract class InteractableObject : MonoBehaviour
     public abstract void OnInteract(GameObject other);
 
     public Sprite InteractCrosshairs { get => _interactCrosshairs; }
+    public string InteractTooltip    { get => _interactTooltip; }
 }

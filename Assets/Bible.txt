@@ -26,6 +26,12 @@
         Secondary - none
         "This trusty cast-iron frying pan can also be used as a drying pan!"
 
+    Sword - "Siezed a Sword"
+        Ranged/Melee Weapons
+        Primary   - Slash
+        Secondary - Magic Slash
+            Fire a magic projectile, consuming energy.
+
     Shotgun
         Starting weapon
         Primary   - Buckshot (Shells)
@@ -233,6 +239,6 @@
         Body:     "Nyarlathotep, a long-time citizen of DUSK, Pennsylvania, was recently found dead in his home, with a single bar of soap nearby. Officials are currently investigating into who is responsible for the tragic loss of this well-respected community leader."
 
 ########## Credits ##########
-    Stock Photos (terrain):  https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
-    Stock Photos (gore):     https://www.texturecan.com
-    Stock Sounds (gunshots): free sound effects from https://www.fesliyanstudios.com
+    Stock Textures (terrain):       https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
+    Stock Textures (terrain, gibs): https://www.texturecan.com               under https://creativecommons.org/publicdomain/zero/1.0/
+    Stock Sounds (gunshots):        free sound effects from https://www.fesliyanstudios.com
