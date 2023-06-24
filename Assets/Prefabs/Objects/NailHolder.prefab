@@ -207,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7689540465798720485}
   - component: {fileID: 7689540465798720484}
+  - component: {fileID: 4022617785812658723}
   m_Layer: 3
   m_Name: NailHolder
   m_TagString: Untagged
@@ -237,7 +238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7689540465798720483}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b552aa1bdba9d7b469005ddaad1b8177, type: 3}
   m_Name: 
@@ -245,3 +246,21 @@ MonoBehaviour:
   _damage: 0
   _lifetime: 30
   _decaySpawn: {fileID: 0}
+--- !u!114 &4022617785812658723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689540465798720483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca84ca1db516a044586bbde95bf2f2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _explosion: {fileID: 151787894086565077, guid: 2ab58efba838c4b459f1bd220660de50,
+    type: 3}
+  _decaySpawn: {fileID: 2730727309722998590, guid: 26bfa3123d3318241b1f3f0271701823,
+    type: 3}
+  _detonated: 0

@@ -214,12 +214,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e1a971a4892247a33b9a45818c105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 90
   _explosion: {fileID: 7689540465798720483, guid: 64396f3ecb00fe044b8dc59035adb81d,
     type: 3}
   _stickyExplosion: 1
   _bulletSpeed: 50
   _lifetime: 60
+  _destroyOnImpact: 1
+  _explodeOnDecay: 0
   _launchFactor: 1
   _targetCrosshairs: 1
   _targetTarget: 0

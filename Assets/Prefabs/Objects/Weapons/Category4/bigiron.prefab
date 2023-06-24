@@ -84,7 +84,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
+  - {fileID: 2100000, guid: 9323240630dc8ee4a94088375fba4ab9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,7 +110,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.025
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -130,8 +130,8 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 0, b: 0, a: 0}
       key1: {r: 1, g: 0, b: 0, a: 0.5019608}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0.5019608}
+      key3: {r: 0, g: 0, b: 0, a: 0.5019608}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
@@ -146,8 +146,8 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
-      atime3: 0
+      atime2: 65535
+      atime3: 65535
       atime4: 0
       atime5: 0
       atime6: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c60367b7a3366b4fb28d9435cb99ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetCrosshairs: 1
+  _targetCrosshairs: 0
 --- !u!1001 &2438469511906457694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,6 +298,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 6019619690061194790, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021475828731712600, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6780b85e6ca8e804792771ab8db52970, type: 3}
 --- !u!4 &2764531104704667573 stripped
@@ -376,6 +391,7 @@ MonoBehaviour:
   _altRecoil: 0
   _altCamRecoil: 0
   _spinBullet: {fileID: 0}
+  _singleBullet: 0
   _busy: 0
 --- !u!114 &1671990238
 MonoBehaviour:

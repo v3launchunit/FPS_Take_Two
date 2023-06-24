@@ -36,6 +36,29 @@ public class CrossbowHandler : WeaponBase
 
     void Update()
     {
+        _animator.SetBool
+        (
+            "Depleted", 
+            (
+                (_sharedAmmo == -1 && _ammo <= 0) ||
+                (_sharedAmmo != -1 && !gameObject.GetComponentInParent<WeaponSelect>()
+                    .ChargeSharedAmmo(_sharedAmmo, 1, true))
+            )
+        );
+        
+        if (Input.GetButtonDown("Spin") && !_busy)
+        {
+            _animator.SetTrigger("Spin");
+            if (_spinBullet != null)
+                Instantiate(_spinBullet, _spawner.transform.position, Camera.main.transform.rotation);
+        }
+        
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName("crossbowCharge") && !_charging)
+        {
+            _animator.SetTrigger("AltFire");
+            _busy = false;
+        }
+
         if 
         (
             (_bullet != null || _muzzleFlash != null) &&
@@ -51,7 +74,7 @@ public class CrossbowHandler : WeaponBase
         if 
         (
             // (_bullet != null || _muzzleFlash != null) &&
-            Input.GetButton("Fire1")                  &&
+            Input.GetButton("Fire1") &&
             _charging
         )
         {
@@ -75,6 +98,13 @@ public class CrossbowHandler : WeaponBase
         )
         {
             _charging = false;
+
+            if (_chargeTimer < _chargeDelay)
+            {   
+                _animator.SetTrigger("AltFire");
+                print("firing aborted");
+                return;
+            }
             // StopCoroutine(_coroutine);
             if (_sharedAmmo != -1)
             {
@@ -122,13 +152,6 @@ public class CrossbowHandler : WeaponBase
             GetComponentInParent<Movement>().Knockback(transform.forward * (_chargeTimer / _chargeDelay) * 0.5f);
             GetComponentInParent<PlayerMovement>().CamRecoil(_chargeTimer / _chargeDelay);
             _busy = true;
-        }
-
-        if (Input.GetButtonDown("Spin") && !_busy)
-        {
-            _animator.SetTrigger("Spin");
-            if (_spinBullet != null)
-                Instantiate(_spinBullet, _spawner.transform.position, Camera.main.transform.rotation);
         }
     }
 

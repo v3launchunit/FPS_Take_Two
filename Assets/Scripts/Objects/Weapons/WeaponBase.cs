@@ -12,7 +12,7 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] private int _category;
     [SerializeField] private int _index;
 
-    private GameObject _iconInstance;
+    protected GameObject _iconInstance;
 
     public void CreateIconInstance()
     {

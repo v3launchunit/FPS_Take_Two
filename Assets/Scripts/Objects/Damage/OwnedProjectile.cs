@@ -7,6 +7,7 @@ public class OwnedProjectile : MonoBehaviour
     [SerializeField] protected int _damage = 10;
 
     protected Transform _owner;
+    // protected Transform _invoker;
 
     public void TransferOwnership(Transform target)
     {
@@ -27,6 +28,7 @@ public class OwnedProjectile : MonoBehaviour
         // }
     }
 
-    public Transform Owner  { get => _owner;  set => _owner  = value; }
-    public int       Damage { get => _damage; set => _damage = value; }
+    public Transform Owner   { get => _owner;   set => _owner   = value; }
+    // public Transform Invoker { get => _invoker; set => _invoker = value; }
+    public int       Damage  { get => _damage;  set => _damage  = value; }
 }

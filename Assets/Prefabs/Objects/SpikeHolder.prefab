@@ -207,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7689540465798720485}
   - component: {fileID: 7689540465798720484}
+  - component: {fileID: 3081559165748213639}
   m_Layer: 3
   m_Name: SpikeHolder
   m_TagString: Untagged
@@ -237,7 +238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7689540465798720483}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b552aa1bdba9d7b469005ddaad1b8177, type: 3}
   m_Name: 
@@ -245,4 +246,21 @@ MonoBehaviour:
   _damage: 10
   _lifetime: 3
   _decaySpawn: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
+    type: 3}
+--- !u!114 &3081559165748213639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689540465798720483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca84ca1db516a044586bbde95bf2f2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 10
+  _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
+    type: 3}
+  _decaySpawn: {fileID: 513295831915521906, guid: b6a132081bd77114485fe1ad8f9d061f,
     type: 3}

@@ -16,39 +16,49 @@ public class Missile : Bullet
                 transform.LookAt(Camera.main.transform.position + 1024 * angle);
 
             gameObject.GetComponent<Rigidbody>().velocity = (transform.forward * _bulletSpeed);
+
+            gameObject.GetComponent<TrailRenderer>().time += Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Fire2"))
+        if (!_collided && (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2")))
+        {
+            _collided = true;
+            Instantiate(_explosion, transform.position, transform.rotation);
             Detonate();
+        }
     }
 
-    private void Detonate()
-    {
-        _collided = true;
-         
-        // Quaternion   rotation  = Quaternion.FromToRotation(Vector3.up, other.transform.localRotation);
-        // Vector3      position  = other.transform.position;
-
-        Instantiate(_explosion, transform.position, transform.rotation);
-
-        Rigidbody bulletBody                        = gameObject.GetComponent<Rigidbody>();
-        bulletBody.isKinematic                      = true;
-        gameObject.GetComponent<Collider>().enabled = false;
-        if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
-            mesh.enabled       = false;
-        bulletBody.constraints = RigidbodyConstraints.FreezeAll;
-
-        if (gameObject.TryGetComponent(out ParticleSystem particleSystem))
-        {
-            var emission     = particleSystem.emission;
-            emission.enabled = false;
-        }
-
-        for (int i = 0; i < transform.childCount; i++ )
-        {
-            transform.GetChild(i).gameObject.SetActive(false);
-        }
-
-        Destroy(gameObject, 0.25f);
-    }
+    // private void Detonate()
+    // {
+    //     _collided = true;
+    //      
+    //     // Quaternion   rotation  = Quaternion.FromToRotation(Vector3.up, other.transform.localRotation);
+    //     // Vector3      position  = other.transform.position;
+    // 
+    //     Instantiate(_explosion, transform.position, transform.rotation);
+    // 
+    //     Rigidbody bulletBody                        = gameObject.GetComponent<Rigidbody>();
+    //     bulletBody.isKinematic                      = true;
+    //     gameObject.GetComponent<Collider>().enabled = false;
+    //     if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
+    //         mesh.enabled       = false;
+    //     // if (gameObject.TryGetComponent(out LineRenderer line)) 
+    //     //     line.enabled       = false;
+    //     foreach (var line in gameObject.GetComponentsInChildren<LineRenderer>())
+    //         line.enabled = false;
+    //     bulletBody.constraints = RigidbodyConstraints.FreezeAll;
+    // 
+    //     if (gameObject.TryGetComponent(out ParticleSystem particleSystem))
+    //     {
+    //         var emission     = particleSystem.emission;
+    //         emission.enabled = false;
+    //     }
+    // 
+    //     for (int i = 0; i < transform.childCount; i++ )
+    //     {
+    //         transform.GetChild(i).gameObject.SetActive(false);
+    //     }
+    // 
+    //     // Destroy(gameObject, 0.25f);
+    // }
 }

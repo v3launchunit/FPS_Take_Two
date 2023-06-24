@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8769445196017979667}
   - component: {fileID: 8968859983902165300}
   - component: {fileID: 7180727995064450108}
+  - component: {fileID: -6091991070434187782}
   m_Layer: 7
   m_Name: PlasmaBall
   m_TagString: Untagged
@@ -59,7 +60,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
+  - {fileID: 2100000, guid: 9323240630dc8ee4a94088375fba4ab9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -193,12 +194,15 @@ MonoBehaviour:
   _stickyExplosion: 0
   _bulletSpeed: 100
   _lifetime: 60
+  _destroyOnImpact: 1
+  _explodeOnDecay: 0
   _launchFactor: 1
   _targetCrosshairs: 1
   _targetTarget: 0
   _mask:
     serializedVersion: 2
     m_Bits: 1865
+  _piercer: 0
   _bouncy: 0
 --- !u!108 &8769445196017979667
 Light:
@@ -371,9 +375,25 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  useOcclusion: 1
+  useOcclusion: 0
   occlusionRadius: 0.2
   sampleCount: 32
   occlusionOffset: 0.15
   scale: 0.5
   allowOffScreen: 0
+--- !u!114 &-6091991070434187782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937649536016436938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316a86e0c5f6da84cb51f9d37bddb025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 32639
+  _fadeTime: 0.1

@@ -113,14 +113,16 @@ MonoBehaviour:
   _touchInteract: 1
   _shootInteract: 0
   _interactCrosshairs: {fileID: 0}
+  _interactTooltip: 
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
+  _pickupText: Got the shells!
+  _pickupFailText: 
+  _pickupFlashColor: {r: 1, g: 1, b: 0, a: 0.2509804}
+  _pickupSpinSpeed: 36
   _weapon:
   - Boomstick
   _amount: 05000000
   _isAltAmmo: 01
   _sharedIndex: 00000000
   _sharedAmount: 19000000
-  _pickupText: Got the shells!
-  _pickupFailText: Already have enough shells.
-  _pickupFlashColor: {r: 1, g: 1, b: 0, a: 0.5019608}

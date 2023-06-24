@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Bullet : OwnedProjectile
@@ -9,12 +10,14 @@ public class Bullet : OwnedProjectile
     [SerializeField] protected bool       _stickyExplosion  = false;
     [SerializeField] protected float      _bulletSpeed      = 500f;
     [SerializeField] private float        _lifetime         =  60f;
+    [SerializeField] private bool         _destroyOnImpact  = true;
     [SerializeField] private bool         _explodeOnDecay   = false;
     // [SerializeField] private float        _linger           =   0.25f;
     [SerializeField] private float        _launchFactor     =   1;
     [SerializeField] protected bool       _targetCrosshairs = false;
     [SerializeField] protected bool       _targetTarget     = false;
     [SerializeField] protected LayerMask  _mask;
+    [SerializeField] private   bool       _piercer;
     [SerializeField] private   bool       _bouncy;
 
     protected bool       _collided = false;
@@ -90,27 +93,12 @@ public class Bullet : OwnedProjectile
             }
 
             var e = Instantiate(_explosion, position, rotation);
-
             TransferOwnership(e.transform);
             
             if (_stickyExplosion)
-                e.transform.SetParent(collision.transform, true); // Doing this instead of using the parent parameter in instantiate prevents the explosion from inheriting its target's dimensions
+                e.transform.SetParent(collision.transform, true);
 
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            gameObject.GetComponent<Collider>().enabled      = false;
-            if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
-                mesh.enabled  = false;
-
-            Rigidbody bulletBody   = gameObject.GetComponent<Rigidbody>();
-            bulletBody.constraints = RigidbodyConstraints.FreezeAll;
-
-            if (gameObject.TryGetComponent(out ParticleSystem particleSystem))
-            {
-                var emission     = particleSystem.emission;
-                emission.enabled = false;
-            }
-
-            Destroy(gameObject, 0.25f);
+            Detonate();
 
             // print($"{_owner.name}'s bullet hit {collision.gameObject.name}");
         }
@@ -118,15 +106,15 @@ public class Bullet : OwnedProjectile
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!_piercer) return;
         _collided = true;
          
         // Quaternion   rotation  = Quaternion.FromToRotation(Vector3.up, other.transform.localRotation);
         // Vector3      position  = other.transform.position;
 
         // Instantiate(_explosion, transform.position, transform.rotation).transform.SetParent(other.transform, true); // GameObject bulletSpawn = 
-            var e = Instantiate(_explosion, transform.position, transform.rotation);
-
-            TransferOwnership(e.transform);
+        var e = Instantiate(_explosion, transform.position, transform.rotation);
+        TransferOwnership(e.transform);
 
         if (other.gameObject.TryGetComponent(out Movement targetMovement))
             targetMovement.Knockback(Vector3.Normalize(transform.position - other.transform.position) * _launchFactor);
@@ -145,22 +133,9 @@ public class Bullet : OwnedProjectile
             }
         }
 
-        Rigidbody bulletBody                        = gameObject.GetComponent<Rigidbody>();
-        bulletBody.isKinematic                      = true;
-        gameObject.GetComponent<Collider>().enabled = false;
-        if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
-            mesh.enabled       = false;
-        bulletBody.constraints = RigidbodyConstraints.FreezeAll;
+        Detonate();
 
-        if (gameObject.TryGetComponent(out ParticleSystem particleSystem))
-        {
-            var emission     = particleSystem.emission;
-            emission.enabled = false;
-        }
-
-        Destroy(gameObject, 0.25f);
-
-        print($"{_owner.name}'s bullet hit {other.gameObject.name}");
+        // print($"{_owner.name}'s bullet hit {other.gameObject.name}");
     }
 
     private void OnDestroy()
@@ -173,4 +148,35 @@ public class Bullet : OwnedProjectile
             // if (e.TryGetComponent(out OwnedProjectile p))
         }
     }
+
+    public  void Detonate()
+    {
+        _collided = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        gameObject.GetComponent<Collider>().enabled      = false;
+        if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
+            mesh.enabled = false;
+        // if (gameObject.TryGetComponent(out LineRenderer line)) 
+        //     line.enabled = false;
+        foreach (var line in gameObject.GetComponentsInChildren<LineRenderer>())
+            line.enabled = false;
+        foreach (var flare in gameObject.GetComponentsInChildren<LensFlareComponentSRP>())
+            flare.enabled = false;
+
+        Rigidbody bulletBody   = gameObject.GetComponent<Rigidbody>();
+        bulletBody.constraints = RigidbodyConstraints.FreezeAll;
+
+        if (gameObject.TryGetComponent(out ParticleSystem particleSystem))
+        {
+            var emission     = particleSystem.emission;
+            emission.enabled = false;
+        }
+
+        if (_destroyOnImpact)
+            Destroy(gameObject, 0.25f);
+    }
+    
+    public float      Speed     { get => _bulletSpeed; set => _bulletSpeed = value; }
+    public bool       Collided  { get => _collided; }
+    public GameObject Explosion { get => _explosion; }
 }

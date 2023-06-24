@@ -92,7 +92,7 @@ public class PlayerMovement : Movement
         _movePitch = Mathf.SmoothDampAngle(_movePitch, -Input.GetAxis("Mouse Y") * _weaponDrag, ref _handSmoothPitch, 0.3f);
         _playerHands.localEulerAngles = new
         (
-            _movePitch + _fallPitch - _camRecoil,
+            _movePitch + _fallPitch,
             Mathf.SmoothDampAngle(_playerHands.localEulerAngles.y, Input.GetAxis("Mouse X") * _weaponDrag, ref _handSmoothYaw, 0.3f),
             0
         );

@@ -55,7 +55,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
+  - {fileID: 2100000, guid: 9323240630dc8ee4a94088375fba4ab9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,7 +81,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.125
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -4857,9 +4857,9 @@ MonoBehaviour:
   _explosion: {fileID: 1186836860010196686, guid: 33d37ca39aadf884b93dd159ff6ef565,
     type: 3}
   _maxRange: 100
-  _lifetime: 60
+  _lifetime: 120
   _fadeSpeed: 100
-  _fadeDelay: 5
+  _fadeDelay: 4.75
   _launchFactorMovement: 0.25
   _launchFactorRigidbody: -10
   _layerMask:
@@ -4889,7 +4889,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
-  - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
+  - {fileID: 2100000, guid: 9323240630dc8ee4a94088375fba4ab9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

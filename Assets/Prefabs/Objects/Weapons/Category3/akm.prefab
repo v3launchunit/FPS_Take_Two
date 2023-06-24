@@ -151,9 +151,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 951738658981965494, guid: 24d8f908ba82f3c43bad8069041f23bc,
         type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 951738658981965494, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
+    - target: {fileID: 3586949037043703132, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3586949037043703132, guid: 24d8f908ba82f3c43bad8069041f23bc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -163,6 +173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232627393660835655, guid: 24d8f908ba82f3c43bad8069041f23bc,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5232627393660835655, guid: 24d8f908ba82f3c43bad8069041f23bc,
         type: 3}
@@ -250,4 +265,5 @@ MonoBehaviour:
   _altRecoil: 0
   _altCamRecoil: 10
   _spinBullet: {fileID: 0}
+  _singleBullet: 0
   _busy: 0

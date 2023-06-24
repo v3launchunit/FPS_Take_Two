@@ -168,12 +168,15 @@ MonoBehaviour:
   _stickyExplosion: 0
   _bulletSpeed: 100
   _lifetime: 60
+  _destroyOnImpact: 1
+  _explodeOnDecay: 0
   _launchFactor: 1
   _targetCrosshairs: 1
   _targetTarget: 0
   _mask:
     serializedVersion: 2
     m_Bits: 1865
+  _piercer: 1
   _bouncy: 0
 --- !u!65 &4210132642855278642
 BoxCollider:

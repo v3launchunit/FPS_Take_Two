@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class WeaponHandler : WeaponBase
@@ -30,12 +31,14 @@ public class WeaponHandler : WeaponBase
     [SerializeField] private float      _altCamRecoil  = 5;
     
     [SerializeField] private GameObject _spinBullet;
-
+    [SerializeField] private bool       _singleBullet = false;
+    
     [SerializeField] private bool _busy = false;
 
     private Animator  _animator;
     private Transform _spawner;
     private Transform _altSpawner;
+    private Transform _activeBullet;
 
     void Awake()
     {
@@ -55,6 +58,14 @@ public class WeaponHandler : WeaponBase
 
     void Update()
     {
+        if (_singleBullet && _activeBullet != null && _activeBullet.TryGetComponent(out Bullet bu) && !bu.Collided)
+        {
+            _busy = true;
+            _animator.SetBool("Depleted", true);
+        }
+        else
+            _animator.SetBool("Depleted", !ChargeAmmo(1, false, true));
+
         if 
         (
             (_mainBullet != null || _mainMuzzleFlash != null) &&
@@ -97,6 +108,9 @@ public class WeaponHandler : WeaponBase
 
                     if (b.TryGetComponent(out OwnedProjectile proj))
                         proj.Owner = Camera.main.transform.parent.parent;
+
+                    if (_singleBullet)
+                        _activeBullet = b.transform;
                 }
 
             if (_mainFireSound != null)
@@ -172,8 +186,6 @@ public class WeaponHandler : WeaponBase
             if (_spinBullet != null)
                 Instantiate(_spinBullet, _spawner.transform.position, Camera.main.transform.rotation);
         }
-
-        _animator.SetBool("Depleted", !ChargeAmmo(1, false, true));
     }
 
     public bool AddAmmo(int amount) { return AddAmmo(amount, false); }
@@ -234,6 +246,17 @@ public class WeaponHandler : WeaponBase
         return false;
     }
 
+    void OnDisable()
+    {
+        if (_iconInstance != null)
+            _iconInstance.GetComponent<Image>().color = new(1, 1, 1, 0.25f);
+
+        if (_singleBullet && _activeBullet != null && _activeBullet.TryGetComponent(out Bullet b) && !b.Collided)
+        {
+            Instantiate(b.Explosion, b.transform.position, b.transform.rotation);
+            b.Detonate();
+        }
+    }
 
     public void MainFire()
     {

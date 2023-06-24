@@ -53,7 +53,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e1247d53576172a409b30bdf9c0f097c, type: 2}
+  - {fileID: 2100000, guid: 9323240630dc8ee4a94088375fba4ab9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,7 +80,7 @@ LineRenderer:
   - {x: 0.45, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.075
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -244,9 +244,9 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 0.5019608}
+      key0: {r: 1, g: 0, b: 0, a: 0}
       key1: {r: 1, g: 0, b: 0, a: 0.5019608}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0.5019608}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -260,9 +260,9 @@ LineRenderer:
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
+      atime0: 16384
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -352,6 +352,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bb9d87ec4d4ba20458d85dda991c07ee,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bb9d87ec4d4ba20458d85dda991c07ee,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bb9d87ec4d4ba20458d85dda991c07ee,
@@ -486,4 +491,5 @@ MonoBehaviour:
   _altRecoil: 0
   _altCamRecoil: 5
   _spinBullet: {fileID: 0}
+  _singleBullet: 0
   _busy: 0

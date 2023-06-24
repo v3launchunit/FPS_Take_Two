@@ -50,6 +50,8 @@ public class MouseLook : MonoBehaviour
             // Debug.Log(target);
             // Debug.Log(targetInteract);
         }
+
+        transform.Find("HandCam").GetComponent<Camera>().fieldOfView = GetComponent<Camera>().fieldOfView;
     }
 
     public float FovDesired       { get => _fovDesired; }

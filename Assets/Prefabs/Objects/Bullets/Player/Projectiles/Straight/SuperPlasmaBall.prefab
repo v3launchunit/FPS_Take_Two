@@ -106,6 +106,8 @@ MonoBehaviour:
   _stickyExplosion: 0
   _bulletSpeed: 200
   _lifetime: 60
+  _destroyOnImpact: 1
+  _explodeOnDecay: 0
   _launchFactor: 1
   _targetCrosshairs: 1
   _targetTarget: 0
