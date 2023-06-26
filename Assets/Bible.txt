@@ -137,6 +137,12 @@
 
         Slot 7 (Debug)
 
+########## Powerups ##########
+    Heart of Life      - +100 Health
+    Claw of Rending    - Quadruple all damage
+    Scale of Shielding - Invincibility
+    All-Seeing Eye     - Fullbright, see enemies through walls
+
 ########## Enemies ##########
     Zombie
         70 Health
@@ -171,11 +177,14 @@
 ########## Plot Thoughts ##########
     Act I
         Setting: Countryside
+        
         Weapons:
-            Shotgun
+            Shotgun(s)
             Boomstick
             Nailgun
+            AKM
             Big Iron
+            RPG
         
         Enemies:
             Zombie
@@ -185,17 +194,53 @@
             Hound
 
         Levels:
-
-
+            E1M01  "In the Flesh?": 
+            E1M02  "The Color Out Of Space":
+            E1M03  "":
+            E1M04  "Obscured by Clouds":
+            E1M05  "":
+            E1M06  "":
+            E1M07  "":
+            E1M08  "Speak To Me":
+            E1M09  "":
+            CLIMAX "":
+            SECRET "":
 
     Act II
         Setting: City/University
 
+        Levels:
+            E2M01  "": 
+            E2M02  "":
+            E2M03  "":
+            E2M04  "":
+            E2M05  "":
+            E2M06  "":
+            E2M07  "":
+            E2M08  "":
+            E2M09  "":
+            CLIMAX "":
+            SECRET "The Derelict":
+
     Act III
         Setting: Otherworld
 
+        Levels:
+            E3M01  "": 
+            E3M02  "":
+            E3M03  "":
+            E3M04  "":
+            E3M05  "":
+            E3M06  "":
+            E3M07  "":
+            E3M08  "":
+            E3M09  "":
+            CLIMAX "":
+            SECRET "":
+
     Act IV
         Setting: Corporate HQ
+
         Weapons:
             Howitzer
         
@@ -207,19 +252,22 @@
             Chopper
 
         Levels:
-            E1M01  "In the Flesh?": 
-            E1M02  ""
-
             E4M01  "In the Flesh":
-            E4M01  "Ashen Tundra":
+            E4M02  "Silent Spring":
             E4M03  "City of Dust":
-            E4M09  "Searing Flesh, Frozen Heart"
+            E4M04  "Fog of War":
+            E4M05  "Ashen Tundra":
+            E4M06  "":
+            E4M07  "":
+            E4M08  "":
+            E4M09  "Searing Flesh, Frozen Heart": 
             FINALE "Welcome": 
                 Weapons:
                     Howitzer
                 
                 Bosses:
                     The Machine
+            SECRET "":
 
 ########## Enemies ##########
 
