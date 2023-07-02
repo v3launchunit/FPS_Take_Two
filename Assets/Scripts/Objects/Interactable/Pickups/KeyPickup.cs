@@ -13,11 +13,11 @@ public class KeyPickup : Pickup
             
         if (other.GetComponentInParent<PlayerStatus>().AddKey(_index))
         {
-            GameObject.FindObjectOfType<Flash>().DoFlash(_pickupFlashColor);
-            GameObject.FindObjectOfType<HudHandler>().Log(_pickupText);
+            FindFirstObjectByType<Flash>().DoFlash(_pickupFlashColor);
+            FindFirstObjectByType<HudHandler>().Log(_pickupText);
             Destroy(gameObject);
         }
         else if (_pickupFailText != "")
-            GameObject.FindObjectOfType<HudHandler>().Log(_pickupFailText);
+            FindFirstObjectByType<HudHandler>().Log(_pickupFailText);
     }
 }

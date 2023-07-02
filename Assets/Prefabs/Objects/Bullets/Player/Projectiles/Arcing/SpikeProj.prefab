@@ -89,7 +89,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!96 &513295831915521907
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,6 +130,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Time: 0.25
+  m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.4
@@ -175,17 +176,21 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!54 &2068935784315803483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -193,10 +198,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513295831915521906}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 0.25
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -217,6 +233,8 @@ MonoBehaviour:
   _damage: 90
   _explosion: {fileID: 7689540465798720483, guid: 64396f3ecb00fe044b8dc59035adb81d,
     type: 3}
+  _impactSound: {fileID: 4756592628764114648, guid: 7f21a3a1e54170c458d236aa24006d0d,
+    type: 3}
   _stickyExplosion: 1
   _bulletSpeed: 50
   _lifetime: 60
@@ -228,7 +246,9 @@ MonoBehaviour:
   _mask:
     serializedVersion: 2
     m_Bits: 1865
+  _piercer: 0
   _bouncy: 0
+  _manualDetonate: 0
 --- !u!65 &3527195979451941752
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -237,8 +257,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513295831915521906}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.125, y: 0.125, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0.1}

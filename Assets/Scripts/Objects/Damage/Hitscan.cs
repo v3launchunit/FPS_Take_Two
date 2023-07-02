@@ -11,6 +11,8 @@ public class Hitscan : OwnedProjectile
     [SerializeField] private float      _fadeDelay             =   1f;
     [SerializeField] private float      _launchFactorMovement  =   0.25f;
     [SerializeField] private float      _launchFactorRigidbody = -10f;
+    [SerializeField] private bool       _targetCrosshairs      = true;
+    [SerializeField] private bool       _targetTarget          = false;
     [SerializeField] private LayerMask  _layerMask;
     [SerializeField] private bool       _parrier;
     [SerializeField] private bool       _piercer;
@@ -29,7 +31,7 @@ public class Hitscan : OwnedProjectile
     // Start is called before the first frame update
     void Start()
     {
-        _scanStartingPosition = Camera.main.transform.position;
+        _scanStartingPosition = _targetCrosshairs ? Camera.main.transform.position : _targetTarget ? _owner.position : transform.position;
         Scan();
         
         // if (_explosion != null)
@@ -86,7 +88,8 @@ public class Hitscan : OwnedProjectile
         LineRenderer line = gameObject.GetComponent<LineRenderer>();
 
         Vector3 angle = transform.rotation * Vector3.forward;
-        if (Physics.Raycast(_scanStartingPosition, angle, out _raycastHit, _maxRange, _layerMask, QueryTriggerInteraction.Ignore))
+        if 
+        (Physics.Raycast(_scanStartingPosition, angle, out _raycastHit, _maxRange, _layerMask, QueryTriggerInteraction.Ignore))
         {
             _impactPoint = _raycastHit.point;
             _hit         = _raycastHit.transform;
@@ -116,6 +119,9 @@ public class Hitscan : OwnedProjectile
                 _hitOrganic = targetDamage.Organic;
 
                 _damage -= targetDamage.Damage(_damage);
+
+                if (targetDamage.BloodSpray != null)
+                    Instantiate(targetDamage.BloodSpray, _impactPoint, Quaternion.FromToRotation(Vector3.up, _raycastHit.normal));
 
                 // if (_hit.TryGetComponent(out EnemyMovement enemyMovement))
                 //     enemyMovement.Target = _owner;

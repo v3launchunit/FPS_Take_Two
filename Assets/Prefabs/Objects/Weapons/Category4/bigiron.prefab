@@ -66,6 +66,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &8678895713219779056
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -153,16 +154,20 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &2029240537386074913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +186,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6780b85e6ca8e804792771ab8db52970,
@@ -314,6 +320,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1618885691}
+    - targetCorrespondingSourceObject: {fileID: -1667202930860327310, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7416945352935257800}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1671990237}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1671990236}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1671990238}
   m_SourcePrefab: {fileID: 100100000, guid: 6780b85e6ca8e804792771ab8db52970, type: 3}
 --- !u!4 &2764531104704667573 stripped
 Transform:
@@ -329,7 +358,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1671990237
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -343,6 +372,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -364,7 +394,7 @@ MonoBehaviour:
   _icon: {fileID: 6287914305384751006, guid: 71d0b479144d2cf4ba4a062b8b53d169, type: 3}
   _crosshairs: {fileID: -2072059990, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 3
-  _index: 1
+  _index: 0
   _mainBullet: {fileID: 3445455089518735197, guid: fc981d65999451f4bbd73ec5f08cffb1,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,

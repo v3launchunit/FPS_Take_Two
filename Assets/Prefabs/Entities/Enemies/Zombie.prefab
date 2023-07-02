@@ -100,8 +100,17 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6236161748059212586}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2.4
   m_Direction: 1
@@ -136,9 +145,17 @@ CharacterController:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6236161748059212586}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
@@ -190,9 +207,13 @@ MonoBehaviour:
   _spread: 0
   _fireCooldown: 5
   _sight: 32
+  _meleeBullet: {fileID: 3445455089518735197, guid: 6b076b5f1dba1674ebbcb337cd408633,
+    type: 3}
+  _meleeRange: 3
+  _target: {fileID: 0}
 --- !u!95 &6236161748059212587
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -206,6 +227,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -223,13 +245,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b88a1aa26cfa64ab2d69c7940ffd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 60
-  _health: 60
+  _maxHealth: 90
+  _health: 90
+  _bloodSpray: {fileID: 0}
   _deathExplosion: {fileID: 1326755823733274519, guid: 639ac572677ef1c40b2cbe500c1150d7,
     type: 3}
   _gibThreshold: 50
   _gibExplosion: {fileID: 5617390132151680554, guid: 8fc996495bce2c249b442d2356367ef1,
     type: 3}
+  _explosionPos: {fileID: 0}
   _organic: 1
 --- !u!1 &6236161748595772147
 GameObject:
@@ -298,6 +322,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6236161748059212595}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 76b783b6ba6580142b91fb5176afc663,
@@ -516,6 +541,13 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -5808298436175812256, guid: 76b783b6ba6580142b91fb5176afc663,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6236161748924689164}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b783b6ba6580142b91fb5176afc663, type: 3}
 --- !u!4 &5837216438932913085 stripped
 Transform:

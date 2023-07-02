@@ -63,9 +63,10 @@ public class Switch : InteractableObject
 
     public override void OnInteract(GameObject other)
     {
-        if (_requiredKey != -1 && _lockedText != "" && !other.GetComponentInParent<PlayerStatus>().Keys[_requiredKey])
+        if (_requiredKey != -1 && !other.GetComponentInParent<PlayerStatus>().Keys[_requiredKey])
         {
-            GameObject.FindObjectOfType<HudHandler>().Log(_lockedText);
+            if (_lockedText != "")
+                FindFirstObjectByType<HudHandler>().Log(_lockedText);
             return;
         }
 
@@ -87,8 +88,8 @@ public class Switch : InteractableObject
             Instantiate(_interactSound, transform.position, transform.rotation);
             
         _on = on;
-        _targetPosition = (on) ? _onPosition : _offPosition;
-        _targetRotation = (on) ? _onRotation : _offRotation;
+        _targetPosition = (on) ? _onPosition + _offPosition : _offPosition;
+        _targetRotation = (on) ? _onRotation                : _offRotation;
 
         foreach (var t in _targets)
         {

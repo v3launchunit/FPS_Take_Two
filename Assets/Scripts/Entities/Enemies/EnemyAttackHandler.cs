@@ -9,7 +9,9 @@ public class EnemyAttackHandler : MonoBehaviour
     [SerializeField] private int        _burst        =  1;
     [SerializeField] private float      _spread       =  0;
     [SerializeField] private int        _fireCooldown =  1;
-    [SerializeField] private int       _sight         = 32;
+    [SerializeField] private float     _sight         = 32;
+    [SerializeField] private GameObject _meleeBullet;
+    [SerializeField] private float     _meleeRange    =  3;
 
     private float         _cooldown;
     private Transform     _spawner;
@@ -33,14 +35,18 @@ public class EnemyAttackHandler : MonoBehaviour
         (
             _target != null &&
             !_movement.Busy &&
-            _cooldown <= 0  // && 
+            (_cooldown <= 0 || (_meleeBullet != null && Vector3.Distance(transform.position, _target.position) <= _meleeRange))
+            // && 
             // Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, _sight) && 
             // hit.transform == _target
         )
         {
             // print($"{_target} spotted");
             transform.LookAt(_target);
-            gameObject.GetComponent<Animator>().SetTrigger("Fire");
+            if (_meleeBullet != null && Vector3.Distance(transform.position, _target.position) <= _meleeRange)
+                gameObject.GetComponent<Animator>().SetTrigger("Melee");
+            else
+                gameObject.GetComponent<Animator>().SetTrigger("Fire");
             _movement.Busy = true;
         }
 
@@ -67,6 +73,21 @@ public class EnemyAttackHandler : MonoBehaviour
                 if (b.TryGetComponent(out OwnedProjectile proj))
                     proj.Owner = transform;
             }
+        }
+
+        _cooldown = _fireCooldown;
+    }
+    public void Melee()
+    {
+        transform.LookAt(_target);
+
+        if (_meleeBullet != null)
+        {
+            // Instantiate(_bullet, _spawner.transform.position, _spawner.transform.rotation);
+            var b = Instantiate(_meleeBullet, _spawner.transform.position, _spawner.transform.rotation);
+
+            if (b.TryGetComponent(out OwnedProjectile proj))
+                proj.Owner = transform;
         }
 
         _cooldown = _fireCooldown;

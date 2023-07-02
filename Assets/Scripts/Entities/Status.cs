@@ -6,6 +6,7 @@ public class Status : MonoBehaviour
 {
     [SerializeField] protected int      _maxHealth    = 100;
     [SerializeField] protected int      _health       = 100;
+    [SerializeField] private GameObject _bloodSpray;
     [SerializeField] private GameObject _deathExplosion;
     [SerializeField] private int        _gibThreshold = 10;
     [SerializeField] private GameObject _gibExplosion;
@@ -32,13 +33,16 @@ public class Status : MonoBehaviour
         return damage;
     }
 
-    public bool Heal(int amount)
+    
+    public bool Heal(int amount) { return Heal(amount, false); }
+
+    public bool Heal(int amount, bool canOverheal)
     {
-        if (_health >= _maxHealth)
+        if (!canOverheal && _health >= _maxHealth)
             return false;
         
         _health += amount;
-        if (_health > _maxHealth)
+        if (!canOverheal && _health > _maxHealth)
             _health = _maxHealth;
         
         return true;
@@ -58,9 +62,10 @@ public class Status : MonoBehaviour
         }
     }
     
-    public virtual bool Organic   { get => _organic; }
+    public virtual bool Organic  { get => _organic; }
 
-    public int  MaxHealth { get => _maxHealth; }
-    public int  Health    { get => _health; }
-    public bool IsDead    { get => _isDead; }
+    public int        MaxHealth  { get => _maxHealth; }
+    public int        Health     { get => _health; }
+    public bool       IsDead     { get => _isDead; }
+    public GameObject BloodSpray { get => _bloodSpray; }
 }

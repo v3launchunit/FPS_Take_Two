@@ -5,12 +5,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
@@ -85,9 +86,39 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
         type: 3}
       propertyPath: m_Name
-      value: tommyGun
+      value: tommyGunPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486661543501798017, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551238392589077143, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6235205622855451884}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7544546130601256891}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3717864403219605331}
   m_SourcePrefab: {fileID: 100100000, guid: 474108b6c2e74b6418884e54247c7b74, type: 3}
 --- !u!1 &565512873651796909 stripped
 GameObject:
@@ -103,9 +134,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565512873651796909}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 0
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &7544546130601256891
@@ -116,9 +155,17 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565512873651796909}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3717864403219605331
@@ -136,6 +183,7 @@ MonoBehaviour:
   _touchInteract: 1
   _shootInteract: 0
   _interactCrosshairs: {fileID: 0}
+  _interactTooltip: 
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
   _pickupText: Tracked down a Tommy Gun!

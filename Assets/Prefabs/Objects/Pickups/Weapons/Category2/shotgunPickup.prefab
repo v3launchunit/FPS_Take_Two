@@ -5,12 +5,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
@@ -62,6 +63,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6433418245104512094, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: -5922622823359544968, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
       propertyPath: m_Layer
@@ -97,6 +103,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 5232627393660835655, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: 5698744347499143916, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,6 +124,21 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 622014946}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 997868792129575078}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 622014945}
   m_SourcePrefab: {fileID: 100100000, guid: 15834c6199c30c143b2e5f87d70a9950, type: 3}
 --- !u!1 &5558999757625796122 stripped
 GameObject:
@@ -128,9 +154,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5558999757625796122}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 0
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &997868792129575078
@@ -141,9 +175,17 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5558999757625796122}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 0.75
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &622014945
@@ -161,6 +203,7 @@ MonoBehaviour:
   _touchInteract: 1
   _shootInteract: 0
   _interactCrosshairs: {fileID: 0}
+  _interactTooltip: 
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
   _pickupText: Snatched a second shotgun!

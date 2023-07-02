@@ -246,6 +246,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8307780501026333356}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
@@ -305,7 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6433418245104512094, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: -5922622823359544968, guid: 15834c6199c30c143b2e5f87d70a9950,
@@ -335,10 +336,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232627393660835655, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500344256770}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780499382928382}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500427340645}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500427340644}
   m_SourcePrefab: {fileID: 100100000, guid: 15834c6199c30c143b2e5f87d70a9950, type: 3}
 --- !u!4 &8413167362829589634 stripped
 Transform:
@@ -354,7 +374,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &8307780500427340645
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -368,6 +388,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -401,27 +422,29 @@ MonoBehaviour:
   _mainAutomatic: 1
   _mainRecoil: 0
   _mainCamRecoil: 0
-  _altBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
+  _altBullet: {fileID: 973319088124361784, guid: 653cbd028cfb0d743903c2308c25b783,
     type: 3}
   _altMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
   _altFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
-  _altBurst: 9
+  _altBurst: 1
   _altSpread: 10
-  _altAmmoMax: 1
-  _altAmmo: 3
-  _sharedAltAmmo: 0
+  _altAmmoMax: 25
+  _altAmmo: 10
+  _sharedAltAmmo: -1
   _altAutomatic: 1
   _altRecoil: 0
   _altCamRecoil: 5
   _spinBullet: {fileID: 0}
+  _singleBullet: 0
   _busy: 0
 --- !u!1001 &8307780500591584595
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8307780499464257453}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
@@ -481,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6433418245104512094, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: -5922622823359544968, guid: 15834c6199c30c143b2e5f87d70a9950,
@@ -511,10 +534,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232627393660835655, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500942054400}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500342182687}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500591584559}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8307780500591584558}
   m_SourcePrefab: {fileID: 100100000, guid: 15834c6199c30c143b2e5f87d70a9950, type: 3}
 --- !u!4 &8413167362656748216 stripped
 Transform:
@@ -530,7 +572,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &8307780500591584559
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -544,6 +586,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -592,4 +635,5 @@ MonoBehaviour:
   _altRecoil: 0
   _altCamRecoil: 0
   _spinBullet: {fileID: 0}
+  _singleBullet: 0
   _busy: 0

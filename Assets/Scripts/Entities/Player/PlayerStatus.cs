@@ -9,9 +9,9 @@ public class PlayerStatus : Status
     [SerializeField] private int    _armor    = 0;
     [SerializeField] private bool[] _keys     = {false, false, false, false, false, false};
 
-    public override int Damage(int damage, float multiplier) //
+    public override int Damage(int damage, float multiplier)
     {
-        GameObject.FindObjectOfType<Flash>().DoFlash(new Color(1, 0, 0, (float)damage/(float)_maxHealth));
+        FindFirstObjectByType<Flash>().DoFlash(new Color(1, 0, 0, (float)damage/(float)_maxHealth));
 
         // print($"1-{_armor}/{_maxArmor} = {1 - ((float)_armor/(float)_maxArmor)}");
         _health -= Mathf.RoundToInt(damage * multiplier * (1 - ((float)_armor/(float)_maxArmor)));

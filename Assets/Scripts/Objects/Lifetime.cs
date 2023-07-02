@@ -14,6 +14,9 @@ public class Lifetime : OwnedProjectile
 
     private void OnDestroy()
     {
+        if (!this.gameObject.scene.isLoaded) 
+            return;
+        
         if (_decaySpawn != null)
         {
             var e = Instantiate(_decaySpawn, transform.position, transform.rotation);

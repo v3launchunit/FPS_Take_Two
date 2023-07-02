@@ -39,16 +39,16 @@
         "Starting weapon. Packs a good punch, and has a reasonable spread."
 
     Twin Shotguns - "Snatched a second Shotgun"
-        Primary   - Left  Buck (Shells)
-        Secondary - Right Buck (Shells)
+        Primary   - Left  Buck
+        Secondary - Right Buck
         "Don't try this at home."
 
     Boomstick - "Burgled a Boomstick"
         Close-range burst weapon
-        Primary   - Super Buckshot (Shells *2)
-        Secondary - Slugs          (Slugs)
-            A powerful single shot, capable of overpenetrating enemies.
-        "The immense spread of this shotgun indicates that there is something very wrong with the left barrel."
+        Primary   - Super Buckshot
+        Secondary - Sawblades
+            A powerful single shot, capable of overpenetrating enemies and bouncing off walls.
+        "The immense spread of this shotgun indicates that there is something very wrong with the barrels."
 
     Pepperbox - "Pilfered a Pepperbox"
         Mid-range marksman weapon
@@ -59,8 +59,9 @@
     Nailgun - "Nabbed a Nailgun"
         Mid-range sustained weapon
         Primary   - Nails
+            Rusty nails that stick to enemies and explode on command.
         Secondary - Spike
-            A railroad spike that detonates after a brief period.
+            A railroad spike that detonates on command and can be used as a platform.
         "On one hand, it fires nails. On the other hand, it fires nails."
 
     Tommy Gun - "Tracked down a Tommy Gun"
@@ -71,11 +72,11 @@
 
     AKM - "Acquired an AKM"
         Mid-range sustained weapon
-        Primary   - Super Nails
-            Fly faster and farther than regular nails.
+        Primary   - Tri-Bullet Volley
+            3 bullets, one after another.
         Secondary - Grenades
-            Impact concusssion grenades with a wide blast radius.
-        "Apparently whoever had this last figured it would be easier to make it fire FUCKING NAILS than to find actual rounds."
+            Concusssion grenades with a wide blast radius.
+        "Ol' Reliable."
 
     Big Iron - "Borrowed a Big Iron"
         Long-range six-shooter
@@ -92,10 +93,10 @@
             
     Plasma Cannon - "Plundered a Plasma Cannon"
         Mid-range projectile weapon
-        Primary   - Plasma Spray
-            A conical spray of plasma that deals heavy knockback.
-        Secondary - Plasma Balls
+        Primary   - Plasma Balls
             Deadly balls of plasma that explode on contact.
+        Secondary - Super Plasma Balls
+            More deadly balls of plasma that explode on contact.
         "This still feels like a terrible idea."
 
     Rocket Launcher - "Recovered an RPG"
@@ -118,6 +119,8 @@
     Inventory
         Slot 1 (Melee)
             Axe
+            Syringe
+            Sword
         Slot 2 (Burst)
             Shotgun
             Twin Shotguns
@@ -133,46 +136,46 @@
             Plasma Cannon
             Rocket Launcher
         Slot 6 (Other)
+            C4
             Howitzer
 
         Slot 7 (Debug)
 
 ########## Powerups ##########
-    Heart of Life      - +100 Health
-    Claw of Rending    - Quadruple all damage
+    Heart of Healing   - +100 Health
+    Claw of Carnage    - Quadruple all damage
     Scale of Shielding - Invincibility
     All-Seeing Eye     - Fullbright, see enemies through walls
 
 ########## Enemies ##########
-    Zombie
-        70 Health
-        Primary - Eldritch blast
-        Slow
+    Critter
+        Tough
+        Medium
+        Melee - Claws
+   
+    Creature
+        Medium
+        Medium
+        Primary - Fireball
+        Melee   - Claws
     
-    Zombie Lumberjack
-        120 Health
-        Primary - Axe
-        Medium
-
-    Zombie Hunter
-        200 Health
-        Primary - Big Iron
-        Slow
-
-    Deer
-        100 Health
-        Primary - Suicide Bomb
-        Very Fast
-
-    Strikebreaker Hammer
-        150 Health
-        Primary - Shotgun
-        Medium
-
-    Strikebreaker Hound
-        50 Health
-        Primary - Teeth
+    Pinkerton
+        Weak
         Fast
+        Primary - Shotgun
+
+    Enforcer
+        Tough
+        Medium
+        Has Riot Shield
+        Melee - Baton
+    
+    Soldier
+        Medium
+        Fast
+        Primary   - Rifle
+        Secondary - Grenades
+        Melee     - Bayonet
 
 ########## Plot Thoughts ##########
     Act I

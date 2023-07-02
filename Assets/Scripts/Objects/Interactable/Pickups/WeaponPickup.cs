@@ -19,11 +19,11 @@ public class WeaponPickup : Pickup
             // GameObject v = GameObject.Find("Vignette");
             // v.GetComponent<Image>().color = _pickupFlashColor;
             // v.SetActive(true);
-            GameObject.FindObjectOfType<Flash>().DoFlash(_pickupFlashColor);
-            GameObject.FindObjectOfType<HudHandler>().Log(_pickupText);
+            FindFirstObjectByType<Flash>().DoFlash(_pickupFlashColor);
+            FindFirstObjectByType<HudHandler>().Log(_pickupText);
             Destroy(gameObject);
         }
         else if (_pickupFailText != "")
-            GameObject.FindObjectOfType<HudHandler>().Log(_pickupFailText);
+            FindFirstObjectByType<HudHandler>().Log(_pickupFailText);
     }
 }

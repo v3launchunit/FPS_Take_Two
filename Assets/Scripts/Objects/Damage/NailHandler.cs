@@ -11,12 +11,12 @@ public class NailHandler : OwnedProjectile
 
     void Update()
     {
-        if (Input.GetButtonDown("Detonate"))
+        if (Input.GetButtonDown("Detonate") && !_detonated)
         {
             _detonated = true;
             if (_explosion != null)
             {
-                var spawn  = Instantiate(_explosion, transform.position, transform.rotation);
+                var spawn = Instantiate(_explosion, transform.position, transform.rotation);
                 TransferOwnership(spawn.transform);
             }
             Destroy(gameObject);
@@ -27,6 +27,7 @@ public class NailHandler : OwnedProjectile
     {
         if (!this.gameObject.scene.isLoaded) 
             return;
+            
         if (!_detonated)
         {
             if (TryGetComponent(out Collider c))

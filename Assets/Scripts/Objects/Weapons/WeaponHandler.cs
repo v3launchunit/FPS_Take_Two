@@ -261,7 +261,7 @@ public class WeaponHandler : WeaponBase
     public void MainFire()
     {
         if (_mainMuzzleFlash != null)
-            Instantiate<GameObject>
+            Instantiate
             (
                 _mainMuzzleFlash, 
                 _spawner.transform.position, 

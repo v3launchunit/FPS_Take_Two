@@ -10,7 +10,8 @@ public class FrameCounter : MonoBehaviour
 
     private TextMeshProUGUI _framePanel;
     private List<float>     _samples = new();
-    private float           _peak;
+    private float           _peak    =    0;
+    private float           _valley  = 1000;
 
     void Start()
     {
@@ -34,7 +35,9 @@ public class FrameCounter : MonoBehaviour
 
         if (current > _peak)
             _peak = current;
+        if (current < _valley)
+            _valley = current;
 
-        _framePanel.text = $"{current:000}/{average:000}";
+        _framePanel.text = $"{1/average:0.000}/{average:000.0}"; //\n\n{_peak:000.0}/{_valley:000.0}
     }
 }

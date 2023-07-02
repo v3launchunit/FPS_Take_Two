@@ -31,7 +31,7 @@ MonoBehaviour:
     autoRotate: 0
     flareType: 1
     modulateByLightColor: 1
-    isFoldOpened: 1
+    isFoldOpened: 0
     distribution: 0
     lengthSpread: 1
     positionCurve:
@@ -110,6 +110,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -270,6 +271,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 1
@@ -430,6 +432,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 1
@@ -590,6 +593,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -671,7 +675,7 @@ MonoBehaviour:
     autoRotate: 0
     flareType: 1
     modulateByLightColor: 1
-    isFoldOpened: 0
+    isFoldOpened: 1
     distribution: 2
     lengthSpread: 1
     positionCurve:
@@ -750,6 +754,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -787,7 +792,7 @@ MonoBehaviour:
     m_EdgeOffset: 0.5
     m_SideCount: 6
     m_SdfRoundness: 0
-    inverseSDF: 0
+    inverseSDF: 1
     uniformAngle: 0
     uniformAngleCurve:
       serializedVersion: 2
@@ -910,6 +915,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1070,6 +1076,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1151,7 +1158,7 @@ MonoBehaviour:
     autoRotate: 0
     flareType: 1
     modulateByLightColor: 1
-    isFoldOpened: 1
+    isFoldOpened: 0
     distribution: 0
     lengthSpread: 0.02
     positionCurve:
@@ -1230,6 +1237,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1390,6 +1398,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1550,6 +1559,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1710,6 +1720,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75
@@ -1870,6 +1881,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     m_IntensityVariation: 0.75

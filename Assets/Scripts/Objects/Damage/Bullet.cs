@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class Bullet : OwnedProjectile
 {
     [SerializeField] protected GameObject _explosion;
+    [SerializeField] protected GameObject _impactSound;
     [SerializeField] protected bool       _stickyExplosion  = false;
     [SerializeField] protected float      _bulletSpeed      = 500f;
     [SerializeField] private float        _lifetime         =  60f;
@@ -19,6 +20,7 @@ public class Bullet : OwnedProjectile
     [SerializeField] protected LayerMask  _mask;
     [SerializeField] private   bool       _piercer;
     [SerializeField] private   bool       _bouncy;
+    [SerializeField] private   bool       _manualDetonate;
 
     protected bool       _collided = false;
     protected RaycastHit _raycastHit;
@@ -40,6 +42,17 @@ public class Bullet : OwnedProjectile
 
         bulletBody.AddForce(transform.forward * _bulletSpeed, ForceMode.VelocityChange);
         Destroy(gameObject, _lifetime);
+    }
+
+    private void Update()
+    {
+        if (_manualDetonate && Input.GetButtonDown("Detonate"))
+        {
+            var e = Instantiate(_explosion, transform.position, transform.rotation);
+            TransferOwnership(e.transform);
+            
+            Detonate(); 
+        }
     }
 
     public void Parry(GameObject parrier)
@@ -81,15 +94,28 @@ public class Bullet : OwnedProjectile
 
             if (collision.gameObject.TryGetComponent(out Status targetStatus)) 
             {
-                targetStatus.Damage(_damage);
+                _damage -= targetStatus.Damage(_damage);
+
+                if (targetStatus.BloodSpray != null)
+                    Instantiate(targetStatus.BloodSpray, position, rotation);
 
                 // if (collision.gameObject.TryGetComponent(out EnemyMovement enemyMovement))
                 //     enemyMovement.Target = _owner;
+                if (_piercer && _damage > 0)
+                {
+                    _collided = false;
+                    return;
+                }
             }
-            else if (_bouncy)
+            else 
             {
-                _collided = false;
-                return;
+                if (_impactSound != null)
+                    Instantiate(_impactSound, transform.position, transform.rotation);
+                if (_bouncy)
+                {
+                    _collided = false;
+                    return;
+                }
             }
 
             var e = Instantiate(_explosion, position, rotation);
@@ -123,6 +149,9 @@ public class Bullet : OwnedProjectile
         {
             _damage -= targetStatus.Damage(_damage);
 
+            if (targetStatus.BloodSpray != null)
+            Instantiate(targetStatus.BloodSpray, transform.position, transform.rotation);
+
             // if (other.gameObject.TryGetComponent(out EnemyMovement enemyMovement))
             //     enemyMovement.Target = _owner;
 
@@ -140,6 +169,9 @@ public class Bullet : OwnedProjectile
 
     private void OnDestroy()
     {
+        if (!this.gameObject.scene.isLoaded) 
+            return;
+
         if (_explodeOnDecay && !_collided)
         {
             var e = Instantiate(_explosion, transform.position, transform.rotation);
@@ -154,12 +186,13 @@ public class Bullet : OwnedProjectile
         _collided = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Collider>().enabled      = false;
-        if (gameObject.TryGetComponent(out MeshRenderer mesh)) 
+        
+        foreach (var mesh in gameObject.GetComponentsInChildren<MeshRenderer>())
             mesh.enabled = false;
-        // if (gameObject.TryGetComponent(out LineRenderer line)) 
-        //     line.enabled = false;
         foreach (var line in gameObject.GetComponentsInChildren<LineRenderer>())
             line.enabled = false;
+        foreach (var light in gameObject.GetComponentsInChildren<Light>())
+            light.enabled = false;
         foreach (var flare in gameObject.GetComponentsInChildren<LensFlareComponentSRP>())
             flare.enabled = false;
 

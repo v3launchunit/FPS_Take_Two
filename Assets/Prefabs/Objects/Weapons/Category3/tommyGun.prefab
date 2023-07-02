@@ -67,6 +67,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
@@ -230,6 +231,25 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1524645917}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538511616}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1308094091}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474108b6c2e74b6418884e54247c7b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1308094090}
   m_SourcePrefab: {fileID: 100100000, guid: 474108b6c2e74b6418884e54247c7b74, type: 3}
 --- !u!1 &4857056373402526536 stripped
 GameObject:
@@ -239,7 +259,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1308094091
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -253,6 +273,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -274,7 +295,7 @@ MonoBehaviour:
   _icon: {fileID: 3154920569161208577, guid: cce844417fdea21418d4ea075d01eccb, type: 3}
   _crosshairs: {fileID: -2032614619, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 2
-  _index: 3
+  _index: 2
   _mainBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
