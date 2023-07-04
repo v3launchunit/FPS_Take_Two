@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 247810864}
   - component: {fileID: 247810863}
   m_Layer: 5
-  m_Name: Keycard_Green
+  m_Name: Card_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1368981141, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 987656789, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 655194205}
   - component: {fileID: 655194204}
   m_Layer: 5
-  m_Name: Key_Gold
+  m_Name: Key_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1378156630, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: -1726239056, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 1402023264}
   - component: {fileID: 1402023263}
   m_Layer: 5
-  m_Name: Keycard_Blue
+  m_Name: Card_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2041863969, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: -1884452837, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 1974018928}
   - component: {fileID: 1974018927}
   m_Layer: 5
-  m_Name: Key_Bronze
+  m_Name: Key_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1385501158, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 735100451, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 2070826124}
   - component: {fileID: 2070826123}
   m_Layer: 5
-  m_Name: Keycard_Red
+  m_Name: Card_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 925470279, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: -301440380, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 2084250722}
   - component: {fileID: 2084250721}
   m_Layer: 5
-  m_Name: Key_Silver
+  m_Name: Key_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1164963153, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 2079344460, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2574,7 +2574,7 @@ GameObject:
   - component: {fileID: 9088142499918636905}
   - component: {fileID: 4469519271463856379}
   m_Layer: 5
-  m_Name: Nerve_Violet
+  m_Name: Nerve_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 982910906, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 277662860, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2650,7 +2650,7 @@ GameObject:
   - component: {fileID: 2966587342413907251}
   - component: {fileID: 2708050771981483031}
   m_Layer: 5
-  m_Name: Nerve_Cyan
+  m_Name: Nerve_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2704,7 +2704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -798333366, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 369710308, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 1242729758325586781}
   - component: {fileID: 7123619075510460909}
   m_Layer: 5
-  m_Name: Nerve_Orange
+  m_Name: Nerve_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -178283457, guid: 2ee7d5a34c13db846aad11751e35bde3, type: 3}
+  m_Sprite: {fileID: 1024376545, guid: 8899002fa7cc46d4188d98e3ccf099ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

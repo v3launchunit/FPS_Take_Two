@@ -8,8 +8,8 @@ public abstract class Pickup : InteractableObject
     [SerializeField] protected string    _pickupFailText;
     [SerializeField] protected Color     _pickupFlashColor = Color.white;
     [SerializeField] private   float     _pickupSpinSpeed     = 36;
-    // [SerializeField] private   float     _pickupBobAmplitude  = true;
-    // [SerializeField] private   float     _pickupBobFrequency  = true;
+    // [SerializeField] private   float     _pickupBobAmplitude  = 1;
+    // [SerializeField] private   float     _pickupBobFrequency  = 1;
     // [SerializeField] private   LayerMask _pickupSnapTo;
 
     void Update()
@@ -23,8 +23,21 @@ public abstract class Pickup : InteractableObject
         // if 
         // (
         //     _pickupSnapTo != 0 &&
-        //     !Physics.Raycast(transform.position, Vector3.down, 0.5f, _pickupSnapTo)
+        //     Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1024, _pickupSnapTo)
         // )
-        //     transform.position -= Vector3.down * 0.5f;
+        //     transform.position = _pickupBobAmplitude != 0 ? 
+        //         hit.point + 
+        //         (
+        //             Vector3.up * 
+        //             (
+        //                 _pickupBobAmplitude * 
+        //                 Mathf.Sin
+        //                 (
+        //                     Time.time * 
+        //                     _pickupBobFrequency
+        //                 )
+        //             )
+        //         ) : 
+        //         hit.point;
     }
 }

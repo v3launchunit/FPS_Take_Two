@@ -31,7 +31,7 @@ public class Hitscan : OwnedProjectile
     // Start is called before the first frame update
     void Start()
     {
-        _scanStartingPosition = _targetCrosshairs ? Camera.main.transform.position : _targetTarget ? _owner.position : transform.position;
+        _scanStartingPosition = _targetCrosshairs ? Camera.main.transform.position : (_targetTarget ? _owner.position : transform.position);
         Scan();
         
         // if (_explosion != null)

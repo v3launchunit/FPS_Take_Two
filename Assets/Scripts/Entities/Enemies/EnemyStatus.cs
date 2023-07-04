@@ -12,6 +12,7 @@ public class EnemyStatus : Status
     {
         _movement = gameObject.GetComponent<EnemyMovement>();
     }
+
     public override int Damage(int damage, float multiplier)
     {
         _health -= Mathf.RoundToInt(damage * multiplier);

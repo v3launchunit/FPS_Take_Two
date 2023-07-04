@@ -295,21 +295,21 @@ MonoBehaviour:
   _icon: {fileID: 3154920569161208577, guid: cce844417fdea21418d4ea075d01eccb, type: 3}
   _crosshairs: {fileID: -2032614619, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 2
-  _index: 2
+  _index: 0
   _mainBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
   _mainFireSound: {fileID: 4756592628764114648, guid: 1c18ad7fcb5d56d48983245322e2d3d8,
     type: 3}
-  _mainBurst: 2
-  _mainSpread: 3
-  _mainAmmoMax: 150
+  _mainBurst: 1
+  _mainSpread: 7.5
+  _mainAmmoMax: 200
   _mainAmmo: 50
   _sharedMainAmmo: -1
   _mainAutomatic: 1
   _mainRecoil: 0
-  _mainCamRecoil: 1
+  _mainCamRecoil: 3
   _altBullet: {fileID: 6382156033032169073, guid: 954a85ba3c3d5d042ae24eb5d384d3cb,
     type: 3}
   _altMuzzleFlash: {fileID: 0}
@@ -317,13 +317,16 @@ MonoBehaviour:
     type: 3}
   _altBurst: 1
   _altSpread: 0
-  _altAmmoMax: 5
+  _altAmmoMax: 10
   _altAmmo: 5
   _sharedAltAmmo: -1
   _altAutomatic: 0
   _altRecoil: 0
   _altCamRecoil: 5
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 4474095313810178510, guid: dd19d66210d2419498e7d24f31614ae5,
+    type: 3}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0
 --- !u!4 &5200650026992548338 stripped

@@ -5,11 +5,12 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
-    [SerializeField] protected float               _riseGrav         =  -9.81f;
-    [SerializeField] protected float               _fallGrav         = -19.62f;
-    [SerializeField] protected float               _cyoteTime        =   0.25f;
-    [SerializeField] protected float               _knockbackFalloff =   0.975f;
-    [SerializeField] protected float               _groundDistance = 0.4f;
+    [SerializeField] protected float               _riseGrav               =  -9.81f;
+    [SerializeField] protected float               _fallGrav               = -19.62f;
+    [SerializeField] protected float               _cyoteTime              =   0.25f;
+    [SerializeField] protected float               _knockbackFalloffAir    =   0.975f;
+    [SerializeField] protected float               _knockbackFalloffGround =   0.9f;
+    [SerializeField] protected float               _groundDistance         =   0.4f;
     [SerializeField] protected LayerMask           _groundMask;
     [SerializeField] protected CharacterController _controller;
 
@@ -62,7 +63,7 @@ public class Movement : MonoBehaviour
     void HandleKnockback()
     {
         _velocity  += _knockback;
-        _knockback *= _knockbackFalloff;
+        _knockback *= _grounded ? _knockbackFalloffGround : _knockbackFalloffAir;
 
         if (_knockback.magnitude < 0.5f)
             _knockback = Vector3.zero;

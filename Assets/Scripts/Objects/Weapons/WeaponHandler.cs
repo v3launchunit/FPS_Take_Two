@@ -30,6 +30,7 @@ public class WeaponHandler : WeaponBase
     [SerializeField] private float      _altRecoil     = 0;
     [SerializeField] private float      _altCamRecoil  = 5;
     
+    [SerializeField] private GameObject _foleySound;
     [SerializeField] private GameObject _spinBullet;
     [SerializeField] private bool       _singleBullet = false;
     
@@ -301,6 +302,11 @@ public class WeaponHandler : WeaponBase
         GetComponentInParent<Movement>().Knockback(transform.forward * _mainRecoil);
         GetComponentInParent<PlayerMovement>().CamRecoil(_mainCamRecoil);
         _busy = true;
+    }
+
+    public void Foley()
+    {
+        Instantiate(_foleySound);
     }
 
     public override int  MainAmmo       { get => _mainAmmo; }

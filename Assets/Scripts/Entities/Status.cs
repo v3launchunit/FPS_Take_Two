@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Status : MonoBehaviour
 {
-    [SerializeField] protected int      _maxHealth    = 100;
-    [SerializeField] protected int      _health       = 100;
-    [SerializeField] private GameObject _bloodSpray;
-    [SerializeField] private GameObject _deathExplosion;
-    [SerializeField] private int        _gibThreshold = 10;
-    [SerializeField] private GameObject _gibExplosion;
-    [SerializeField] private Transform  _explosionPos;
-    [SerializeField] private bool       _organic = false;
+    [SerializeField] protected int        _maxHealth    = 100;
+    [SerializeField] protected int        _health       = 100;
+    [SerializeField] protected GameObject _bloodSpray;
+    [SerializeField] private GameObject   _deathExplosion;
+    [SerializeField] private int          _gibThreshold = 10;
+    [SerializeField] private GameObject   _gibExplosion;
+    [SerializeField] private Transform    _explosionPos;
+    [SerializeField] private GameObject[] _loot;
+    [SerializeField] private bool         _organic = false;
 
     private bool _isDead = false;
 
@@ -58,6 +59,12 @@ public class Status : MonoBehaviour
                 Instantiate(_deathExplosion, _explosionPos.position, _explosionPos.rotation);
             if (_deathExplosion != null)
                 Instantiate(_deathExplosion, _explosionPos.position, _explosionPos.rotation);
+            
+            if (_loot.Length != 0)
+            {
+                Instantiate(_loot[Random.Range(0, _loot.Length)], _explosionPos.position, _explosionPos.rotation);
+            }
+            
             Destroy(gameObject);
         }
     }

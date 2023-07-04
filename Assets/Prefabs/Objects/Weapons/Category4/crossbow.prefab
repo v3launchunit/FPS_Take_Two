@@ -727,13 +727,14 @@ MonoBehaviour:
   _index: 2
   _bullet: {fileID: 3553420234629529280, guid: 20255e96370239546966a7a4bce60ccd, type: 3}
   _muzzleFlash: {fileID: 0}
-  _damageBase: 15
+  _damageBase: 25
   _chargeDelay: 0.1
   _ammoMax: 100
   _ammo: 100
   _sharedAmmo: 1
   _automatic: 0
-  _spinBullet: {fileID: 0}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _busy: 0
 --- !u!114 &8721066332781903996
 MonoBehaviour:
@@ -775,6 +776,7 @@ MonoBehaviour:
   _altAutomatic: 0
   _altRecoil: 0
   _altCamRecoil: 5
+  _foleySound: {fileID: 0}
   _spinBullet: {fileID: 0}
   _singleBullet: 0
   _busy: 0

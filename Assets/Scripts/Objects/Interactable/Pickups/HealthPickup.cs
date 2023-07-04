@@ -11,7 +11,12 @@ public class HealthPickup : Pickup
 
     public override void OnInteract(GameObject other)
     {
-        if (!_armorPickup && other.GetComponentInParent<Status>().Heal(_amount, _canOverheal))
+        if 
+        (
+            (!_armorPickup && other.GetComponentInParent<Status>().Heal(_amount, _canOverheal)) 
+            ||
+            (_armorPickup  && other.GetComponentInParent<PlayerStatus>().AddArmor(_amount))
+        )
         {
             if (_interactSound != null)
                 Instantiate(_interactSound, transform.position, transform.rotation);

@@ -106,7 +106,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 2
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 3233920215341471519}
   scalingMode: 1
   randomSeed: 0
@@ -2135,12 +2135,12 @@ ParticleSystem:
         m_RotationOrder: 4
     inWorldSpace: 0
   InheritVelocityModule:
-    enabled: 0
+    enabled: 1
     m_Mode: 0
     m_Curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4992,7 +4992,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 2
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 3233920215341471519}
   scalingMode: 1
   randomSeed: 0
@@ -7021,12 +7021,12 @@ ParticleSystem:
         m_RotationOrder: 4
     inWorldSpace: 0
   InheritVelocityModule:
-    enabled: 0
+    enabled: 1
     m_Mode: 0
     m_Curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -10079,7 +10079,10 @@ MonoBehaviour:
   _altAutomatic: 1
   _altRecoil: 5
   _altCamRecoil: 15
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+    type: 3}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0
 --- !u!4 &3233920215341471519 stripped

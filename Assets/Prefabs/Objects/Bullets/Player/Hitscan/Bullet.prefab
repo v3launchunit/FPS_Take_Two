@@ -35,6 +35,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &7045430934666532089
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,7 +99,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 0.5019608, a: 0}
-      key1: {r: 1, g: 1, b: 0.5019608, a: 1}
+      key1: {r: 1, g: 1, b: 0.5019608, a: 0.5019608}
       key2: {r: 1, g: 1, b: 0.5019608, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -122,16 +123,20 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &8691877518198904213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +158,8 @@ MonoBehaviour:
   _fadeDelay: 0.05
   _launchFactorMovement: 0.25
   _launchFactorRigidbody: -10
+  _targetCrosshairs: 1
+  _targetTarget: 0
   _layerMask:
     serializedVersion: 2
     m_Bits: 1865

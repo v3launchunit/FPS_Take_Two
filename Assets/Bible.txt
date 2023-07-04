@@ -148,16 +148,21 @@
     All-Seeing Eye     - Fullbright, see enemies through walls
 
 ########## Enemies ##########
-    Critter
+    Canary
         Tough
         Medium
-        Melee - Claws
+        Melee - Pickaxe
    
     Creature
         Medium
         Medium
         Primary - Fireball
         Melee   - Claws
+    
+    Eyeball
+        Weak
+        Fast (flying)
+        Primary - Fireball
     
     Pinkerton
         Weak
@@ -177,6 +182,11 @@
         Secondary - Grenades
         Melee     - Bayonet
 
+    Rocketeer
+        Weak
+        Slow
+        Primary - Homing Rockets
+
 ########## Plot Thoughts ##########
     Act I
         Setting: Countryside
@@ -190,10 +200,10 @@
             RPG
         
         Enemies:
-            Zombie
-            Lumberjack
-            Hunter
-            Hammer
+            Canary
+            Creature
+            Pinkerton
+            Eyeball
             Hound
 
         Levels:
@@ -292,4 +302,5 @@
 ########## Credits ##########
     Stock Textures (terrain):       https://www.the3rdsequence.com/texturedb under http://creativecommons.org/licenses/by/4.0/
     Stock Textures (terrain, gibs): https://www.texturecan.com               under https://creativecommons.org/publicdomain/zero/1.0/
+    Stock Textures (water):         https://www.cadhatch.com/seamless-water-textures?pgid=kw6kcyt6-f107bf01-1690-4994-853c-9e21bd6506b8
     Stock Sounds (gunshots):        free sound effects from https://www.fesliyanstudios.com

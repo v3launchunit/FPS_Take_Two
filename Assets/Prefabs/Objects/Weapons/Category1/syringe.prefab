@@ -421,7 +421,8 @@ MonoBehaviour:
   _plunger: {fileID: 4015086524284499186}
   _plungerEmptyPos: {x: 0, y: 0.1, z: 0}
   _plungerFullPos: {x: 0, y: 4, z: 0}
-  _spinBullet: {fileID: 0}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _busy: 0
 --- !u!1 &7654917186464593233
 GameObject:

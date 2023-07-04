@@ -9,9 +9,10 @@ public class EnemyAttackHandler : MonoBehaviour
     [SerializeField] private int        _burst        =  1;
     [SerializeField] private float      _spread       =  0;
     [SerializeField] private int        _fireCooldown =  1;
-    [SerializeField] private float     _sight         = 32;
+    [SerializeField] private float      _sight         = 32;
     [SerializeField] private GameObject _meleeBullet;
-    [SerializeField] private float     _meleeRange    =  3;
+    [SerializeField] private float      _meleeRange    =  3;
+    [SerializeField] private GameObject _foleySound;
 
     private float         _cooldown;
     private Transform     _spawner;
@@ -20,7 +21,7 @@ public class EnemyAttackHandler : MonoBehaviour
 
     void Start()
     {
-        _cooldown = _fireCooldown;
+        _cooldown = Random.Range(_fireCooldown - 0.5f, _fireCooldown + 0.5f);
         _spawner  = Utils.FindRecursive(transform, "Spawner");
         _movement = gameObject.GetComponent<EnemyMovement>();
         _target   = _movement.Target;
@@ -45,8 +46,9 @@ public class EnemyAttackHandler : MonoBehaviour
             transform.LookAt(_target);
             if (_meleeBullet != null && Vector3.Distance(transform.position, _target.position) <= _meleeRange)
                 gameObject.GetComponent<Animator>().SetTrigger("Melee");
-            else
+            else if (_bullet != null)
                 gameObject.GetComponent<Animator>().SetTrigger("Fire");
+            else return;
             _movement.Busy = true;
         }
 
@@ -84,12 +86,17 @@ public class EnemyAttackHandler : MonoBehaviour
         if (_meleeBullet != null)
         {
             // Instantiate(_bullet, _spawner.transform.position, _spawner.transform.rotation);
-            var b = Instantiate(_meleeBullet, _spawner.transform.position, _spawner.transform.rotation);
+            var b = Instantiate(_meleeBullet, _spawner.transform.position, transform.rotation);
 
             if (b.TryGetComponent(out OwnedProjectile proj))
                 proj.Owner = transform;
         }
 
         _cooldown = _fireCooldown;
+    }
+
+    public void Foley()
+    {
+        Instantiate(_foleySound);
     }
 }

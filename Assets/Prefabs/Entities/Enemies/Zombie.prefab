@@ -178,7 +178,8 @@ MonoBehaviour:
   _riseGrav: -9.81
   _fallGrav: -19.62
   _cyoteTime: 0.25
-  _knockbackFalloff: 0.975
+  _knockbackFalloffAir: 0.975
+  _knockbackFalloffGround: 0.9
   _groundDistance: 0.4
   _groundMask:
     serializedVersion: 2
@@ -209,7 +210,8 @@ MonoBehaviour:
   _sight: 32
   _meleeBullet: {fileID: 3445455089518735197, guid: 6b076b5f1dba1674ebbcb337cd408633,
     type: 3}
-  _meleeRange: 3
+  _meleeRange: 1.5
+  _foleySound: {fileID: 0}
   _target: {fileID: 0}
 --- !u!95 &6236161748059212587
 Animator:
@@ -245,8 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b88a1aa26cfa64ab2d69c7940ffd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 90
-  _health: 90
+  _maxHealth: 60
+  _health: 60
   _bloodSpray: {fileID: 0}
   _deathExplosion: {fileID: 1326755823733274519, guid: 639ac572677ef1c40b2cbe500c1150d7,
     type: 3}
@@ -254,6 +256,9 @@ MonoBehaviour:
   _gibExplosion: {fileID: 5617390132151680554, guid: 8fc996495bce2c249b442d2356367ef1,
     type: 3}
   _explosionPos: {fileID: 0}
+  _loot:
+  - {fileID: 307637916519203342, guid: 13922fa6ee58bfb44b3f4ac448aa5e8c, type: 3}
+  - {fileID: 8284978486729852067, guid: 4c1d89d33c6ab4248bf035c2a275702d, type: 3}
   _organic: 1
 --- !u!1 &6236161748595772147
 GameObject:

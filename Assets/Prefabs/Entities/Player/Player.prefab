@@ -61,7 +61,7 @@ MonoBehaviour:
   _selectedCategory: 1
   _selectedIndex: 00000000000000000000000000000000000000000000000000000000
   _sharedAmmoMax: 6400000064000000
-  _sharedAmmo: 0f00000064000000
+  _sharedAmmo: 0f00000000000000
 --- !u!1 &544714776576893292
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
+  m_VolumeFrameworkUpdateModeOption: 1
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -281,7 +281,7 @@ Light:
   m_Intensity: 10
   m_Range: 50
   m_SpotAngle: 45
-  m_InnerSpotAngle: 22.5
+  m_InnerSpotAngle: 40
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -309,7 +309,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 2800000, guid: 146cecaaa7d3bc045b724b17c846076b, type: 3}
+  m_Cookie: {fileID: 2800000, guid: cd0f4d3df1e0e6745a447e1b70acb01b, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 1
@@ -499,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544714777858504537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0.135, z: 0.6875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544714778099091396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0.135, z: 0.6875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -721,7 +721,8 @@ MonoBehaviour:
   _riseGrav: -9.81
   _fallGrav: -19.62
   _cyoteTime: 0.25
-  _knockbackFalloff: 0.975
+  _knockbackFalloffAir: 0.975
+  _knockbackFalloffGround: 0.9
   _groundDistance: 0.5
   _groundMask:
     serializedVersion: 2
@@ -751,12 +752,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _health: 100
+  _bloodSpray: {fileID: 0}
   _deathExplosion: {fileID: 1109266680002391311, guid: a11f229bacb591545a5ade4eae1b0e98,
     type: 3}
   _gibThreshold: 10
   _gibExplosion: {fileID: 1109266680002391311, guid: a11f229bacb591545a5ade4eae1b0e98,
     type: 3}
   _explosionPos: {fileID: 0}
+  _loot: []
   _organic: 0
   _maxArmor: 100
   _armor: 25
@@ -1076,7 +1079,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.20000005
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
@@ -1117,6 +1120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8411699214803250028, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -6433418245104512094, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
@@ -1159,6 +1167,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5232627393660835655, guid: 15834c6199c30c143b2e5f87d70a9950,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
+    - target: {fileID: 5512725075856658511, guid: 15834c6199c30c143b2e5f87d70a9950,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1260,7 +1273,10 @@ MonoBehaviour:
   _altAutomatic: 0
   _altRecoil: 0
   _altCamRecoil: 5
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 4474095313810178510, guid: 500dfdff48737ed4193522a57d8f945f,
+    type: 3}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0
 --- !u!1001 &544714777904676244
@@ -1432,7 +1448,8 @@ MonoBehaviour:
   _mainBullet: {fileID: 3445455089518735197, guid: 69d041d3e8119dd4f926e0358da12b46,
     type: 3}
   _mainMuzzleFlash: {fileID: 0}
-  _mainFireSound: {fileID: 0}
+  _mainFireSound: {fileID: 4756592628764114648, guid: ddcee8b86ae6418458d188c9f9ff335a,
+    type: 3}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: -1
@@ -1452,6 +1469,9 @@ MonoBehaviour:
   _altAutomatic: 0
   _altRecoil: 0
   _altCamRecoil: 0
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 4756592628764114648, guid: ddcee8b86ae6418458d188c9f9ff335a,
+    type: 3}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0

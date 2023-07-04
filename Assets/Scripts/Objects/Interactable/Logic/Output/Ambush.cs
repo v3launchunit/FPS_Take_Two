@@ -16,7 +16,9 @@ public class Ambush : LogicOutput
 
     public override void ToggleActive(bool on)
     {
-        _on = _oneWay ? on : true;
+        _on = _oneWay ? true : on;
+
+        print(_on);
         
         for (int i = 0; i < transform.childCount; i++)
         {

@@ -67,6 +67,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 79ab4d5d250f8194aad700be1665d294,
@@ -180,6 +181,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507437168}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1730114137}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1843966851}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1843966850}
   m_SourcePrefab: {fileID: 100100000, guid: 79ab4d5d250f8194aad700be1665d294, type: 3}
 --- !u!4 &3855199132843228549 stripped
 Transform:
@@ -195,7 +215,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1843966851
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -209,6 +229,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -230,16 +251,16 @@ MonoBehaviour:
   _icon: {fileID: 3692014984911228537, guid: 4e8edec71a0888d4b9a3f95d08243fa3, type: 3}
   _crosshairs: {fileID: 967470931, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
   _category: 2
-  _index: 0
+  _index: 2
   _mainBullet: {fileID: 2730727309722998590, guid: 26bfa3123d3318241b1f3f0271701823,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
-  _mainFireSound: {fileID: 4756592628764114648, guid: 1c18ad7fcb5d56d48983245322e2d3d8,
+  _mainFireSound: {fileID: 4756592628764114648, guid: b5e6b4b262a1ede42aed078fb2776964,
     type: 3}
   _mainBurst: 1
-  _mainSpread: 7.5
-  _mainAmmoMax: 200
+  _mainSpread: 5
+  _mainAmmoMax: 100
   _mainAmmo: 0
   _sharedMainAmmo: -1
   _mainAutomatic: 1
@@ -253,12 +274,14 @@ MonoBehaviour:
     type: 3}
   _altBurst: 1
   _altSpread: 0
-  _altAmmoMax: 15
+  _altAmmoMax: 5
   _altAmmo: 0
   _sharedAltAmmo: -1
   _altAutomatic: 0
   _altRecoil: 3
   _altCamRecoil: 15
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 0}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0

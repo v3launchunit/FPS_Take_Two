@@ -620,12 +620,17 @@ MonoBehaviour:
   _shootInteract: 0
   _interactCrosshairs: {fileID: 0}
   _interactTooltip: 
-  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+  _interactSound: {fileID: 4756592628764114648, guid: 46f5201c62b9b6340a7617100fd37d7e,
     type: 3}
   _pickupText: Snagged a Syringe!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
   _pickupSpinSpeed: 36
+  _pickupBobAmplitude: 1
+  _pickupBobFrequency: 1
+  _pickupSnapTo:
+    serializedVersion: 2
+    m_Bits: 0
   _weapon: {fileID: 7420475668016536434, guid: 2c5898717b3a7b44eaaba4c17a76f8b1, type: 3}
   _startingMainAmmo: 0
   _startingAltAmmo: 0

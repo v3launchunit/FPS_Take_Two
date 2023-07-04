@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 136f98370d90e8844a58e5a6d8898ba6,
@@ -67,7 +68,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Molotov
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911945014}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911945015}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4889876010460642569}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8303228305860189788}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 136f98370d90e8844a58e5a6d8898ba6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1911945013}
   m_SourcePrefab: {fileID: 100100000, guid: 136f98370d90e8844a58e5a6d8898ba6, type: 3}
 --- !u!1 &6382156033032169073 stripped
 GameObject:
@@ -82,10 +111,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6382156033032169073}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -98,10 +138,18 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6382156033032169073}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5c455b608a390994f95acdf43ad8f8c0, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.125, y: 0.125, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &4889876010460642569
@@ -322,6 +370,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -351,6 +400,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     startSize:
@@ -672,6 +722,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -1401,6 +1452,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -1430,6 +1482,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
@@ -3650,6 +3703,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -3679,6 +3733,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
@@ -4056,6 +4111,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -4098,6 +4154,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -4127,6 +4184,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     widthOverTrail:
@@ -4214,6 +4272,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -4243,6 +4302,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   CustomDataModule:
@@ -4281,6 +4341,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -4310,6 +4371,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel0: Color
@@ -4563,6 +4625,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -4592,6 +4655,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel1: Color
@@ -4898,9 +4962,11 @@ MonoBehaviour:
   _damage: 60
   _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
     type: 3}
+  _impactSound: {fileID: 4756592628764114648, guid: f361cdc2ce257d74080275a7f5db9d6e,
+    type: 3}
   _stickyExplosion: 0
   _bulletSpeed: 50
-  _lifetime: 5
+  _lifetime: 3
   _destroyOnImpact: 0
   _explodeOnDecay: 1
   _launchFactor: 1
@@ -4909,4 +4975,6 @@ MonoBehaviour:
   _mask:
     serializedVersion: 2
     m_Bits: 5961
+  _piercer: 0
   _bouncy: 1
+  _manualDetonate: 0

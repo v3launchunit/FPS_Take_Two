@@ -5265,7 +5265,7 @@ MonoBehaviour:
     type: 3}
   _mainBurst: 1
   _mainSpread: 0
-  _mainAmmoMax: 4
+  _mainAmmoMax: 2
   _mainAmmo: 15
   _sharedMainAmmo: 1
   _mainAutomatic: 1
@@ -5283,7 +5283,9 @@ MonoBehaviour:
   _altAutomatic: 0
   _altRecoil: 0
   _altCamRecoil: 0
-  _spinBullet: {fileID: 0}
+  _foleySound: {fileID: 0}
+  _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
+    type: 3}
   _singleBullet: 0
   _busy: 0
 --- !u!4 &1997255748647159167 stripped

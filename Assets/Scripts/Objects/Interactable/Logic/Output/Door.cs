@@ -38,7 +38,7 @@ public class Door : LogicOutput
     public override void ToggleActive(bool on)
     {
         _on = on;
-        _targetPosition = (on) ? _onPosition : _offPosition;
-        _targetRotation = (on) ? _onRotation : _offRotation;
+        _targetPosition = (on) ? _onPosition + _offPosition : _offPosition;
+        _targetRotation = (on) ? _onRotation                : _offRotation;
     }
 }

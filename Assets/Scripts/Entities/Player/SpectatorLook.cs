@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpectatorLook : MonoBehaviour
 {
@@ -26,5 +27,11 @@ public class SpectatorLook : MonoBehaviour
         // transform.position += moveX + moveZ;
         
         Time.timeScale = Mathf.SmoothDamp(Time.timeScale, 0, ref _timeScaleVel, 1);
+
+        if (Input.anyKeyDown)
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(gameObject.scene.name);
+        }
     }
 }
