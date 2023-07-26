@@ -40,7 +40,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4336538394976828037
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -54,6 +54,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -67,9 +68,17 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4336538394976828091}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 0.65
   m_Center: {x: 0, y: 0, z: -0.5}
 --- !u!54 &4336538394976828039
@@ -79,10 +88,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4336538394976828091}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -101,25 +121,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 300
-  _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
+  _explosion: {fileID: 151787894086565077, guid: 9a0acdde6527e584da24f6d40857b155,
     type: 3}
+  _impactSound: {fileID: 0}
   _stickyExplosion: 0
-  _bulletSpeed: 200
-  _lifetime: 60
+  _bulletSpeed: 40
+  _lifetime: 3
   _destroyOnImpact: 1
-  _explodeOnDecay: 0
+  _explodeOnDecay: 1
   _launchFactor: 1
   _targetCrosshairs: 1
   _targetTarget: 0
   _mask:
     serializedVersion: 2
     m_Bits: 1865
+  _piercer: 0
   _bouncy: 0
+  _manualDetonate: 0
 --- !u!1001 &4336538395887072495
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4336538394976828090}
     m_Modifications:
     - target: {fileID: 1281927435497042780, guid: c6fd698f19330bf40b91046b8cf8f820,
@@ -198,6 +222,9 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6fd698f19330bf40b91046b8cf8f820, type: 3}
 --- !u!4 &4622542973266115099 stripped
 Transform:
@@ -210,6 +237,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4336538394976828090}
     m_Modifications:
     - target: {fileID: 1281927435497042780, guid: c6fd698f19330bf40b91046b8cf8f820,
@@ -288,6 +316,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6fd698f19330bf40b91046b8cf8f820, type: 3}
 --- !u!4 &4622542973364811790 stripped
 Transform:
@@ -300,6 +331,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4336538394976828090}
     m_Modifications:
     - target: {fileID: 1281927435497042780, guid: c6fd698f19330bf40b91046b8cf8f820,
@@ -378,6 +410,9 @@ PrefabInstance:
       value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6fd698f19330bf40b91046b8cf8f820, type: 3}
 --- !u!4 &4622542973159221056 stripped
 Transform:

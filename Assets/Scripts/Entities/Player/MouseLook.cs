@@ -9,15 +9,20 @@ public class MouseLook : MonoBehaviour
     [SerializeField] private float     _mouseSensitivity = 100f;
     [SerializeField] private float     _fovDesired       =  60f;
 
-    private float _sensitivityMult = 1f;
-    private float _pitch           = 0f;
-    private float _pitchClampVel   = 0f;
-    private Ray   _ray;
+    private float  _sensitivityMult = 1f;
+    private float  _pitch           = 0f;
+    private float  _pitchClampVel   = 0f;
+    private Ray    _ray;
+    private Camera _handCam;
 
     void Start()
     {
         // Camera.main.fieldOfView = Globals.SETTINGS_FOV_DESIRED;
         Cursor.lockState        = CursorLockMode.Locked;
+
+        _handCam = transform.Find("HandCam").GetComponent<Camera>();
+        _handCam.targetTexture.width  = Screen.width;
+        _handCam.targetTexture.height = Screen.height;
     }
 
     // Update is called once per frame
@@ -50,8 +55,8 @@ public class MouseLook : MonoBehaviour
             // Debug.Log(target);
             // Debug.Log(targetInteract);
         }
-
-        transform.Find("HandCam").GetComponent<Camera>().fieldOfView = GetComponent<Camera>().fieldOfView;
+        
+        _handCam.fieldOfView = GetComponent<Camera>().fieldOfView;
     }
 
     public float FovDesired       { get => _fovDesired; }

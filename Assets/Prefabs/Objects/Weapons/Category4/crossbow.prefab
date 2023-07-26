@@ -723,6 +723,8 @@ MonoBehaviour:
   _id: Crossbow
   _icon: {fileID: 1993195622645355348, guid: 34afc83479d00ad4fb9c888f7b229bfd, type: 3}
   _crosshairs: {fileID: 1623719172, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 708565421, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 3
   _index: 2
   _bullet: {fileID: 3553420234629529280, guid: 20255e96370239546966a7a4bce60ccd, type: 3}
@@ -751,6 +753,8 @@ MonoBehaviour:
   _id: Crossbow
   _icon: {fileID: 1993195622645355348, guid: 34afc83479d00ad4fb9c888f7b229bfd, type: 3}
   _crosshairs: {fileID: -1282175947, guid: f1555c972094a0546b8019be3c4b5a4f, type: 3}
+  _mainAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 3
   _index: 1
   _mainBullet: {fileID: 7763596665089330956, guid: b86a0a610d0470445ae9c8683ac9d0ce,

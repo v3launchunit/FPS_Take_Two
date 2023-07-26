@@ -6,12 +6,12 @@ public class EnemyStatus : Status
 {
     [SerializeField] private float _flinchChance;
 
-    private EnemyMovement _movement;
+    // private EnemyMovement _movement;
 
-    void Start()
-    {
-        _movement = gameObject.GetComponent<EnemyMovement>();
-    }
+    // void Start()
+    // {
+    //     _movement = gameObject.GetComponent<EnemyMovement>();
+    // }
 
     public override int Damage(int damage, float multiplier)
     {

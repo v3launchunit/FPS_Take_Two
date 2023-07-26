@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6652725513331149018, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -5922622823359544968, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_Layer
@@ -145,11 +150,21 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5215299815803115452, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -3862753553070925569, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3862753553070925569, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: 635547659545568360, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_Layer
@@ -180,6 +195,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5232627393660835655, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -250,6 +270,8 @@ MonoBehaviour:
   _id: Nailgun
   _icon: {fileID: 3692014984911228537, guid: 4e8edec71a0888d4b9a3f95d08243fa3, type: 3}
   _crosshairs: {fileID: 967470931, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: -1185236447, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 1648379220, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 2
   _index: 2
   _mainBullet: {fileID: 2730727309722998590, guid: 26bfa3123d3318241b1f3f0271701823,

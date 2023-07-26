@@ -309,16 +309,31 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6019619690061194790, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     - target: {fileID: 7021475828731712600, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021475828731712600, guid: 6780b85e6ca8e804792771ab8db52970,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
+    - target: {fileID: 7202271454713460447, guid: 6780b85e6ca8e804792771ab8db52970,
         type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7202271454713460447, guid: 6780b85e6ca8e804792771ab8db52970,
         type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 80cf7f9c4080f6f4383361c37a358f97, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -393,18 +408,20 @@ MonoBehaviour:
   _id: Big Iron
   _icon: {fileID: 6287914305384751006, guid: 71d0b479144d2cf4ba4a062b8b53d169, type: 3}
   _crosshairs: {fileID: -2072059990, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: -769682266, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 708565421, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 3
   _index: 0
   _mainBullet: {fileID: 3445455089518735197, guid: fc981d65999451f4bbd73ec5f08cffb1,
     type: 3}
   _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
     type: 3}
-  _mainFireSound: {fileID: 8525948762005938277, guid: c7f825259b2976941b93bb086dfb19b0,
+  _mainFireSound: {fileID: 4756592628764114648, guid: b5e6b4b262a1ede42aed078fb2776964,
     type: 3}
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: 30
-  _mainAmmo: 5
+  _mainAmmo: 0
   _sharedMainAmmo: -1
   _mainAutomatic: 1
   _mainRecoil: 0

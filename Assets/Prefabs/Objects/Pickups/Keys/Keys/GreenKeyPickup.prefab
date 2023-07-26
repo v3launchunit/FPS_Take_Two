@@ -103,8 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
   _interactSound: {fileID: 4756592628764114648, guid: 46f5201c62b9b6340a7617100fd37d7e,
     type: 3}
   _pickupText: Got the GREEN key!
@@ -146,7 +147,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_Intensity: 1
-  m_Range: 3
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

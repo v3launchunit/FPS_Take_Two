@@ -8,11 +8,12 @@ public class EnemyAttackHandler : MonoBehaviour
     [SerializeField] private GameObject _muzzleFlash;
     [SerializeField] private int        _burst        =  1;
     [SerializeField] private float      _spread       =  0;
-    [SerializeField] private int        _fireCooldown =  1;
+    [SerializeField] private float      _fireCooldown =  1;
     [SerializeField] private float      _sight         = 32;
     [SerializeField] private GameObject _meleeBullet;
     [SerializeField] private float      _meleeRange    =  3;
     [SerializeField] private GameObject _foleySound;
+    [SerializeField] private LayerMask  _sightMask;
 
     private float         _cooldown;
     private Transform     _spawner;
@@ -37,18 +38,17 @@ public class EnemyAttackHandler : MonoBehaviour
             _target != null &&
             !_movement.Busy &&
             (_cooldown <= 0 || (_meleeBullet != null && Vector3.Distance(transform.position, _target.position) <= _meleeRange))
-            // && 
-            // Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, _sight) && 
-            // hit.transform == _target
+            && 
+            !Physics.Linecast(transform.position, _target.position, _sightMask)
         )
         {
             // print($"{_target} spotted");
-            transform.LookAt(_target);
             if (_meleeBullet != null && Vector3.Distance(transform.position, _target.position) <= _meleeRange)
                 gameObject.GetComponent<Animator>().SetTrigger("Melee");
             else if (_bullet != null)
                 gameObject.GetComponent<Animator>().SetTrigger("Fire");
             else return;
+            transform.LookAt(_target);
             _movement.Busy = true;
         }
 
@@ -57,7 +57,7 @@ public class EnemyAttackHandler : MonoBehaviour
 
     public void Fire()
     {
-        transform.LookAt(_target);
+        // transform.LookAt(_target);
 
         if (_muzzleFlash != null)
         {
@@ -81,7 +81,7 @@ public class EnemyAttackHandler : MonoBehaviour
     }
     public void Melee()
     {
-        transform.LookAt(_target);
+        // transform.LookAt(_target);
 
         if (_meleeBullet != null)
         {

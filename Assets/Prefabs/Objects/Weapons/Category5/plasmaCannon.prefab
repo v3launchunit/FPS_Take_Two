@@ -5255,6 +5255,8 @@ MonoBehaviour:
   _id: Plasma Cannon
   _icon: {fileID: 5876239950262260937, guid: 6c6e5f509ea7ddf4580ca06fcf85e53a, type: 3}
   _crosshairs: {fileID: 1986802575, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 4
   _index: 0
   _mainBullet: {fileID: 8937649536016436938, guid: c6fd698f19330bf40b91046b8cf8f820,
@@ -5265,15 +5267,15 @@ MonoBehaviour:
     type: 3}
   _mainBurst: 1
   _mainSpread: 0
-  _mainAmmoMax: 2
+  _mainAmmoMax: 4
   _mainAmmo: 15
   _sharedMainAmmo: 1
   _mainAutomatic: 1
   _mainRecoil: 0
   _mainCamRecoil: 5
-  _altBullet: {fileID: 4752454774002749121, guid: 6f8361dc6a91d6f4fa4950202ca57b00,
+  _altBullet: {fileID: 0}
+  _altMuzzleFlash: {fileID: 4752454774002749121, guid: 6f8361dc6a91d6f4fa4950202ca57b00,
     type: 3}
-  _altMuzzleFlash: {fileID: 0}
   _altFireSound: {fileID: 0}
   _altBurst: 1
   _altSpread: 0

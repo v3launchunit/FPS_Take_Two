@@ -29,9 +29,9 @@ public class Door : LogicOutput
 
     void Update()
     {
-        transform.position    = 
-            Vector3.SmoothDamp(transform.position,    _targetPosition, ref _positionVel, _travelTime);
-        transform.eulerAngles = 
+        transform.localPosition    = 
+            Vector3.SmoothDamp(transform.localPosition,    _targetPosition, ref _positionVel, _travelTime);
+        transform.localEulerAngles = 
             Vector3.SmoothDamp(transform.eulerAngles, _targetRotation, ref _rotationVel, _travelTime);
     }
 

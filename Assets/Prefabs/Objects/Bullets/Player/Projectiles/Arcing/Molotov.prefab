@@ -4976,5 +4976,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 5961
   _piercer: 0
-  _bouncy: 1
+  _bouncy: 0
   _manualDetonate: 0

@@ -6,6 +6,7 @@ public class Switch : InteractableObject
 {
     // [SerializeField] private Vector3           _offPosition;
     // [SerializeField] private Vector3           _offRotation;
+    [SerializeField] private bool              _static;
     [SerializeField] private Vector3           _onPosition;
     [SerializeField] private Vector3           _onRotation;
     [SerializeField] private float             _travelTime  =  0.5f;
@@ -39,16 +40,17 @@ public class Switch : InteractableObject
 
     void Update()
     {
-        transform.localPosition    = 
-            Vector3.SmoothDamp(transform.localPosition,    _targetPosition, ref _positionVel, _travelTime);
-        // transform.localEulerAngles = 
-        //     Vector3.SmoothDamp(transform.localEulerAngles, _targetRotation, ref _rotationVel, _travelTime);
-        transform.localEulerAngles = new
-        (
-            Mathf.SmoothDampAngle(transform.localEulerAngles.x, _targetRotation.x, ref _pitchVel, _travelTime),
-            Mathf.SmoothDampAngle(transform.localEulerAngles.y, _targetRotation.y, ref _yawVel,   _travelTime),
-            Mathf.SmoothDampAngle(transform.localEulerAngles.z, _targetRotation.z, ref _rollVel,  _travelTime)
-        );
+        if (!_static)
+        {
+            transform.localPosition    = 
+                Vector3.SmoothDamp(transform.localPosition,    _targetPosition, ref _positionVel, _travelTime);
+            transform.localEulerAngles = new
+            (
+                Mathf.SmoothDampAngle(transform.localEulerAngles.x, _targetRotation.x, ref _pitchVel, _travelTime),
+                Mathf.SmoothDampAngle(transform.localEulerAngles.y, _targetRotation.y, ref _yawVel,   _travelTime),
+                Mathf.SmoothDampAngle(transform.localEulerAngles.z, _targetRotation.z, ref _rollVel,  _travelTime)
+            );
+        }
         
         if (_on && _resetDelay != -1)
         {

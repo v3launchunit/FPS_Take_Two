@@ -11,7 +11,7 @@ public class PlayerStatus : Status
 
     public override int Damage(int damage, float multiplier)
     {
-        FindFirstObjectByType<Flash>().DoFlash(new Color(1, 0, 0, (float)damage/(float)_maxHealth));
+        FindFirstObjectByType<Flash>().DoFlash(new Color(1, 0, 0, 1)); // (float)damage/(float)_maxHealth
 
         // print($"1-{_armor}/{_maxArmor} = {1 - ((float)_armor/(float)_maxArmor)}");
         _health -= Mathf.RoundToInt(damage * multiplier * (1 - ((float)_armor/(float)_maxArmor)));

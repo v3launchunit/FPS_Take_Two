@@ -102,11 +102,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _pickupText: Got a power cell!
+  _pickupText: Got a small power cell! (+1 cells)
   _pickupFailText: 
   _pickupFlashColor: {r: 0, g: 1, b: 1, a: 0.101960786}
   _pickupSpinSpeed: 36

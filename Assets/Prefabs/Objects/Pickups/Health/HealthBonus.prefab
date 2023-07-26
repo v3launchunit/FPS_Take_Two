@@ -36,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2138673969973030129
 MeshFilter:
@@ -123,19 +123,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
-  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
     type: 3}
-  _pickupText: Got a health bonus!
+  _interactTooltip: Take
+  _interactSound: {fileID: 4756592628764114648, guid: f346ee9a04a938c429cdd9d40c7e3855,
+    type: 3}
+  _pickupText: Got a health bonus! (+1% HP)
   _pickupFailText: 
   _pickupFlashColor: {r: 0, g: 1, b: 0, a: 0.101960786}
   _pickupSpinSpeed: 0
-  _pickupBobAmplitude: 1
-  _pickupBobFrequency: 1
-  _pickupSnapTo:
-    serializedVersion: 2
-    m_Bits: 65
   _armorPickup: 0
   _canOverheal: 1
   _amount: 1

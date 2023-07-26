@@ -10050,11 +10050,13 @@ MonoBehaviour:
   _id: Boomstick
   _icon: {fileID: 1729140038815141777, guid: 5706ad30020294d40bf057c86fc9f9b5, type: 3}
   _crosshairs: {fileID: 814677533, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: -1871367101, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 152986729, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 1
   _index: 2
   _mainBullet: {fileID: 3445455089518735197, guid: f6eb901be2f4f8a45b08185e4971ff15,
     type: 3}
-  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
   _mainFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
@@ -10074,7 +10076,7 @@ MonoBehaviour:
   _altBurst: 1
   _altSpread: 0
   _altAmmoMax: 25
-  _altAmmo: 5
+  _altAmmo: 0
   _sharedAltAmmo: -1
   _altAutomatic: 1
   _altRecoil: 5

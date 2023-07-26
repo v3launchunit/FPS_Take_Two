@@ -6,6 +6,7 @@ public class Status : MonoBehaviour
 {
     [SerializeField] protected int        _maxHealth    = 100;
     [SerializeField] protected int        _health       = 100;
+    [SerializeField] protected GameObject _damageSound;
     [SerializeField] protected GameObject _bloodSpray;
     [SerializeField] private GameObject   _deathExplosion;
     [SerializeField] private int          _gibThreshold = 10;
@@ -25,6 +26,8 @@ public class Status : MonoBehaviour
     public int Damage(int damage) { return Damage(damage, 1); }
     public virtual int Damage(int damage, float multiplier) //
     {
+        if (_damageSound != null)
+            Instantiate(_damageSound, transform);
         _health -= Mathf.RoundToInt(damage * multiplier);
         if (_health <= 0)
         {

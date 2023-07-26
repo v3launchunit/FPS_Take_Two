@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3327052318817015134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
+    - target: {fileID: 919132149155446097, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      propertyPath: m_Name
+      value: SawbladePickup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5827784574293302093}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d602468c5565ec140bb6b30725de68e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2241679561492370395}
+  m_SourcePrefab: {fileID: 100100000, guid: d602468c5565ec140bb6b30725de68e9, type: 3}
+--- !u!1 &2516801517289695247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d602468c5565ec140bb6b30725de68e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3327052318817015134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5827784574293302093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516801517289695247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e42360d28733f4e9d3722965398a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _touchInteract: 1
+  _shootInteract: 0
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
+  _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
+    type: 3}
+  _pickupText: Got a Sawblade! (+1 Boomstick Sawblades)
+  _pickupFailText: 
+  _pickupFlashColor: {r: 1, g: 1, b: 0, a: 0.5019608}
+  _pickupSpinSpeed: 36
+  _weapon:
+  - Boomstick
+  _amount: 01000000
+  _isAltAmmo: 01
+  _sharedIndex: 
+  _sharedAmount: 
+--- !u!135 &2241679561492370395
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516801517289695247}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

@@ -120,17 +120,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _pickupText: Got the shells!
+  _pickupText: Got a box of shells! (+15 shells)
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 0.2509804}
   _pickupSpinSpeed: 36
   _weapon:
-  - TwinShotguns
+  - Twin Shotguns
   _amount: 05000000
   _isAltAmmo: 01
   _sharedIndex: 00000000
-  _sharedAmount: 19000000
+  _sharedAmount: 0f000000

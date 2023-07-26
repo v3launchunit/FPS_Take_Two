@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
@@ -68,11 +68,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: -6652725513331149018, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -5922622823359544968, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: -5215299815803115452, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -4226156463210825400, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -83,6 +93,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.2499997
       objectReference: {fileID: 0}
+    - target: {fileID: -3862753553070925569, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -771660224154329397, guid: 79ab4d5d250f8194aad700be1665d294,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -143,6 +158,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.2499997
       objectReference: {fileID: 0}
+    - target: {fileID: 5232627393660835655, guid: 79ab4d5d250f8194aad700be1665d294,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -222,19 +242,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
   _interactSound: {fileID: 4756592628764114648, guid: 46f5201c62b9b6340a7617100fd37d7e,
     type: 3}
   _pickupText: Nabbed a Nailgun!
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 1}
   _pickupSpinSpeed: 36
-  _pickupBobAmplitude: 1
-  _pickupBobFrequency: 1
-  _pickupSnapTo:
-    serializedVersion: 2
-    m_Bits: 0
   _weapon: {fileID: 4524916422361737023, guid: edea814f971295f44a95c37fce3bff05, type: 3}
   _startingMainAmmo: 50
   _startingAltAmmo: 3

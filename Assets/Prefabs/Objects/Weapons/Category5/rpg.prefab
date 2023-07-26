@@ -348,6 +348,8 @@ MonoBehaviour:
   _id: RPG
   _icon: {fileID: 3743310100739483010, guid: c1af0c42fd1cd2f4f8410d178a095d01, type: 3}
   _crosshairs: {fileID: 2059190383, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: 545676327, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 2040344556, guid: f1555c972094a0546b8019be3c4b5a4f, type: 3}
   _category: 4
   _index: 1
   _mainBullet: {fileID: 5136272352233544748, guid: ebc45a04c3b49ed409c6efd79820b96c,

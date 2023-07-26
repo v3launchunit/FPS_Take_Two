@@ -67,7 +67,12 @@ public class SyringeHandler : WeaponBase
             _busy = true;
         }
 
-        if (Input.GetButtonDown("Fire2") && _charge > 0 && !_busy)
+        if 
+        (
+            Input.GetButtonDown("Fire2") &&
+            GetComponentInParent<PlayerStatus>().Health < GetComponentInParent<PlayerStatus>().MaxHealth &&
+            _charge > 0 &&
+            !_busy)
         {      
             _animator.SetTrigger("AltFire");
             GameObject.Find("Crosshairs").GetComponent<Animator>().SetTrigger("Fire");

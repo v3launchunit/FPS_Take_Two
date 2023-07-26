@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3464691409884465157}
   - component: {fileID: 7045117393982664007}
   m_Layer: 0
-  m_Name: AKMBonus
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ Transform:
   - {fileID: 4390951809997447260}
   - {fileID: 1347308373224248713}
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
 --- !u!33 &7924121378519331372
 MeshFilter:
@@ -187,11 +187,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _touchInteract: 1
   _shootInteract: 0
-  _interactCrosshairs: {fileID: 0}
-  _interactTooltip: 
+  _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
+    type: 3}
+  _interactTooltip: Take
   _interactSound: {fileID: 4756592628764114648, guid: 3a10c209905ae7a4fafcc33558451fbc,
     type: 3}
-  _pickupText: Got an AKM bullet!
+  _pickupText: Got a few AKM bullets! (+1 AKM burst)
   _pickupFailText: 
   _pickupFlashColor: {r: 1, g: 1, b: 0, a: 0.101960786}
   _pickupSpinSpeed: 36
@@ -445,7 +446,7 @@ GameObject:
   - component: {fileID: 3005000075113482148}
   - component: {fileID: 6367284175301837001}
   m_Layer: 0
-  m_Name: AKMBonus_1
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

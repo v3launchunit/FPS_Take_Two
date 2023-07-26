@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1299842500128109364}
   - component: {fileID: 4489173972860069655}
   - component: {fileID: 703098913231214097}
+  - component: {fileID: 1320428878679086389}
   m_Layer: 9
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -159,7 +160,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.125, y: 0.125, z: 1}
-  m_Center: {x: 0, y: 0, z: -0.5}
+  m_Center: {x: 0, y: 0, z: 0.5}
 --- !u!54 &4489173972860069655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -199,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e1a971a4892247a33b9a45818c105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
+  _damage: 5
   _explosion: {fileID: 1186836860010196686, guid: 25e729009974d6a4db6908d19828c7e8,
     type: 3}
   _impactSound: {fileID: 0}
@@ -213,7 +214,28 @@ MonoBehaviour:
   _targetTarget: 0
   _mask:
     serializedVersion: 2
-    m_Bits: 1609
+    m_Bits: 1865
   _piercer: 0
   _bouncy: 0
   _manualDetonate: 0
+--- !u!135 &1320428878679086389
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730727309722998590}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.0625
+  m_Center: {x: 0, y: 0, z: 0}

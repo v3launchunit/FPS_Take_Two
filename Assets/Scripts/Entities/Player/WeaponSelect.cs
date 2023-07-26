@@ -22,11 +22,12 @@ public class WeaponSelect : MonoBehaviour
     [SerializeField] private List<GameObject> _weapons5;
     [SerializeField] private List<GameObject> _weapons6;
 
-    [SerializeField] private int       _selectedWeapon   = 0;
-    [SerializeField] private int       _selectedCategory = 0;
-    [SerializeField] private int[]     _selectedIndex    = { 0, 0, 0, 0, 0, 0, 0 };
-    [SerializeField] private List<int> _sharedAmmoMax;
-    [SerializeField] private List<int> _sharedAmmo; // = new()
+    [SerializeField] private int        _selectedWeapon   = 0;
+    [SerializeField] private int        _selectedCategory = 0;
+    [SerializeField] private int[]      _selectedIndex    = { 0, 0, 0, 0, 0, 0, 0 };
+    [SerializeField] private List<int>  _sharedAmmoMax;
+    [SerializeField] private List<int>  _sharedAmmo; // = new()
+    [SerializeField] private GameObject _rummageSound;
 
     void Start()
     {
@@ -115,6 +116,7 @@ public class WeaponSelect : MonoBehaviour
         _weapons[_selectedWeapon].SetActive(false);
         _selectedWeapon = index;
         _weapons[_selectedWeapon].SetActive(true);
+        Instantiate(_rummageSound, transform.position, transform.rotation);
     }
 
     private void SelectCategory(int category)
@@ -152,6 +154,7 @@ public class WeaponSelect : MonoBehaviour
         }
 
         _weapons[_selectedWeapon].SetActive(false);
+        Instantiate(_rummageSound, transform.position, transform.rotation);
 
         if (category == _selectedCategory)
             _selectedIndex[category]++;
@@ -211,6 +214,7 @@ public class WeaponSelect : MonoBehaviour
         _selectedWeapon++;
         if(_selectedWeapon >= _weapons.Count) _selectedWeapon = 0;
         _weapons[_selectedWeapon].SetActive(true);
+        Instantiate(_rummageSound, transform.position, transform.rotation);
     } 
 
     private void SelectPrevious()
@@ -219,6 +223,7 @@ public class WeaponSelect : MonoBehaviour
         _selectedWeapon--;
         if(_selectedWeapon < 0) _selectedWeapon = _weapons.Count - 1;
         _weapons[_selectedWeapon].SetActive(true);
+        Instantiate(_rummageSound, transform.position, transform.rotation);
     }
 
     public bool AddWeapon(GameObject weapon) { return AddWeapon(weapon, 0, 0); }

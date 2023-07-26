@@ -26,16 +26,19 @@ public class Movement : MonoBehaviour
         _groundCheck = transform.Find("GroundCheck");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        _velocity    = Vector3.zero;
-
         HandleMovement();
         HandleGravity();
-        HandleKnockback();
 
         _controller.Move(_velocity * Time.deltaTime);
+    }
+
+    void FixedUpdate()
+    {
+        _velocity = Vector3.zero;
+
+        HandleKnockback();
     }
 
     protected virtual void HandleMovement()

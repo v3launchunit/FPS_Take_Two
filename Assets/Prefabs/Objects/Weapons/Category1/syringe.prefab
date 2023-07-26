@@ -409,6 +409,8 @@ MonoBehaviour:
   _id: Syringe
   _icon: {fileID: 3743310100739483010, guid: 57db9d626ee98994e86992f3e10cb66d, type: 3}
   _crosshairs: {fileID: 173577172, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: -432488813, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 1685905991, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 0
   _index: 1
   _bullet: {fileID: 3445455089518735197, guid: 420d08bb29838894a9971b4e85092ec6, type: 3}

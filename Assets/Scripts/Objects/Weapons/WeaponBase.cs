@@ -8,6 +8,8 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] private string     _id;
     [SerializeField] private GameObject _icon;
     [SerializeField] private Sprite     _crosshairs;
+    [SerializeField] private Sprite     _mainAmmoType;
+    [SerializeField] private Sprite     _altAmmoType;
 
     [SerializeField] private int _category;
     [SerializeField] private int _index;
@@ -47,6 +49,9 @@ public abstract class WeaponBase : MonoBehaviour
         if (_crosshairs != null)
             FindFirstObjectByType<HudHandler>().WeaponCrosshairs = _crosshairs;
         //    GameObject.Find("Crosshairs").GetComponent<Image>().sprite = _crosshairs;
+
+        GameObject.Find("AmmoType_Main").GetComponent<Image>().sprite = _mainAmmoType;
+        GameObject.Find("AmmoType_Alt" ).GetComponent<Image>().sprite =  _altAmmoType;
     }
 
     void OnDisable()

@@ -22,6 +22,7 @@ public class EnemyMovement : Movement
         _agent                  = gameObject.GetComponent<NavMeshAgent>();
         _destination            = _agent.destination;
         _agent.stoppingDistance = _targetDesiredDistance;
+        transform.LookAt(_target);
     }
 
     void Update()

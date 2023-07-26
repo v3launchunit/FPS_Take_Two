@@ -5534,6 +5534,8 @@ MonoBehaviour:
   _id: Sword
   _icon: {fileID: 3668587133712556071, guid: e24b7a029332f2b4988bcd3d5a13b928, type: 3}
   _crosshairs: {fileID: -2064421592, guid: bfc7cdcaed806274abc8576ff6512bad, type: 3}
+  _mainAmmoType: {fileID: -432488813, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 0
   _index: 2
   _mainBullet: {fileID: 3445455089518735197, guid: cc6a2f09876df954ebd675c82679459f,

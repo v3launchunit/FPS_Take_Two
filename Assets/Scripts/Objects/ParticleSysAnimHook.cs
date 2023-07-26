@@ -16,4 +16,12 @@ public class ParticleSysAnimHook : MonoBehaviour
             p.Play();
         }
     }
+
+    public void EmitFromAll(int count)
+    {
+        foreach(var p in GetComponentsInChildren<ParticleSystem>())
+        {
+            p.Emit(count);
+        }
+    }
 }

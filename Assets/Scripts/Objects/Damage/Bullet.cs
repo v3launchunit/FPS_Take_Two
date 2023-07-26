@@ -42,11 +42,12 @@ public class Bullet : OwnedProjectile
 
         bulletBody.AddForce(transform.forward * _bulletSpeed, ForceMode.VelocityChange);
         Destroy(gameObject, _lifetime);
+        transform.position += transform.forward;
     }
 
     private void Update()
     {
-        if (_manualDetonate && Input.GetButtonDown("Detonate"))
+        if (_manualDetonate && !_collided && Input.GetButtonDown("Detonate"))
         {
             var e = Instantiate(_explosion, transform.position, transform.rotation);
             TransferOwnership(e.transform);
@@ -80,6 +81,7 @@ public class Bullet : OwnedProjectile
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.transform == _owner) return;
         if (!_collided)
         {
             _collided = true;
@@ -132,7 +134,7 @@ public class Bullet : OwnedProjectile
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!_piercer) return;
+        if ((!_piercer) || _bouncy) return;
         _collided = true;
          
         // Quaternion   rotation  = Quaternion.FromToRotation(Vector3.up, other.transform.localRotation);

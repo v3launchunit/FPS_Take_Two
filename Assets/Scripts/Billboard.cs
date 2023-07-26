@@ -6,7 +6,7 @@ public class Billboard : MonoBehaviour
 {
     [SerializeField] private bool _pitch = true;
     [SerializeField] private bool _yaw   = true;
-    [SerializeField] private bool _roll  = false;
+    [SerializeField] private bool _roll  = true;
 
     // Camera _mainCamera;
     // void Start() { _mainCamera = Camera.main; }

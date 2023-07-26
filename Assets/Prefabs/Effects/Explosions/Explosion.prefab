@@ -5202,14 +5202,14 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.5, g: 0.5, b: 0, a: 1}
-  m_Intensity: 5
-  m_Range: 5
+  m_Color: {r: 1, g: 0.6666667, b: 0, a: 1}
+  m_Intensity: 10
+  m_Range: 25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5317,7 +5317,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &151787895532766658
 MonoBehaviour:
@@ -5331,6 +5331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38d8cee807c03441b4ef41ce0d1b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 60
+  _damage: 120
   _selfDamage: 30
-  _movementKnockback: 50
+  _movementKnockback: 30
