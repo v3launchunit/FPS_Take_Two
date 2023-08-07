@@ -164,8 +164,8 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 1865
-  _parrier: 1
-  _piercer: 1
+  _parrier: 0
+  _piercer: 0
 --- !u!1001 &3631940611959200266
 PrefabInstance:
   m_ObjectHideFlags: 0

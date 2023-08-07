@@ -153,7 +153,7 @@ MonoBehaviour:
   _explosion: {fileID: 1186836860010196686, guid: ca972d5fc9913274c8846b2f3cb25682,
     type: 3}
   _maxRange: 100
-  _lifetime: 60
+  _lifetime: 5
   _fadeSpeed: 100
   _fadeDelay: 0.05
   _launchFactorMovement: 0.25

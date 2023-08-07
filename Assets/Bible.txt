@@ -123,21 +123,20 @@
             Sword
         Slot 2 (Burst)
             Shotgun
-            Twin Shotguns
             Boomstick
         Slot 3 (Sustained)
-            Nailgun
+            Tommy Gun
             AKM
+            Nailgun
         Slot 4 (Ranged)
-            Pepperbox
             Big Iron
             Crossbow
         Slot 5 (Projectile)
             Plasma Cannon
             Rocket Launcher
         Slot 6 (Other)
-            C4
             Howitzer
+            Flamethrower
 
         Slot 7 (Debug)
 

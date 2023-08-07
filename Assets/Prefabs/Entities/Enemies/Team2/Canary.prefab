@@ -312,8 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b88a1aa26cfa64ab2d69c7940ffd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 150
-  _health: 150
+  _maxHealth: 200
+  _health: 200
   _damageSound: {fileID: 0}
   _bloodSpray: {fileID: 1186836860010196686, guid: e139bdab13f76254bb6db755caebaebc,
     type: 3}

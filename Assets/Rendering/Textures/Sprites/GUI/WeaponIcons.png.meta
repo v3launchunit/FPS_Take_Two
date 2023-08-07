@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -365,7 +367,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,6 +375,27 @@ TextureImporter:
       bones: []
       spriteID: 65b4177fb7e52434495e00adb4bd64db
       internalID: 1021582010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeaponIcons_Flamethrower
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52e5c15e2cd77f499da5f9a7d926e31
+      internalID: -1113929658
       vertices: []
       indices: 
       edges: []
@@ -394,6 +417,7 @@ TextureImporter:
       WeaponIcons_BigIron: 1630861343
       WeaponIcons_Boomstick: -673318003
       WeaponIcons_Crossbow: -348928223
+      WeaponIcons_Flamethrower: -1113929658
       WeaponIcons_Nailgun: -556331135
       WeaponIcons_Pepperbox: -217458396
       WeaponIcons_PlasmaCannon: -793589221
@@ -402,9 +426,8 @@ TextureImporter:
       WeaponIcons_Syringe: 1190911189
       WeaponIcons_TommyGun: 1021582010
       WeaponIcons_TwinShotguns: -129510547
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

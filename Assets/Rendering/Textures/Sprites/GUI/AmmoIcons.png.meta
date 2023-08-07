@@ -376,7 +376,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,6 +384,27 @@ TextureImporter:
       bones: []
       spriteID: c610c2f21d90eee47a99c9f4bb4ae800
       internalID: 708565421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmmoIcons_Flamethrower
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5426eb5bee586644a7e5fac0a5e452c
+      internalID: 713343596
       vertices: []
       indices: 
       edges: []
@@ -405,6 +426,7 @@ TextureImporter:
       AmmoIcons_AKM: 452619721
       AmmoIcons_BigIron: -769682266
       AmmoIcons_Cells: 634598996
+      AmmoIcons_Flamethrower: 713343596
       AmmoIcons_Grenade: -1608188780
       AmmoIcons_Melee: -432488813
       AmmoIcons_Molotov: -574315431

@@ -67,10 +67,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 849379129802519247}
-  - {fileID: 236760665867364341}
-  - {fileID: -1844888397310755740}
   - {fileID: -7011558710299706105}
+  - {fileID: 236760665867364341}
   - {fileID: 3275196659294963256}
+  - {fileID: -1844888397310755740}
 --- !u!114 &236760665867364341
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06437c1ff663d574d9447842ba0a72e4, type: 3}
   m_Name: ScreenSpaceLensFlare
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
     m_Value: 1
@@ -211,7 +211,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   streaksLength:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   streaksOrientation:
     m_OverrideState: 0

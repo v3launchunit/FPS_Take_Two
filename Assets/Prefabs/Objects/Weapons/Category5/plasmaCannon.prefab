@@ -4844,7 +4844,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.5019608, g: 0, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 3
+  m_Range: 6
   m_SpotAngle: 179
   m_InnerSpotAngle: 170
   m_CookieSize: 10
@@ -5259,32 +5259,34 @@ MonoBehaviour:
   _altAmmoType: {fileID: 634598996, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
   _category: 4
   _index: 0
-  _mainBullet: {fileID: 8937649536016436938, guid: c6fd698f19330bf40b91046b8cf8f820,
+  _mainBullet: {fileID: 8937649536016436938, guid: 2cdacc1874a32114ebcc17b00bb7cd35,
     type: 3}
   _mainMuzzleFlash: {fileID: 2609597111421509414, guid: 3477feb5a8edb1741891d8dfea01ff74,
     type: 3}
-  _mainFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
+  _mainFireSound: {fileID: 4756592628764114648, guid: b5e6b4b262a1ede42aed078fb2776964,
     type: 3}
   _mainBurst: 1
   _mainSpread: 0
-  _mainAmmoMax: 4
+  _mainAmmoMax: 1
   _mainAmmo: 15
   _sharedMainAmmo: 1
   _mainAutomatic: 1
   _mainRecoil: 0
-  _mainCamRecoil: 5
-  _altBullet: {fileID: 0}
-  _altMuzzleFlash: {fileID: 4752454774002749121, guid: 6f8361dc6a91d6f4fa4950202ca57b00,
+  _mainCamRecoil: 1
+  _altBullet: {fileID: 8937649536016436938, guid: c6fd698f19330bf40b91046b8cf8f820,
     type: 3}
-  _altFireSound: {fileID: 0}
+  _altMuzzleFlash: {fileID: 2609597111421509414, guid: 3477feb5a8edb1741891d8dfea01ff74,
+    type: 3}
+  _altFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
+    type: 3}
   _altBurst: 1
   _altSpread: 0
-  _altAmmoMax: 20
+  _altAmmoMax: 5
   _altAmmo: 3
   _sharedAltAmmo: 1
-  _altAutomatic: 0
+  _altAutomatic: 1
   _altRecoil: 0
-  _altCamRecoil: 0
+  _altCamRecoil: 5
   _foleySound: {fileID: 0}
   _spinBullet: {fileID: 3445455089518735197, guid: cad233c2ff78a7a4ba97582b4523d240,
     type: 3}

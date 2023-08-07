@@ -118,7 +118,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b5d0ff698af01eb40bd9122cff8768d5, type: 2}
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: -5922622823359544968, guid: 9bc75171b68e20c4a9ea5a63e25af94a,
         type: 3}
       propertyPath: m_Layer
@@ -133,7 +133,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b5d0ff698af01eb40bd9122cff8768d5, type: 2}
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: 919132149155446097, guid: 9bc75171b68e20c4a9ea5a63e25af94a,
         type: 3}
       propertyPath: m_Name
@@ -154,6 +154,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3652011956315678642, guid: 9bc75171b68e20c4a9ea5a63e25af94a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5232627393660835655, guid: 9bc75171b68e20c4a9ea5a63e25af94a,
         type: 3}
       propertyPath: m_CastShadows
@@ -163,7 +168,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b5d0ff698af01eb40bd9122cff8768d5, type: 2}
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     - target: {fileID: 6836824091210677514, guid: 9bc75171b68e20c4a9ea5a63e25af94a,
         type: 3}
       propertyPath: m_Layer
@@ -183,7 +188,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b5d0ff698af01eb40bd9122cff8768d5, type: 2}
+      objectReference: {fileID: 2100000, guid: 9caf466bee472dd45874f8f45ff10814, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -244,21 +249,23 @@ MonoBehaviour:
   _id: Howitzer
   _icon: {fileID: 3743310100739483010, guid: c1af0c42fd1cd2f4f8410d178a095d01, type: 3}
   _crosshairs: {fileID: -308116444, guid: 3bcd7ced304751346858e70f1b5cc072, type: 3}
+  _mainAmmoType: {fileID: -1608188780, guid: 691c2ff489c1f5f48b18d965741e0c25, type: 3}
+  _altAmmoType: {fileID: 2040344556, guid: f1555c972094a0546b8019be3c4b5a4f, type: 3}
   _category: 5
   _index: 1
   _mainBullet: {fileID: 3445455089518735197, guid: 67a5cacb76241c74fa3a777a331d36db,
     type: 3}
-  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: bd9248602055dc54aa4c7353807287ba,
+  _mainMuzzleFlash: {fileID: 2573932049405874653, guid: c4b35e90a01d8f845b184d43b557f378,
     type: 3}
-  _mainFireSound: {fileID: 4474095313810178510, guid: a2ac6746093d17e438caf600bb52e9a2,
+  _mainFireSound: {fileID: 4474095313810178510, guid: 71c3cf4f928cba04fa0eca798c8d4758,
     type: 3}
   _mainBurst: 1
   _mainSpread: 5
   _mainAmmoMax: 50
-  _mainAmmo: 50
+  _mainAmmo: 0
   _sharedMainAmmo: -1
   _mainAutomatic: 1
-  _mainRecoil: 7.5
+  _mainRecoil: 5
   _mainCamRecoil: 5
   _altBullet: {fileID: 0}
   _altMuzzleFlash: {fileID: 0}

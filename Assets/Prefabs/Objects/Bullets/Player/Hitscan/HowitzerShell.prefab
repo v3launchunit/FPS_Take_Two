@@ -35,6 +35,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &7045430934666532089
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -122,16 +123,20 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &8691877518198904213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,15 +149,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b80c484c6778844a73e3ce6aca8b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 100
+  _damage: 120
   _explosion: {fileID: 151787894086565077, guid: 0fe00ef397656204081be52d4c55f45a,
     type: 3}
   _maxRange: 100
-  _lifetime: 60
+  _lifetime: 5
   _fadeSpeed: 100
   _fadeDelay: 0.05
   _launchFactorMovement: 0.25
   _launchFactorRigidbody: -10
+  _targetCrosshairs: 1
+  _targetTarget: 0
   _layerMask:
     serializedVersion: 2
     m_Bits: 1865

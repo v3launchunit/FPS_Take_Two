@@ -83,12 +83,12 @@ public class WeaponHandler : WeaponBase
                 (
                     _mainMuzzleFlash, 
                     _spawner.transform.position, 
-                    Camera.main.transform.rotation * Quaternion.Euler
-                    (
-                        0,
-                        0,
-                        (Random.value - 0.5f) * 45f
-                    )
+                    Camera.main.transform.rotation // * Quaternion.Euler
+                    // (
+                    //     0,
+                    //     0,
+                    //     (Random.value - 0.5f) * 45f
+                    // )
                 )
                 .transform.SetParent(transform, true);
 

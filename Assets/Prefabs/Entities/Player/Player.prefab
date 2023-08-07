@@ -725,7 +725,7 @@ MonoBehaviour:
   _cyoteTime: 0.25
   _knockbackFalloffAir: 0.975
   _knockbackFalloffGround: 0.9
-  _groundDistance: 0.5
+  _groundDistance: 0.4
   _groundMask:
     serializedVersion: 2
     m_Bits: 1864

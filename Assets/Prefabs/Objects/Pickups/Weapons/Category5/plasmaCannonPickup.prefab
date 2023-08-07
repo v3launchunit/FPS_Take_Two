@@ -411,7 +411,7 @@ MonoBehaviour:
   _pickupFlashColor: {r: 0.5, g: 0, b: 1, a: 1}
   _pickupSpinSpeed: 36
   _weapon: {fileID: 1223990817627627461, guid: bd7b670c0ae58ed45aece72e5d039cab, type: 3}
-  _startingMainAmmo: 24
+  _startingMainAmmo: 20
   _startingAltAmmo: 0
 --- !u!4 &7717730122001588426 stripped
 Transform:

@@ -447,10 +447,11 @@ MonoBehaviour:
   _shootInteract: 0
   _interactCrosshairs: {fileID: 976143515, guid: 3bcd7ced304751346858e70f1b5cc072,
     type: 3}
-  _interactTooltip: 
+  _interactTooltip: Pull
   _interactSound: {fileID: 0}
+  _static: 0
   _onPosition: {x: 0, y: 0, z: 0}
-  _onRotation: {x: 90, y: 0, z: 0}
+  _onRotation: {x: 89, y: 0, z: 0}
   _travelTime: 0.3
   _resetDelay: -1
   _requiredKey: -1

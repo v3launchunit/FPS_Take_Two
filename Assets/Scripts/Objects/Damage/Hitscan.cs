@@ -31,7 +31,10 @@ public class Hitscan : OwnedProjectile
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(gameObject, _lifetime);
+
         _scanStartingPosition = _targetCrosshairs ? Camera.main.transform.position : (_targetTarget ? _owner.position : transform.position);
+        _firedFrom            = transform.position;
         Scan();
         
         // if (_explosion != null)
@@ -43,9 +46,6 @@ public class Hitscan : OwnedProjectile
         //     )
         //     .transform.SetParent(_hit, true);
 
-        Destroy(gameObject, _lifetime);
-
-        _firedFrom = transform.position;
         // print($"{_owner.name}'s hitscan hit {_hit.gameObject.name}");
     }
 
@@ -116,7 +116,7 @@ public class Hitscan : OwnedProjectile
                     return;
                 }
 
-                _hitOrganic = targetDamage.Organic;
+                _hitOrganic = _hitOrganic || targetDamage.Organic;
 
                 _damage -= targetDamage.Damage(_damage);
 

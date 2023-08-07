@@ -57,7 +57,7 @@ public class PlayerMovement : Movement
         _playerHands.localPosition = new
         (
             -x * 0.1f,
-            (Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4) - ((2 - _crouchPos)/10),
+            (Mathf.Min(move.magnitude, 1) * Mathf.Sin(Time.time * _bobSpeed * 2) * _bobIntensity/4) + ((2 - _crouchPos)/10),
             0
         );
     }
@@ -88,7 +88,7 @@ public class PlayerMovement : Movement
 
         _velocity.y += _fallSpeed;
 
-        _fallPitch = Mathf.SmoothDampAngle(_fallPitch, _fallSpeed,                              ref _handSmoothFall,  0.05f);
+        _fallPitch = Mathf.SmoothDampAngle(_fallPitch, Mathf.max(_fallSpeed, -45),              ref _handSmoothFall,  0.05f);
         _movePitch = Mathf.SmoothDampAngle(_movePitch, -Input.GetAxis("Mouse Y") * _weaponDrag, ref _handSmoothPitch, 0.3f);
         _playerHands.localEulerAngles = new
         (

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1266485473729315120}
   - component: {fileID: 5407032485970888151}
   - component: {fileID: 4120236853364530308}
-  - component: {fileID: 8653798989070266016}
   - component: {fileID: 4944588907661183791}
   m_Layer: 1
   m_Name: Sphere_1
@@ -28,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142734373402210009}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 6.75, y: 6.75, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.025, y: 2.025, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9010321976224265182}
@@ -42,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142734373402210009}
-  m_Mesh: {fileID: 3613567641014311022, guid: 57ee8b27397b1ea40adc7126da68f7c1, type: 3}
+  m_Mesh: {fileID: 760883399406238408, guid: 1cbe9c4f9f1596149a5a9c759225a894, type: 3}
 --- !u!23 &4120236853364530308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85,27 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8653798989070266016
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142734373402210009}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4944588907661183791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +108,6 @@ GameObject:
   - component: {fileID: 9178644405841347187}
   - component: {fileID: 8136359817340245528}
   - component: {fileID: 6278370171693033379}
-  - component: {fileID: 1762653439060821420}
   - component: {fileID: 8685583369737555724}
   m_Layer: 1
   m_Name: Sphere
@@ -147,8 +124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086882316503112142}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 5, y: 5, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9010321976224265182}
@@ -161,7 +138,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086882316503112142}
-  m_Mesh: {fileID: 3613567641014311022, guid: 57ee8b27397b1ea40adc7126da68f7c1, type: 3}
+  m_Mesh: {fileID: 760883399406238408, guid: 1cbe9c4f9f1596149a5a9c759225a894, type: 3}
 --- !u!23 &6278370171693033379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,27 +181,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1762653439060821420
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086882316503112142}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8685583369737555724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +470,6 @@ GameObject:
   - component: {fileID: 6708641567666317951}
   - component: {fileID: 2440098173218216865}
   - component: {fileID: 486361498389502338}
-  - component: {fileID: 5194909414045008442}
   - component: {fileID: 294569922617494453}
   m_Layer: 1
   m_Name: Sphere_2
@@ -531,8 +486,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8846108307561103229}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 8.25, y: 8.25, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.65, y: 1.65, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9010321976224265182}
@@ -545,7 +500,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8846108307561103229}
-  m_Mesh: {fileID: 3613567641014311022, guid: 57ee8b27397b1ea40adc7126da68f7c1, type: 3}
+  m_Mesh: {fileID: 760883399406238408, guid: 1cbe9c4f9f1596149a5a9c759225a894, type: 3}
 --- !u!23 &486361498389502338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -588,27 +543,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5194909414045008442
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8846108307561103229}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &294569922617494453
 MonoBehaviour:
   m_ObjectHideFlags: 0

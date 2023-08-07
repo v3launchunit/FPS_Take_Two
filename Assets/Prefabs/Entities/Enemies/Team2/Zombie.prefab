@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded70562b37eae54db06f4d755ee9baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 70
-  _health: 70
+  _maxHealth: 100
+  _health: 100
   _damageSound: {fileID: 0}
   _bloodSpray: {fileID: 1186836860010196686, guid: e139bdab13f76254bb6db755caebaebc,
     type: 3}
