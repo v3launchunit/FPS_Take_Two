@@ -106,7 +106,7 @@ public class Hitscan : OwnedProjectile
             {
                 if (targetDamage.IsDead)
                 {
-                    _scanStartingPosition = _impactPoint; // + transform.forward
+                    _scanStartingPosition = _impactPoint + transform.forward;
                     _scanEscapeCounter++;
                     if (_scanEscapeCounter < 100)
                         Scan();

@@ -967,10 +967,7 @@ MonoBehaviour:
   _maxSpeed: 10
   _bullet: {fileID: 8937649536016436938, guid: a4efd634fca2b4c41a3381d8af89c59b, type: 3}
   _muzzleFlash: {fileID: 0}
-  _burst: 1
-  _spread: 0
-  _fireCooldown: 10
-  _sight: 32
+  _fireCooldown: 5
 --- !u!1 &63763754855528616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 865380665432890762, guid: 9c987ac482e161a41b75c9f08fa553e5,

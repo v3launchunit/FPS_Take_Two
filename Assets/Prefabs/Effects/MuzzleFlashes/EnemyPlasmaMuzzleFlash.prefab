@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
-  _lifetime: 0.25
+  _lifetime: 1
   _decaySpawn: {fileID: 0}
 --- !u!1001 &4680804483205936215
 PrefabInstance:

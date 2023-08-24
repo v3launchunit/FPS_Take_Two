@@ -27,6 +27,10 @@ public class Bullet : OwnedProjectile
 
     private void Start()
     {
+        Destroy(gameObject, _lifetime);
+        print(_owner);
+        Physics.IgnoreCollision(GetComponent<Collider>(), _owner.GetComponent<Collider>());
+        
         Vector3 angle = transform.rotation * Vector3.forward;
         if (_targetCrosshairs && Physics.Raycast(Camera.main.transform.position, angle, out _raycastHit, 1024, _mask))
             transform.LookAt(_raycastHit.point);
@@ -41,7 +45,6 @@ public class Bullet : OwnedProjectile
         Rigidbody bulletBody = gameObject.GetComponent<Rigidbody>();
 
         bulletBody.AddForce(transform.forward * _bulletSpeed, ForceMode.VelocityChange);
-        Destroy(gameObject, _lifetime);
         transform.position += transform.forward;
     }
 
@@ -206,6 +209,9 @@ public class Bullet : OwnedProjectile
             var emission     = particleSystem.emission;
             emission.enabled = false;
         }
+
+        if (gameObject.TryGetComponent(out AudioSource audio))
+            audio.enabled = false;
 
         if (_destroyOnImpact)
             Destroy(gameObject, 0.25f);

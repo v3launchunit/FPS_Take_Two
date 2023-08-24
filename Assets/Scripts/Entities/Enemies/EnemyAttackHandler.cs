@@ -9,7 +9,7 @@ public class EnemyAttackHandler : MonoBehaviour
     [SerializeField] private int        _burst        =  1;
     [SerializeField] private float      _spread       =  0;
     [SerializeField] private float      _fireCooldown =  1;
-    [SerializeField] private float      _sight         = 32;
+    // [SerializeField] private float      _sight         = 32;
     [SerializeField] private GameObject _meleeBullet;
     [SerializeField] private float      _meleeRange    =  3;
     [SerializeField] private GameObject _foleySound;
@@ -71,7 +71,8 @@ public class EnemyAttackHandler : MonoBehaviour
             for (int i = 0; i<_burst; i++)
             {
                 var b = Instantiate(_bullet, _spawner.transform.position, _spawner.transform.rotation * Quaternion.Euler(_spread * Mathf.Sin(i) * i/9, _spread * Mathf.Cos(i) * i/9, 0));
-                
+                Physics.IgnoreCollision(GetComponent<Collider>(), b.GetComponent<Collider>());
+
                 if (b.TryGetComponent(out OwnedProjectile proj))
                     proj.Owner = transform;
             }

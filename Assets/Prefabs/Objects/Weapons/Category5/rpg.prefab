@@ -360,7 +360,7 @@ MonoBehaviour:
   _mainBurst: 1
   _mainSpread: 0
   _mainAmmoMax: 10
-  _mainAmmo: 3
+  _mainAmmo: 0
   _sharedMainAmmo: -1
   _mainAutomatic: 1
   _mainRecoil: 0

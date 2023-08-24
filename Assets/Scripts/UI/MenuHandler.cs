@@ -17,16 +17,26 @@ public class MenuHandler : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Time.timeScale = 0;
                 _menuLayer++;
+                transform.Find("Canvas/PauseMenu").gameObject.SetActive(true);
             }
             else
             {
                 _menuLayer--;
                 if (_menuLayer == 0)
                 {
-                    Time.timeScale = _timeScale;
-                Cursor.lockState = CursorLockMode.Locked;
+                    Unpause();
                 }
             }
         }
     }
+
+    void Unpause()
+    {
+        _menuLayer = 0;
+        transform.Find("Canvas/PauseMenu").gameObject.SetActive(false);
+        Time.timeScale   = _timeScale;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public int MenuLayer { get => _menuLayer; }
 }

@@ -112,9 +112,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2.4
+  m_Height: 2.75
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.35, z: 0}
 --- !u!195 &2054260531399525979
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -208,7 +208,6 @@ MonoBehaviour:
   _burst: 1
   _spread: 0
   _fireCooldown: 5
-  _sight: 32
   _meleeBullet: {fileID: 3445455089518735197, guid: 6b076b5f1dba1674ebbcb337cd408633,
     type: 3}
   _meleeRange: 1.5

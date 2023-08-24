@@ -13,7 +13,7 @@ public class CrossbowHandler : WeaponBase
     [SerializeField] private int        _ammoMax     = 50;
     [SerializeField] private int        _ammo        = 15;
     [SerializeField] private int        _sharedAmmo  = -1;
-    [SerializeField] private bool       _automatic   = true;
+    // [SerializeField] private bool       _automatic   = true;
 
     [SerializeField] private GameObject _spinBullet;
 

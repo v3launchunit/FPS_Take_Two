@@ -6,7 +6,7 @@ public class ChargeAltFire : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _chargeBulletStages;
     [SerializeField] private List<GameObject> _chargeMuzzleFlashStages;
-    [SerializeField] private float            _stageIncrementDelay = 1f;
+    // [SerializeField] private float            _stageIncrementDelay = 1f;
     [SerializeField] private bool             _overloadForceFire;
     [SerializeField] private bool             _charging;
 

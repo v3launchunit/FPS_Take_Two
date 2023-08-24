@@ -23,6 +23,15 @@ public class Status : MonoBehaviour
             _explosionPos = transform;
     }
 
+    void Update()
+    {
+
+        if (_health <= 0)
+        {
+            Kill();
+        }
+    }
+
     public int Damage(int damage) { return Damage(damage, 1); }
     public virtual int Damage(int damage, float multiplier) //
     {

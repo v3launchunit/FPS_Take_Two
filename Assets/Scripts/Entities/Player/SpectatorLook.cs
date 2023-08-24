@@ -7,7 +7,7 @@ public class SpectatorLook : MonoBehaviour
 {
     [SerializeField] private float _mouseSensitivity = 300f;
     [SerializeField] private float _zoomSensitivity  = 300f;
-    [SerializeField] private float _moveSpeed        = 10f;
+    // [SerializeField] private float _moveSpeed        = 10f;
 
     private float _pitch = 0f;
     private float _yaw   = 0f;

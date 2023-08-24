@@ -74,7 +74,7 @@ public class PlayerMovement : Movement
         else if (_cyoteTimeLeft > 0)
             _cyoteTimeLeft -= Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump") && (_grounded || _cyoteTimeLeft > 0))
+        if (Input.GetButton("Jump") && (_grounded || _cyoteTimeLeft > 0))
         {
             _fallSpeed = Mathf.Sqrt(_jumpHeight * -2f * _riseGrav);
             _cyoteTimeLeft = 0;
@@ -88,7 +88,7 @@ public class PlayerMovement : Movement
 
         _velocity.y += _fallSpeed;
 
-        _fallPitch = Mathf.SmoothDampAngle(_fallPitch, Mathf.max(_fallSpeed, -45),              ref _handSmoothFall,  0.05f);
+        _fallPitch = Mathf.SmoothDampAngle(_fallPitch, Mathf.Max(_fallSpeed, -45),              ref _handSmoothFall,  0.05f);
         _movePitch = Mathf.SmoothDampAngle(_movePitch, -Input.GetAxis("Mouse Y") * _weaponDrag, ref _handSmoothPitch, 0.3f);
         _playerHands.localEulerAngles = new
         (

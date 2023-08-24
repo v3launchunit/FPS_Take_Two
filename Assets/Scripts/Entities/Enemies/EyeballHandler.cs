@@ -10,17 +10,17 @@ public class EyeballHandler : MonoBehaviour
     [SerializeField] private float      _maxSpeed              = 25;
     [SerializeField] private GameObject _bullet;
     [SerializeField] private GameObject _muzzleFlash;
-    [SerializeField] private int        _burst        =  1;
-    [SerializeField] private float      _spread       =  0;
+    // [SerializeField] private int        _burst        =  1;
+    // [SerializeField] private float      _spread       =  0;
     [SerializeField] private int        _fireCooldown =  5;
-    [SerializeField] private float      _sight        = 32;
+    // [SerializeField] private float      _sight        = 32;
 
     private float     _cooldown;
     private Rigidbody _body;
 
     void Start()
     {
-        _cooldown = _fireCooldown;
+        _cooldown = Random.Range(_fireCooldown - 0.5f, _fireCooldown + 0.5f);
         _body     = GetComponent<Rigidbody>();
     }
 
@@ -46,7 +46,8 @@ public class EyeballHandler : MonoBehaviour
 
         if (_cooldown <= 0)
         {
-            Instantiate(_bullet, transform.position + transform.forward, transform.rotation);
+            var b = Instantiate(_bullet, transform.position + transform.forward, transform.rotation);
+            b.GetComponent<OwnedProjectile>().Owner = transform;
             _cooldown = _fireCooldown;
         }
         else
